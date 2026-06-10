@@ -1,0 +1,149 @@
+{
+  "name": "FantasyPicks",
+  "subtitle": "精选 iOS 旁载应用索引源",
+  "description": "FantasyPicks 是一个 AltStore 第三方精选索引源。IPA 下载链接直接指向原作者 GitHub Releases，不重新托管应用文件。",
+  "iconURL": "https://github.com/KIDA-MNESIA.png",
+  "headerURL": "",
+  "website": "https://kida-mnesia.github.io/FantasyPicks/",
+  "tintColor": "#4185A9",
+  "featuredApps": [
+    "app.aidoku.Aidoku",
+    "io.github.haukuen.venera",
+    "com.example.piliplus",
+    "thewonderofyou.Feather",
+    "com.github.lingyan000.fluxdo"
+  ],
+  "apps": [
+    {
+      "bundleIdentifier": "app.aidoku.Aidoku",
+      "versions": [
+        {
+          "version": "0.8.3",
+          "buildVersion": "3",
+          "date": "2026-05-18",
+          "localizedDescription": "- New migration flow: view series details and optionally copy data instead of completely migrating.\r\n- Kavita API key login: in addition to OIDC and basic auth, use an API key if it works better for you.\r\n- Continuous with gaps reading mode: like the Webtoon mode, but with gaps between pages.\r\n- Fixed tracker search bar: should show again on iOS 26.4+.\r\n- Improved double page reader: new page offset setting and double page handling fixes.\r\n- Various other bug fixes and small features: see [the website](<https://aidoku.app/release-notes/>) for a more complete list.\n\nUpstream release: https://github.com/Aidoku/Aidoku/releases/tag/v0.8.3",
+          "downloadURL": "https://github.com/Aidoku/Aidoku/releases/download/v0.8.3/Aidoku.ipa",
+          "size": 9287296,
+          "minOSVersion": "15.0"
+        }
+      ],
+      "name": "Aidoku",
+      "developerName": "Aidoku",
+      "subtitle": "开源漫画阅读器",
+      "localizedDescription": "Aidoku 是一款用于 iOS 和 iPadOS 的开源漫画阅读器。本条目仅索引原作者 GitHub Releases 中发布的 IPA。",
+      "iconURL": "",
+      "tintColor": "#4185A9",
+      "category": "books",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "bundleIdentifier": "io.github.haukuen.venera",
+      "versions": [
+        {
+          "version": "1.13.0",
+          "buildVersion": "204",
+          "date": "2026-06-06",
+          "localizedDescription": "## What's Changed\r\n* refactor: 规范cbz导出的格式 by @haukuen in https://github.com/haukuen/venera/pull/87\r\n* feat: 新增 WebDAV 漫画归档功能 by @haukuen in https://github.com/haukuen/venera/pull/88\r\n* feat: 持久化首页图片收藏的分类选择状态\r\n* feat: 搜索页面更新收藏状态\r\n* feat: 新增自动清理历史记录功能\r\n* ci: 构建完成后再创建 Release\r\n\r\n**Full Changelog**: https://github.com/haukuen/venera/compare/v1.12.0...v1.13.0\n\nUpstream release: https://github.com/haukuen/venera/releases/tag/v1.13.0",
+          "downloadURL": "https://github.com/haukuen/venera/releases/download/v1.13.0/venera-ios-1.13.0%2B204.ipa",
+          "size": 15672047,
+          "minOSVersion": "14.0"
+        }
+      ],
+      "name": "Venera",
+      "developerName": "haukuen",
+      "subtitle": "跨平台漫画阅读器",
+      "localizedDescription": "Venera 是一款支持本地和网络漫画源的跨平台漫画阅读器。本条目仅索引原作者 GitHub Releases 中发布的 iOS IPA。",
+      "iconURL": "",
+      "tintColor": "#4185A9",
+      "category": "books",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "bundleIdentifier": "com.example.piliplus",
+      "versions": [
+        {
+          "version": "2.0.8",
+          "buildVersion": "5024",
+          "date": "2026-06-06",
+          "localizedDescription": "增加私信消息点击范围 #2292\r\n\r\n修复专栏解析\r\n修复 #2295 #2308\r\n修复界面缩放时无法显示滚动弹幕 #2305\n\nUpstream release: https://github.com/bggRGjQaUbCoE/PiliPlus/releases/tag/2.0.8.1",
+          "downloadURL": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.0.8.1/PiliPlus_ios_2.0.8%2B5024.ipa",
+          "size": 23460325,
+          "minOSVersion": "14.0"
+        }
+      ],
+      "name": "PiliPlus",
+      "developerName": "bggRGjQaUbCoE",
+      "subtitle": "第三方哔哩哔哩客户端",
+      "localizedDescription": "PiliPlus 是一个第三方哔哩哔哩客户端。本条目仅索引原作者 GitHub Releases 中发布的 iOS IPA。",
+      "iconURL": "",
+      "tintColor": "#4185A9",
+      "category": "entertainment",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "bundleIdentifier": "thewonderofyou.Feather",
+      "versions": [
+        {
+          "version": "2.8.2",
+          "buildVersion": "63ec47d071c188f833fd607f152b58a5bc34ab9c",
+          "date": "2026-04-22",
+          "localizedDescription": "Thank you for all your feedback and contributions!\r\n\r\n> [!TIP]\r\n> For `idevice` configuration, you can use [Impactor](https://github.com/claration/Impactor?tab=readme-ov-file#pairing-file) for easily retrieving a pairing file for installing!\r\n\r\n## What's Changed\r\n* Added support for Catalyst targets.\r\n* Added ability to rename existing certificates.\r\n* Added Arabic localizations by @mohammed1d1 in https://github.com/CLARATION/Feather/pull/624\r\n\r\n## New Contributors\r\n* @mohammed1d1 made their first contribution in https://github.com/CLARATION/Feather/pull/624\r\n\r\n**Full Changelog**: https://github.com/CLARATION/Feather/compare/v2.7.0...v2.8.2\n\nUpstream release: https://github.com/claration/Feather/releases/tag/v2.8.2",
+          "downloadURL": "https://github.com/claration/Feather/releases/download/v2.8.2/Feather.ipa",
+          "size": 14242031,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "name": "Feather",
+      "developerName": "claration",
+      "subtitle": "iOS 本地签名工具",
+      "localizedDescription": "Feather 是一款开源的 iOS 本地签名工具。本条目仅索引原作者 GitHub Releases 中发布的 IPA。",
+      "iconURL": "",
+      "tintColor": "#4185A9",
+      "category": "utilities",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "bundleIdentifier": "com.github.lingyan000.fluxdo",
+      "versions": [
+        {
+          "version": "0.2.16",
+          "buildVersion": "2026060919",
+          "date": "2026-06-09",
+          "localizedDescription": "\r\n## [0.2.16] - 2026-06-09\r\n\r\n\r\n### 🌟 新功能\r\n\r\n- 俺也一样: OP 帖底部 ME TOO 表态按钮 (discourse-solved shared_issue) by @Lingyan000\r\n\r\n- Notion 同步: 帖子/话题 -> Notion Database (close [#230](https://github.com/lingyan000/fluxdo/issues/230)) by @Lingyan000\r\n\r\n- 导出历史: 帖子导出/同步统一可追溯 (PR1/2 → #227) by @Lingyan000\r\n\r\n- Native 应用登录页: WebView 内 JS 全流程登录 by @Lingyan000\r\n\r\n- 多解决方案支持: 列表化 banner + 兼容 discourse-solved 新分支 by @Lingyan000\r\n\r\n- 老 WKWebView 兼容层: core-js polyfill 子工程 + JS 错误回传 by @Lingyan000\r\n\r\n- Cookie 引擎 v0.4.0 闭环: 全量同步 + 跨平台 observer + Win/Linux 接通 by @Lingyan000\r\n\r\n- 进度悬浮条手势：按压时间反馈 + 长按菜单设置页 by @Lingyan000\r\n\r\n- 进度悬浮条手势：左右上滑 + 长按半圆菜单 by @Lingyan000\r\n\r\n- CF 盾自动验证开关 by @Lingyan000\r\n\r\n- APK 更新支持后台下载 + 通知栏进度 by @Lingyan000\r\n\r\n- Release 日志改造：接入 git-cliff + TG 通知重构 by @Lingyan000\r\n\r\n- Cookie 引擎 v0.4.0 (#276) ([#276](https://github.com/lingyan000/fluxdo/pull/276)) by @Lingyan000\r\n\r\n- : 更新桌面端 App Icon ([#272](https://github.com/lingyan000/fluxdo/pull/272)) by @Silhouette-my\r\n\r\n- 字体粗细调整 by @Lingyan000\r\n\r\n- CF 验证样式优化 by @Lingyan000\r\n\r\n- Flutter 更新到 3.44.0 by @Lingyan000\r\n\r\n- 刷新率设置支持 by @Lingyan000\r\n\r\n- 优化 CF 盾处理与验证体验 (#266) ([#266](https://github.com/lingyan000/fluxdo/pull/266)) by @Lingyan000\r\n\r\n- 添加话题关键词过滤功能，允许用户根据标题关键词筛选话题 (#268) ([#268](https://github.com/lingyan000/fluxdo/pull/268)) by @SuperJeason\r\n\r\n- 跨平台我的书签工作区与统一书签编辑体验（clean） (#262) ([#262](https://github.com/lingyan000/fluxdo/pull/262)) by @liucong2013\r\n\r\n- AI 提供商排序置顶与模型收藏排序，新增发帖 AI 审核，修复网页端草稿编辑问题 (#261) ([#261](https://github.com/lingyan000/fluxdo/pull/261)) by @miniworldcnmm\r\n\r\n- 优化桌面布局与侧边栏导航分组 (#249) ([#249](https://github.com/lingyan000/fluxdo/pull/249)) by @liucong2013\r\n\r\n- AI 助手功能优化 by @Lingyan000\r\n\r\n\r\n### 🐛 修复\r\n\r\n- 修 AI 测试模型弹框标题撞状态栏 by @Lingyan000\r\n\r\n- 修 _t 被错存为 domain cookie 挂到子域名 by @Lingyan000\r\n\r\n- 修 cdk/ldc OAuth callback \"CSRF 验证失败\" by @Lingyan000\r\n\r\n- Cdk/ldc OAuth 链路拟人化, 缓解 429 by @Lingyan000\r\n\r\n- 修 iOS 切换应用图标无法切回主图标 by @Lingyan000\r\n\r\n- 修 iOS 真机 AI「未收到 AI 回复」+ 跟随网络 Claude 第二次起必挂 by @Lingyan000\r\n\r\n- 修日志文件含非法 utf-8 字节时日志页面崩溃打不开 by @Lingyan000\r\n\r\n- 修双栏布局下正在输入指示器居中显示 by @Lingyan000\r\n\r\n- 修 cdk/ldc OAuth user-info 双发 + 链路无间隔触发 429 by @Lingyan000\r\n\r\n- 修 Priming 与 cf_challenge 竞态导致 CF 第一次验证关闭 by @Lingyan000\r\n\r\n- 修 CF 验证循环 bug + sameSite 字段全链路保留 by @Lingyan000\r\n\r\n- 修复 release notes stable 漏合 beta + TG 双消息缺少关联 by @Lingyan000\r\n\r\n- 修复 Priming 同步失败: 去掉 fast path + 加 verify by @Lingyan000\r\n\r\n- 修复查看图片隐藏状态栏之后不再显示的问题 by @Lingyan000\r\n\r\n- Flutter 升级兼容性修复 by @Lingyan000\r\n\r\n- 修复 AI 功能跟随应用网络配置失效的问题 by @Lingyan000\r\n\r\n- LDC 功能错误提示优化 by @Lingyan000\r\n\r\n- Fix post-login loading handoff (#258) ([#258](https://github.com/lingyan000/fluxdo/pull/258)) by @liucong2013\r\n\r\n- 修复 rhttp 引擎开关退出重进自动关闭问题 (#254) ([#254](https://github.com/lingyan000/fluxdo/pull/254)) by @miniworldcnmm\r\n\r\n\r\n### 🔧 其他\r\n\r\n- Revert \":rocket: AVIF 走 Skia 内置 codec 优先 — 跟浏览器同档 path\" by @Lingyan000\r\n\r\n- :rocket: AVIF 走 Skia 内置 codec 优先 — 跟浏览器同档 path by @Lingyan000\r\n\r\n- :zap: Android AVIF 卡 + 关闭面板还卡 — generation cancel + AVIF 并发 1 by @Lingyan000\r\n\r\n- :zap: sticker / AVIF 完整方案 (2/2): 后续微优化(解码并发/UI/网络) by @Lingyan000\r\n\r\n- :sparkles: sticker / AVIF 完整方案 (1/2): native 集成 + 架构重构 + 主要修复 by @Lingyan000\r\n\r\n- 🔥 移除 hCaptcha 无障碍 Cookie 功能 by @Lingyan000\r\n\r\n\r\n\r\n\r\n**Full Changelog**: https://github.com/lingyan000/fluxdo/compare/v0.2.15...v0.2.16\r\n\r\n\r\n<div align=center>\r\n\r\n[![Release Downloads](https://img.shields.io/github/downloads/lingyan000/fluxdo/v0.2.16/total?style=flat-square&logo=github)](https://img.shields.io/github/downloads/lingyan000/fluxdo/v0.2.16/)\r\n\r\n</div>\r\n\r\n**Download based on your device:**\r\n\r\n<div align=left>\r\n<table>\r\n    <thead align=left>\r\n        <tr>\r\n            <th>OS</th>\r\n            <th>Download</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody align=left>\r\n        <tr>\r\n        <td>Android</td>\r\n            <td>\r\n                <a href=\"https://github.com/lingyan000/fluxdo/releases/download/v0.2.16/fluxdo-arm64-v8a.apk\"><img src=\"\n\n…",
+          "downloadURL": "https://github.com/Lingyan000/fluxdo/releases/download/v0.2.16/fluxdo-unsigned.ipa",
+          "size": 50580206,
+          "minOSVersion": "14.0"
+        }
+      ],
+      "name": "FluxDO",
+      "developerName": "Lingyan000",
+      "subtitle": "Linux.do 第三方客户端",
+      "localizedDescription": "FluxDO 是一个 Linux.do 第三方客户端。本条目仅索引原作者 GitHub Releases 中发布的 iOS IPA。",
+      "iconURL": "",
+      "tintColor": "#4185A9",
+      "category": "social-networking",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    }
+  ],
+  "news": []
+}
