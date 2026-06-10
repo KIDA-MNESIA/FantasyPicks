@@ -111,6 +111,11 @@ def parse_release_limit(config: dict[str, Any]) -> int:
         return 20
 
 
+def default_icon_url(config: dict[str, Any]) -> str:
+    owner = config["github"].split("/", 1)[0]
+    return f"https://github.com/{owner}.png"
+
+
 def sync_app_metadata(app: dict[str, Any], app_info: dict[str, str | None], config: dict[str, Any]) -> bool:
     name = config.get("name") or app_info.get("name") or app["bundleIdentifier"]
     app_permissions = config.get("appPermissions", app.get("appPermissions", {"entitlements": [], "privacy": {}}))
@@ -122,7 +127,7 @@ def sync_app_metadata(app: dict[str, Any], app_info: dict[str, str | None], conf
         "localizedDescription": config.get("description") or (
             f"此条目为非官方精选索引。IPA 文件来自 {config['github']} 的 GitHub Releases。"
         ),
-        "iconURL": config.get("iconURL", app.get("iconURL", "")),
+        "iconURL": config.get("iconURL") or app.get("iconURL") or default_icon_url(config),
         "tintColor": config.get("tintColor", app.get("tintColor", "#4185A9")),
         "category": config.get("category", app.get("category", "utilities")),
         "screenshots": config.get("screenshots", app.get("screenshots", [])),
