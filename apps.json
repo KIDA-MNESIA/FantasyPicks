@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Aidoku",
+    "github": "Aidoku/Aidoku",
+    "assetRegex": "^Aidoku\\.ipa$",
+    "includePrereleases": false,
+    "releaseLimit": 30,
+    "developerName": "Aidoku",
+    "subtitle": "开源漫画阅读器",
+    "description": "Aidoku 是一款用于 iOS 和 iPadOS 的开源漫画阅读器。本条目仅索引原作者 GitHub Releases 中发布的 IPA。",
+    "category": "books",
+    "tintColor": "#4185A9"
+  },
+  {
+    "name": "Venera",
+    "github": "haukuen/venera",
+    "assetRegex": "^venera-ios-.*\\.ipa$",
+    "includePrereleases": false,
+    "releaseLimit": 30,
+    "developerName": "haukuen",
+    "subtitle": "跨平台漫画阅读器",
+    "description": "Venera 是一款支持本地和网络漫画源的跨平台漫画阅读器。本条目仅索引原作者 GitHub Releases 中发布的 iOS IPA。",
+    "category": "books",
+    "tintColor": "#4185A9"
+  },
+  {
+    "name": "PiliPlus",
+    "github": "bggRGjQaUbCoE/PiliPlus",
+    "assetRegex": "^PiliPlus_ios_.*\\.ipa$",
+    "includePrereleases": false,
+    "releaseLimit": 30,
+    "developerName": "bggRGjQaUbCoE",
+    "subtitle": "第三方哔哩哔哩客户端",
+    "description": "PiliPlus 是一个第三方哔哩哔哩客户端。本条目仅索引原作者 GitHub Releases 中发布的 iOS IPA。",
+    "category": "entertainment",
+    "tintColor": "#4185A9"
+  },
+  {
+    "name": "Feather",
+    "github": "claration/Feather",
+    "assetRegex": "^Feather\\.ipa$",
+    "includePrereleases": false,
+    "releaseLimit": 30,
+    "developerName": "claration",
+    "subtitle": "iOS 本地签名工具",
+    "description": "Feather 是一款开源的 iOS 本地签名工具。本条目仅索引原作者 GitHub Releases 中发布的 IPA。",
+    "category": "utilities",
+    "tintColor": "#4185A9"
+  },
+  {
+    "name": "FluxDO",
+    "github": "Lingyan000/fluxdo",
+    "assetRegex": "(?:.*ios.*|fluxdo.*)\\.ipa$",
+    "includePrereleases": false,
+    "releaseLimit": 30,
+    "developerName": "Lingyan000",
+    "subtitle": "Linux.do 第三方客户端",
+    "description": "FluxDO 是一个 Linux.do 第三方客户端。本条目仅索引原作者 GitHub Releases 中发布的 iOS IPA。",
+    "category": "social-networking",
+    "tintColor": "#4185A9"
+  }
+]
