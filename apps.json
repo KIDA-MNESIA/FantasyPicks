@@ -8,7 +8,7 @@
     "developerName": "Aidoku",
     "subtitle": "开源漫画阅读器",
     "description": "Aidoku 是一款用于 iOS 和 iPadOS 的开源漫画阅读器。本条目仅索引原作者 GitHub Releases 中发布的 IPA。",
-    "iconURL": "https://aidoku.app/images/apple-touch-icon.png",
+    "iconURL": "https://raw.githubusercontent.com/Aidoku/Aidoku/main/Shared/Assets.xcassets/AppIcon.appiconset/Icon.png",
     "category": "books",
     "tintColor": "#4185A9"
   },
@@ -21,7 +21,7 @@
     "developerName": "haukuen",
     "subtitle": "跨平台漫画阅读器",
     "description": "Venera 是一款支持本地和网络漫画源的跨平台漫画阅读器。本条目仅索引原作者 GitHub Releases 中发布的 iOS IPA。",
-    "iconURL": "https://github.com/haukuen.png",
+    "iconURL": "https://raw.githubusercontent.com/haukuen/venera/main/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
     "category": "books",
     "tintColor": "#4185A9"
   },
@@ -34,7 +34,7 @@
     "developerName": "bggRGjQaUbCoE",
     "subtitle": "第三方哔哩哔哩客户端",
     "description": "PiliPlus 是一个第三方哔哩哔哩客户端。本条目仅索引原作者 GitHub Releases 中发布的 iOS IPA。",
-    "iconURL": "https://github.com/bggRGjQaUbCoE.png",
+    "iconURL": "https://raw.githubusercontent.com/bggRGjQaUbCoE/PiliPlus/main/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
     "category": "entertainment",
     "tintColor": "#4185A9"
   },
@@ -47,7 +47,7 @@
     "developerName": "claration",
     "subtitle": "iOS 本地签名工具",
     "description": "Feather 是一款开源的 iOS 本地签名工具。本条目仅索引原作者 GitHub Releases 中发布的 IPA。",
-    "iconURL": "https://github.com/claration.png",
+    "iconURL": "https://raw.githubusercontent.com/claration/Feather/main/Feather/Resources/Assets.xcassets/AppIcon.appiconset/feather.png",
     "category": "utilities",
     "tintColor": "#4185A9"
   },
@@ -60,8 +60,21 @@
     "developerName": "Lingyan000",
     "subtitle": "Linux.do 第三方客户端",
     "description": "FluxDO 是一个 Linux.do 第三方客户端。本条目仅索引原作者 GitHub Releases 中发布的 iOS IPA。",
-    "iconURL": "https://github.com/Lingyan000.png",
+    "iconURL": "https://raw.githubusercontent.com/Lingyan000/fluxdo/main/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon-Light-1024x1024.png",
     "category": "social-networking",
+    "tintColor": "#4185A9"
+  },
+  {
+    "name": "Simple Live",
+    "github": "June6699/dart_simple_live",
+    "assetRegex": "^ios_no_sign\\.ipa$",
+    "includePrereleases": false,
+    "releaseLimit": 30,
+    "developerName": "June6699",
+    "subtitle": "简简单单的看直播",
+    "description": "Simple Live 是一款开源直播聚合客户端。本条目仅索引上游 GitHub Releases 中发布的未签名 iOS IPA。",
+    "iconURL": "https://raw.githubusercontent.com/June6699/dart_simple_live/master/simple_live_app/ios/Runner/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
+    "category": "entertainment",
     "tintColor": "#4185A9"
   }
 ]

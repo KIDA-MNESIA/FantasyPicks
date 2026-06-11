@@ -12,7 +12,8 @@
     "io.github.haukuen.venera",
     "com.example.piliplus",
     "thewonderofyou.Feather",
-    "com.github.lingyan000.fluxdo"
+    "com.github.lingyan000.fluxdo",
+    "com.xycz.simple-live"
   ],
   "apps": [
     {
@@ -32,7 +33,7 @@
       "developerName": "Aidoku",
       "subtitle": "开源漫画阅读器",
       "localizedDescription": "Aidoku 是一款用于 iOS 和 iPadOS 的开源漫画阅读器。本条目仅索引原作者 GitHub Releases 中发布的 IPA。",
-      "iconURL": "https://aidoku.app/images/apple-touch-icon.png",
+      "iconURL": "https://raw.githubusercontent.com/Aidoku/Aidoku/main/Shared/Assets.xcassets/AppIcon.appiconset/Icon.png",
       "tintColor": "#4185A9",
       "category": "books",
       "screenshots": [],
@@ -58,7 +59,7 @@
       "developerName": "haukuen",
       "subtitle": "跨平台漫画阅读器",
       "localizedDescription": "Venera 是一款支持本地和网络漫画源的跨平台漫画阅读器。本条目仅索引原作者 GitHub Releases 中发布的 iOS IPA。",
-      "iconURL": "https://github.com/haukuen.png",
+      "iconURL": "https://raw.githubusercontent.com/haukuen/venera/main/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
       "tintColor": "#4185A9",
       "category": "books",
       "screenshots": [],
@@ -84,7 +85,7 @@
       "developerName": "bggRGjQaUbCoE",
       "subtitle": "第三方哔哩哔哩客户端",
       "localizedDescription": "PiliPlus 是一个第三方哔哩哔哩客户端。本条目仅索引原作者 GitHub Releases 中发布的 iOS IPA。",
-      "iconURL": "https://github.com/bggRGjQaUbCoE.png",
+      "iconURL": "https://raw.githubusercontent.com/bggRGjQaUbCoE/PiliPlus/main/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#4185A9",
       "category": "entertainment",
       "screenshots": [],
@@ -110,7 +111,7 @@
       "developerName": "claration",
       "subtitle": "iOS 本地签名工具",
       "localizedDescription": "Feather 是一款开源的 iOS 本地签名工具。本条目仅索引原作者 GitHub Releases 中发布的 IPA。",
-      "iconURL": "https://github.com/claration.png",
+      "iconURL": "https://raw.githubusercontent.com/claration/Feather/main/Feather/Resources/Assets.xcassets/AppIcon.appiconset/feather.png",
       "tintColor": "#4185A9",
       "category": "utilities",
       "screenshots": [],
@@ -136,9 +137,35 @@
       "developerName": "Lingyan000",
       "subtitle": "Linux.do 第三方客户端",
       "localizedDescription": "FluxDO 是一个 Linux.do 第三方客户端。本条目仅索引原作者 GitHub Releases 中发布的 iOS IPA。",
-      "iconURL": "https://github.com/Lingyan000.png",
+      "iconURL": "https://raw.githubusercontent.com/Lingyan000/fluxdo/main/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon-Light-1024x1024.png",
       "tintColor": "#4185A9",
       "category": "social-networking",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "bundleIdentifier": "com.xycz.simple-live",
+      "versions": [
+        {
+          "version": "1.12.5",
+          "buildVersion": "11205",
+          "date": "2026-06-07",
+          "localizedDescription": "v1.12.5-fix 合并了直播间、多开、弹幕、表情、关注页、同步和平台适配等更新，并包含 iOS 返回手势与播放体验修补。\n\nUpstream release: https://github.com/June6699/dart_simple_live/releases/tag/v1.12.5-fix",
+          "downloadURL": "https://github.com/June6699/dart_simple_live/releases/download/v1.12.5-fix/ios_no_sign.ipa",
+          "size": 29640187,
+          "minOSVersion": "13.0"
+        }
+      ],
+      "name": "Simple Live",
+      "developerName": "June6699",
+      "subtitle": "简简单单的看直播",
+      "localizedDescription": "Simple Live 是一款开源直播聚合客户端。本条目仅索引上游 GitHub Releases 中发布的未签名 iOS IPA。",
+      "iconURL": "https://raw.githubusercontent.com/June6699/dart_simple_live/master/simple_live_app/ios/Runner/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
+      "tintColor": "#4185A9",
+      "category": "entertainment",
       "screenshots": [],
       "appPermissions": {
         "entitlements": [],
