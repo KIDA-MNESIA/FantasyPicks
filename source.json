@@ -46,6 +46,15 @@
       "bundleIdentifier": "io.github.haukuen.venera",
       "versions": [
         {
+          "version": "1.14.1",
+          "buildVersion": "206",
+          "date": "2026-06-19",
+          "localizedDescription": "## What's Changed\r\n* fix: 修复评论页滑动触发收藏崩溃及双指缩放问题 by @haukuen in https://github.com/haukuen/venera/pull/105\r\n* feat: 更新漫画源仓库\r\n\r\n\r\n**Full Changelog**: https://github.com/haukuen/venera/compare/v1.14.0...v1.14.1\n\nUpstream release: https://github.com/haukuen/venera/releases/tag/v1.14.1",
+          "downloadURL": "https://github.com/haukuen/venera/releases/download/v1.14.1/venera-ios-1.14.1%2B206.ipa",
+          "size": 16129280,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.13.0",
           "buildVersion": "204",
           "date": "2026-06-06",
@@ -150,6 +159,15 @@
     {
       "bundleIdentifier": "com.github.lingyan000.fluxdo",
       "versions": [
+        {
+          "version": "0.2.20",
+          "buildVersion": "2026061917",
+          "date": "2026-06-19",
+          "localizedDescription": "## [0.2.20] - 2026-06-19\n\n\n### 🌟 新功能\n\n- 改进移动端表情长按面板体验 by @Lingyan000\n\n- 弹出菜单顶部快捷按钮条 + 子面板展开动画 by @Lingyan000\n\n- 帖子编辑历史 + 修复 callout 跨标签贪婪正则 by @Lingyan000\n\n- 优化 CF 信任刷新与 Cookie 同步 by @Lingyan000\n\n- 表情选择器改造为手势驱动的连贯交互 by @Lingyan000\n\n- 长按进度条菜单加入衍生 / 收回动画 by @Lingyan000\n\n- 支持轻量 WebView 会话 cookie bootstrap by @Lingyan000\n\n\n### 🐛 修复\n\n- 识别 CHIPS 分区 cf_clearance，终结 sweep 空转 by @Lingyan000\n\n- 修复页面刷新后通知徽章回退到初值 by @Lingyan000\n\n- 修复通知图标 build 阶段 setState 报错 by @Lingyan000\n\n- 修复 mac 进度指示器卡死 + 表情选择器 tap 误触发动画 by @Lingyan000\n\n- 修复启动页动画卡顿 by @Lingyan000\n\n- 修复话题详情 listener 触发 inactive ancestor lookup by @Lingyan000\n\n- 修复 Cloudflare 验证完成后的 404 闪烁 by @Lingyan000\n\n- 修复登录态 probe 的 _t 回退逻辑 by @Lingyan000\n\n\n### ⚡ 性能\n\n- CDK/LDC 余额改为进入页面才请求，不在冷启动预取 by @Lingyan000\n\n\n### ♻️ 重构\n\n- WebView session bootstrap CF 失败接入 BrowserTrustCoordinator by @Lingyan000\n\n- 网络引擎设置重做为预设单选 + VPN 开关意图/生效分离 by @Lingyan000\n\n\n### 🎨 样式\n\n- 收尾表情选择器手势细节 by @Lingyan000\n\n\n### 🔧 其他\n\n- 🔒 优化浏览器信任与 Cookie 同步 by @Lingyan000\n\n- ⬆️ lock 更新 by @Lingyan000\n\n\n\n\n**Full Changelog**: https://github.com/lingyan000/fluxdo/compare/v0.2.19...v0.2.20\n\n\n<div align=center>\n\n[![Release Downloads](https://img.shields.io/github/downloads/lingyan000/fluxdo/v0.2.20/total?style=flat-square&logo=github)](https://img.shields.io/github/downloads/lingyan000/fluxdo/v0.2.20/)\n\n</div>\n\n**Download based on your device:**\n\n<div align=left>\n<table>\n    <thead align=left>\n        <tr>\n            <th>OS</th>\n            <th>Download</th>\n        </tr>\n    </thead>\n    <tbody align=left>\n        <tr>\n        <td>Android</td>\n            <td>\n                <a href=\"https://github.com/lingyan000/fluxdo/releases/download/v0.2.20/fluxdo-arm64-v8a.apk\"><img src=\"https://img.shields.io/badge/APK-ARMv8-168039.svg?logo=android\"></a><br>\n                <a href=\"https://github.com/lingyan000/fluxdo/releases/download/v0.2.20/fluxdo-armeabi-v7a.apk\"><img src=\"https://img.shields.io/badge/APK-ARMv7-45bf55.svg?logo=android\"></a><br>\n                <a href=\"https://github.com/lingyan000/fluxdo/releases/download/v0.2.20/fluxdo-x86_64.apk\"><img src=\"https://img.shields.io/badge/APK-x64-96ed89.svg?logo=android\"></a>\n            </td>\n        </tr>\n        <tr>\n        <td>iOS</td>\n            <td>\n                <a href=\"https://github.com/lingyan000/fluxdo/releases/download/v0.2.20/fluxdo-unsigned.ipa\"><img src=\"https://img.shields.io/badge/IPA-Unsigned-0c6bff.svg?logo=apple\"></a>\n            </td>\n        </tr>\n        <tr>\n        <td>macOS</td>\n            <td>\n                <a href=\"https://github.com/lingyan000/fluxdo/releases/download/v0.2.20/fluxdo-macos-arm64.dmg\"><img src=\"https://img.shields.io/badge/DMG-Apple_Silicon-333333.svg?logo=apple\"></a><br>\n                <a href=\"https://github.com/lingyan000/fluxdo/releases/download/v0.2.20/fluxdo-macos-x86_64.dmg\"><img src=\"https://img.shields.io/badge/DMG-Intel-666666.svg?logo=apple\"></a>\n            </td>\n        </tr>\n        <tr>\n        <td>Windows</td>\n            <td>\n                <a href=\"https://github.com/lingyan000/fluxdo/releases/download/v0.2.20/fluxdo-windows-x86_64-setup.exe\"><img src=\"https://img.shields.io/badge/Setup-x64-0078D4.svg?logo=windows\"></a><br>\n                <a href=\"https://github.com/lingyan000/fluxdo/releases/download/v0.2.20/fluxdo-windows-x86_64.zip\"><img src=\"https://img.shields.io/badge/ZIP-x64-2d7d9a.svg?logo=windows\"></a>\n            </td>\n        </tr>\n        <tr>\n        <td>Linux</td>\n            <td>\n                <a href=\"https://github.com/lingyan000/fluxdo/releases/download/v0.2.20/fluxdo-linux-x86_64.flatpak\"><img src=\"https://img.shields.io/badge/Flatpak-x64-1793D1.svg?logo=linux\"></a>\n            </td>\n        </tr>\n    </tbody>\n</table>\n\n</div>\n\n\nUpstream release: https://github.com/Lingyan000/fluxdo/releases/tag/v0.2.20",
+          "downloadURL": "https://github.com/Lingyan000/fluxdo/releases/download/v0.2.20/fluxdo-unsigned.ipa",
+          "size": 51447441,
+          "minOSVersion": "14.0"
+        },
         {
           "version": "0.2.19",
           "buildVersion": "2026061610",
