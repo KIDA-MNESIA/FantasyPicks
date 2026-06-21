@@ -46,6 +46,15 @@
       "bundleIdentifier": "io.github.haukuen.venera",
       "versions": [
         {
+          "version": "1.14.2",
+          "buildVersion": "207",
+          "date": "2026-06-20",
+          "localizedDescription": "## What's Changed\r\n* fix: 修复源列表 URL 迁移后单源更新仍从旧地址下载的问题 (https://github.com/haukuen/venera/issues/107)\r\n\r\n**Full Changelog**: https://github.com/haukuen/venera/compare/v1.14.1...v1.14.2\n\nUpstream release: https://github.com/haukuen/venera/releases/tag/v1.14.2",
+          "downloadURL": "https://github.com/haukuen/venera/releases/download/v1.14.2/venera-ios-1.14.2%2B207.ipa",
+          "size": 16130759,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.14.1",
           "buildVersion": "206",
           "date": "2026-06-19",
