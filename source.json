@@ -20,6 +20,15 @@
       "bundleIdentifier": "app.aidoku.Aidoku",
       "versions": [
         {
+          "version": "0.8.4",
+          "buildVersion": "1",
+          "date": "2026-07-03",
+          "localizedDescription": "- Fixes for iOS 27: fixed settings pages freezing the app, along with other minor visual issues.\r\n- Improved backup restore time: restores should now take seconds instead of minutes. (@Amqx)\r\n- Failed download page retrying: less chance of missing pages in downloaded chapters from sources with aggressive rate limits. (@pxseu)\r\n- New chapter notifications (experimental): when Aidoku refreshes in the background, notification(s) of new chapters should be sent if enabled. (@Zareix)\r\n- Various other bug fixes and small features: see [the website](<https://aidoku.app/release-notes/>) for a more complete list.\n\nUpstream release: https://github.com/Aidoku/Aidoku/releases/tag/v0.8.4",
+          "downloadURL": "https://github.com/Aidoku/Aidoku/releases/download/v0.8.4/Aidoku.ipa",
+          "size": 10136987,
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "0.8.3",
           "buildVersion": "3",
           "date": "2026-05-18",
@@ -239,6 +248,15 @@
     {
       "bundleIdentifier": "com.xycz.simple-live",
       "versions": [
+        {
+          "version": "1.12.6",
+          "buildVersion": "11206",
+          "date": "2026-06-17",
+          "localizedDescription": "## 正式版本\r\n\r\n这个版本把主 App 推进到 `1.12.6+11206`，重点是关注页展示与筛选整理、桌面端播放手势修复、抖音关注刷新链路收敛，以及之前的同步 / 导入稳定性、大关注分页、懒人模式与桌面多开端口冲突修复。TV 端和 TV-Windows 对应版本见 `tv_v1.7.7`。\r\n\r\n快手cookie导入教程见 [快手 抖音 cookie 导入SimpleLive教程](https://june6699.github.io/posts/simple-live-%E6%8A%96%E9%9F%B3-cookie-%E8%8E%B7%E5%8F%96%E5%92%8C%E5%AF%BC%E5%85%A5%E6%95%99%E7%A8%8B/) \r\n或者国内站点 [快手 抖音 cookie 导入SimpleLive教程](https://www.june6699.top/posts/simple-live-%E6%8A%96%E9%9F%B3-cookie-%E8%8E%B7%E5%8F%96%E5%92%8C%E5%AF%BC%E5%85%A5%E6%95%99%E7%A8%8B/)\r\n\r\n## 重点更新\r\n\r\n- 支持快手直播平台，感谢 @xuanxuan123xuan 的开发。\r\n- 修复桌面端直播页上下滑调节音量 / 亮度时从 0 开始计算的问题；现在会从当前播放器音量和当前应用亮度继续增减。\r\n- 新增播放页“滑动调节音量/亮度”开关，放在 `直播间设置 > 播放器`，默认开启；关闭后不再响应这类手势。\r\n- 关注页新增 `默认 / 紧凑 / 卡片` 三种显示样式，并新增“展示直播封面”开关，默认关闭；关闭时使用更紧凑的头像信息列表，开启后才显示真实直播间封面图。\r\n- 关注页新增“仅显示开播”、本地搜索主播名、进入关注页后自动刷新三项能力；自动刷新默认关闭，开启后会先显示本地列表，再异步执行一次全量刷新。\r\n- 关注刷新线程数统一为 `0 = 自动`，自动最多 4 路；手动可选 1-8 路，并直接覆盖自动判断。\r\n- 抖音关注刷新改成“状态阶段”和“手动详情补齐阶段”分离：自动刷新只跑状态接口，手动刷新才低并发补齐封面 / 标题并做抖音 roomId 校正，降低 444 触发概率。\r\n- 快手主页直播列表改为按热度从高到低展示，和其他平台主页排序体验对齐。\r\n- 关注导入、配置包恢复、局域网同步、房间同步、WebDAV 恢复只落库，不再导入完成后自动刷新直播状态。\r\n- 导入 / 同步完成后只汇总提示一次，避免大量关注导入时每 200 条频繁提示。\r\n- “刷新频繁”只在用户主动刷新并触发冷却时出现，纯导入链路不再弹出。\r\n- 关注排序统一为：特别关注直播中、特别关注未直播 / 未知、普通关注直播中、普通关注未直播 / 未知。\r\n- 关注总数超过 400 自动分页，底部悬浮分页条提供上一页、下一页、刷新当前页、刷新全部；移动端支持左右滑翻页。\r\n- 刷新当前页会先刷新全量特别关注，再刷新当前页普通关注；刷新全部会再补全量普通关注。\r\n- 刷新任务会降低当前播放房间的干扰，抖音刷新并发更保守，缓解刷新中打开抖音直播间的周期性卡顿。\r\n- 新增懒人模式开关：关播后自动切到下一个直播间、播放失败且线路 / 重试耗尽后自动切到下一个直播间，默认关闭。\r\n- 桌面端“观看历史”改为和“关注列表”一致的长条样式，“同类推荐”保持原样。\r\n- 桌面端 mpv 性能档位、同步分块、大配置批量写库、虎牙分类缓存等改动继续保留。\r\n\r\n## 桌面端与同步\r\n\r\n- 主 App desktop secondary 播放窗口不再注册 `SyncService`，避免多屏 / 多窗口播放时抢占 `23234/23235`。\r\n- UDP / HTTP 同步服务绑定失败改为非致命错误，不影响播放和主界面。\r\n- 同步页端口冲突文案改为明确提示：`23234 端口已被占用，请关闭其他 Simple Live / TV-Windows 窗口后重试`。\r\n- 同机同时打开主 App 和 TV-Windows 时，如果端口冲突，应用不会崩溃，局域网同步页会显示明确原因。\r\n- Windows 主 App 来自 `simple_live_app`，正式包为完整 zip，不发布单 exe。\r\n- 修复 Windows install 阶段缺失 `build/native_assets/windows` 时导致 `INSTALL.vcxproj` 失败的问题。\r\n- 如果关闭 Simple Live 时 Windows 弹出系统报错，可检查 `Windows Error Reporting Service` 是否被禁用；将其设为“自动”并启动服务后，issue #64 反馈该方案有效。\r\n\r\n## 下载说明\r\n\r\n- Android arm64：`SimpleLive-v1.12.6-arm64-v8a-release.apk`\r\n- Android armeabi-v7a：`SimpleLive-v1.12.6-armeabi-v7a-release.apk`\r\n- Android x86_64：`SimpleLive-v1.12.6-x86_64-release.apk`\r\n- Windows：`SimpleLive-Windows-v1.12.6.zip`\r\n- Linux zip：`SimpleLive-Linux-v1.12.6.zip`\r\n- Linux deb：`SimpleLive-Linux-v1.12.6-amd64.deb`\r\n- macOS dmg：`simple_live_app-1.12.6+11206-macos.dmg`\r\n- macOS zip：`simple_live_app-1.12.6+11206-macos.zip`\r\n- iOS 未签名 IPA：`ios_no_sign.ipa`\r\n\n\nUpstream release: https://github.com/June6699/dart_simple_live/releases/tag/v1.12.6",
+          "downloadURL": "https://github.com/June6699/dart_simple_live/releases/download/v1.12.6/ios_no_sign.ipa",
+          "size": 30896989,
+          "minOSVersion": "13.0"
+        },
         {
           "version": "1.12.5",
           "buildVersion": "11205",
