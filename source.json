@@ -152,6 +152,15 @@
       "bundleIdentifier": "thewonderofyou.Feather",
       "versions": [
         {
+          "version": "2.9.0",
+          "buildVersion": "1",
+          "date": "2026-07-05",
+          "localizedDescription": "Thank you for all your feedback and contributions!\r\n\r\n> [!TIP]\r\n> For `idevice` configuration, you can use [Impactor](https://github.com/claration/Impactor?tab=readme-ov-file#pairing-file) for easily retrieving a pairing file for installing!\r\n\r\n## What's Changed\r\n* Added tweak options in default signing options.\r\n* Added ability to search for identifier's in Library @ismailcarlik in https://github.com/claration/Feather/pull/652\r\n* Fixed issue in the file enumeration logic, by using the path property instead of method.\r\n* Fixed credit links.\r\n* Fixed duplicate repository in recommended repositories.\r\n\r\n## New Contributors\r\n* @xiangfeidexiaohuo made their first contribution in https://github.com/claration/Feather/pull/634\r\n* @osageling made their first contribution in https://github.com/claration/Feather/pull/642\r\n\r\n**Full Changelog**: https://github.com/claration/Feather/compare/v2.8.2...v2.9.0\n\nUpstream release: https://github.com/claration/Feather/releases/tag/v2.9.0",
+          "downloadURL": "https://github.com/claration/Feather/releases/download/v2.9.0/Feather.ipa",
+          "size": 14241853,
+          "minOSVersion": "16.0"
+        },
+        {
           "version": "2.8.2",
           "buildVersion": "63ec47d071c188f833fd607f152b58a5bc34ab9c",
           "date": "2026-04-22",
