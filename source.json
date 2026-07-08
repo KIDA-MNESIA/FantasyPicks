@@ -55,6 +55,15 @@
       "bundleIdentifier": "io.github.haukuen.venera",
       "versions": [
         {
+          "version": "1.14.3",
+          "buildVersion": "208",
+          "date": "2026-07-07",
+          "localizedDescription": "**Full Changelog**: https://github.com/haukuen/venera/compare/v1.14.2...v1.14.3\n\nUpstream release: https://github.com/haukuen/venera/releases/tag/v1.14.3",
+          "downloadURL": "https://github.com/haukuen/venera/releases/download/v1.14.3/venera-ios-1.14.3%2B208.ipa",
+          "size": 16129085,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.14.2",
           "buildVersion": "207",
           "date": "2026-06-20",
