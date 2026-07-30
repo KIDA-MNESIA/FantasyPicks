@@ -55,6 +55,15 @@
       "bundleIdentifier": "io.github.haukuen.venera",
       "versions": [
         {
+          "version": "1.15.0",
+          "buildVersion": "209",
+          "date": "2026-07-29",
+          "localizedDescription": "## What's Changed\n* fix: 修复章节下载标记竞态与EPUB导出中断 by @haukuen in https://github.com/haukuen/venera/pull/128\n* 身份验证添加 PIN 码解锁作为备选方式 by @journey-ad in https://github.com/haukuen/venera/pull/130\n* feat: CBZ 分章节导出 by @haukuen in https://github.com/haukuen/venera/pull/133\n* feat: 阅读器 PageUp/PageDown 键功能可配置 by @haukuen in https://github.com/haukuen/venera/pull/137\n\n## New Contributors\n* @journey-ad made their first contribution in https://github.com/haukuen/venera/pull/130\n\n**Full Changelog**: https://github.com/haukuen/venera/compare/v1.14.3...v1.15.0\n\nUpstream release: https://github.com/haukuen/venera/releases/tag/v1.15.0",
+          "downloadURL": "https://github.com/haukuen/venera/releases/download/v1.15.0/venera-ios-1.15.0%2B209.ipa",
+          "size": 16127417,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.14.3",
           "buildVersion": "208",
           "date": "2026-07-07",
