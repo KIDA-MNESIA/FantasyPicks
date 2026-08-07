@@ -13,7 +13,9 @@
     "com.example.piliplus",
     "thewonderofyou.Feather",
     "com.github.lingyan000.fluxdo",
-    "com.xycz.simple-live"
+    "com.xycz.simple-live",
+    "com.minh-ton.Reynard",
+    "com.kodjodevf.mangayomi"
   ],
   "apps": [
     {
@@ -355,6 +357,58 @@
       "iconURL": "https://raw.githubusercontent.com/June6699/dart_simple_live/master/simple_live_app/ios/Runner/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
       "tintColor": "#4185A9",
       "category": "entertainment",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "bundleIdentifier": "com.minh-ton.Reynard",
+      "versions": [
+        {
+          "version": "0.9.0",
+          "buildVersion": "a92d9e8",
+          "date": "2026-07-26",
+          "localizedDescription": "## Changes\r\n\r\n**Full Changelog**: https://github.com/minh-ton/reynard-browser/compare/0.8.0...0.9.0\r\n\r\n### New Features\r\n- Added pull-to-refresh gesture.\r\n- You can now tap the status bar to scroll to the top of the webpage.\r\n- Added HTTP-only mode setting.\r\n- Added Enhanced Tracking Protection and Global Privacy Control settings.\r\n- You can now configure the website mode (Request Desktop Website) for each website individually.\r\n- Added the ability to clear the cookies & website data of a website individually.\r\n- Added the ability to hide the recommendations or new updates banner on the homepage.\r\n- Added a top sites list for the search suggestion completion.\r\n\r\n### Bug Fixes & Improvements\r\n- Tabs now persist when they are killed by the OS in the background, and recover automatically when you select them.\r\n- Tabs now show an error message when crashed or killed in the foreground, and are recoverable instead of closing unexpectedly.\r\n- Non-top-level and error visits are no longer present in the history list.\r\n- Tab overview cards no longer jump unexpectedly when long pressing them.\r\n- Fixed a crash that occurred after orientation change when the sidebar is open on iPads.\r\n- Toolbar buttons' touch target size is now increased, making it easier to tap them.\r\n\r\n### Translations\r\n\r\nAdded Russian translation.\r\n\r\nIf you want to translate the project into your language or improve existing translations, feel free to contribute to the [Crowdin](https://crowdin.com/project/reynard-browser) project!\r\n\r\n### Engine\r\n\r\nUpdated Gecko to [`FIREFOX_153_0_RELEASE@f1b6c0f`](https://github.com/mozilla-firefox/firefox/commit/FIREFOX_153_0_RELEASE) (released Jul 21, 2026).\n\nUpstream release: https://github.com/minh-ton/reynard-browser/releases/tag/0.9.0",
+          "downloadURL": "https://github.com/minh-ton/reynard-browser/releases/download/0.9.0/Reynard.ipa",
+          "size": 109141356,
+          "minOSVersion": "13.0"
+        }
+      ],
+      "name": "Reynard Browser",
+      "developerName": "minh-ton",
+      "subtitle": "基于 Gecko 的实验性浏览器",
+      "localizedDescription": "Reynard Browser 是一款适用于 iOS 的实验性 Gecko 浏览器，可通过 AltStore 或 SideStore 安装。本条目仅索引原作者 GitHub Releases 中发布的普通侧载版 Reynard.ipa。",
+      "iconURL": "https://raw.githubusercontent.com/minh-ton/reynard-browser/main/browser/Reynard/Resources/Assets.xcassets/AppIcon.appiconset/icon.png",
+      "tintColor": "#4185A9",
+      "category": "utilities",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "bundleIdentifier": "com.kodjodevf.mangayomi",
+      "versions": [
+        {
+          "version": "0.8.2",
+          "buildVersion": "110",
+          "date": "2026-08-03",
+          "localizedDescription": "## What's Changed\r\n* fix #832: mangayomi consumes 100% cpu while fetching every font from google fonts\r\n* fix #814 This image couldn't be loaded on desktop\r\n* feat: rebuild recommendations and watch order on AniList by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/825\r\n* perf: fix v8.0 Android jank (Skia renderer + cover thumbnail resampling) by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/830\r\n* Streamline mpv config extraction by @NBA2K1 in https://github.com/kodjodevf/mangayomi/pull/833\r\n\r\n\r\n**Full Changelog**: https://github.com/kodjodevf/mangayomi/compare/v0.8.1...v0.8.2\n\nUpstream release: https://github.com/kodjodevf/mangayomi/releases/tag/v0.8.2",
+          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.8.2/Mangayomi-v0.8.2-ios.ipa",
+          "size": 47729645,
+          "minOSVersion": "13.0"
+        }
+      ],
+      "name": "Mangayomi",
+      "developerName": "kodjodevf",
+      "subtitle": "跨平台漫画与动漫阅读器",
+      "localizedDescription": "Mangayomi 是一款跨平台漫画与动漫阅读器，通过扩展支持多种内容源。本条目仅索引原作者 GitHub Releases 中发布的 iOS IPA。",
+      "iconURL": "https://raw.githubusercontent.com/kodjodevf/mangayomi/main/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "tintColor": "#4185A9",
+      "category": "books",
       "screenshots": [],
       "appPermissions": {
         "entitlements": [],
