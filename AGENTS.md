@@ -8,6 +8,8 @@
 | Feather | `claration/Feather` | `^Feather\.ipa$` |
 | FluxDO | `Lingyan000/fluxdo` | `(?:.*ios.*\|fluxdo.*)\.ipa$` |
 | Simple Live | `June6699/dart_simple_live` | `^ios_no_sign\.ipa$` |
+| Reynard Browser | `minh-ton/reynard-browser` | `^Reynard\.ipa$` |
+| Mangayomi | `kodjodevf/mangayomi` | `^Mangayomi-.*-ios\.ipa$` |
 
 ## 文件说明
 

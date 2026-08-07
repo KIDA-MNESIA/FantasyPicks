@@ -76,5 +76,31 @@
     "iconURL": "https://raw.githubusercontent.com/June6699/dart_simple_live/master/simple_live_app/ios/Runner/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
     "category": "entertainment",
     "tintColor": "#4185A9"
+  },
+  {
+    "name": "Reynard Browser",
+    "github": "minh-ton/reynard-browser",
+    "assetRegex": "^Reynard\\.ipa$",
+    "includePrereleases": false,
+    "releaseLimit": 30,
+    "developerName": "minh-ton",
+    "subtitle": "基于 Gecko 的实验性浏览器",
+    "description": "Reynard Browser 是一款适用于 iOS 的实验性 Gecko 浏览器，可通过 AltStore 或 SideStore 安装。本条目仅索引原作者 GitHub Releases 中发布的普通侧载版 Reynard.ipa。",
+    "iconURL": "https://raw.githubusercontent.com/minh-ton/reynard-browser/main/browser/Reynard/Resources/Assets.xcassets/AppIcon.appiconset/icon.png",
+    "category": "utilities",
+    "tintColor": "#4185A9"
+  },
+  {
+    "name": "Mangayomi",
+    "github": "kodjodevf/mangayomi",
+    "assetRegex": "^Mangayomi-.*-ios\\.ipa$",
+    "includePrereleases": false,
+    "releaseLimit": 30,
+    "developerName": "kodjodevf",
+    "subtitle": "跨平台漫画与动漫阅读器",
+    "description": "Mangayomi 是一款跨平台漫画与动漫阅读器，通过扩展支持多种内容源。本条目仅索引原作者 GitHub Releases 中发布的 iOS IPA。",
+    "iconURL": "https://raw.githubusercontent.com/kodjodevf/mangayomi/main/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+    "category": "books",
+    "tintColor": "#4185A9"
   }
 ]
