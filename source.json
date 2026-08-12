@@ -402,6 +402,15 @@
       "bundleIdentifier": "com.kodjodevf.mangayomi",
       "versions": [
         {
+          "version": "0.8.3",
+          "buildVersion": "111",
+          "date": "2026-08-11",
+          "localizedDescription": "## What's Changed\r\n* Add support for repo url that end with .pb\r\n* A few optimizations\r\n* Fix library UI jank + related header/user-agent cleanup by @NBA2K1 in https://github.com/kodjodevf/mangayomi/pull/835\r\n* Remove Dead Code by @NBA2K1 in https://github.com/kodjodevf/mangayomi/pull/836\r\n* Revert ChapterCount badge style by @NBA2K1 in https://github.com/kodjodevf/mangayomi/pull/837\r\n* include notes in extension by @NBA2K1 in https://github.com/kodjodevf/mangayomi/pull/839\r\n\r\n\r\n**Full Changelog**: https://github.com/kodjodevf/mangayomi/compare/v0.8.2...v0.8.3\n\nUpstream release: https://github.com/kodjodevf/mangayomi/releases/tag/v0.8.3",
+          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.8.3/Mangayomi-v0.8.3-ios.ipa",
+          "size": 47763602,
+          "minOSVersion": "13.0"
+        },
+        {
           "version": "0.8.2",
           "buildVersion": "110",
           "date": "2026-08-03",
