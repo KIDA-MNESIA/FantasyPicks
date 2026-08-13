@@ -402,6 +402,15 @@
       "bundleIdentifier": "com.kodjodevf.mangayomi",
       "versions": [
         {
+          "version": "0.8.4",
+          "buildVersion": "112",
+          "date": "2026-08-12",
+          "localizedDescription": "## What's Changed\r\n* enhance Android image decoding performance by pre-decoding full RGBA and optimizing tile extraction; adjust cache size and implement batch rebuild for tile rendering\r\n* fix libjpg/libpng not linked (linux)\r\n* Revert e0bac9210db2f6d8e6133937e31c3a1460a80cb9 by @NBA2K1 in https://github.com/kodjodevf/mangayomi/pull/842\r\n* ci: disable Jetifier (app is fully AndroidX) by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/841\r\n* Clean up reader_view code duplication and add comments to functions by @NBA2K1 in https://github.com/kodjodevf/mangayomi/pull/840\r\n\r\n\r\n**Full Changelog**: https://github.com/kodjodevf/mangayomi/compare/v0.8.3...v0.8.4\n\nUpstream release: https://github.com/kodjodevf/mangayomi/releases/tag/v0.8.4",
+          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.8.4/Mangayomi-v0.8.4-ios.ipa",
+          "size": 47770028,
+          "minOSVersion": "13.0"
+        },
+        {
           "version": "0.8.3",
           "buildVersion": "111",
           "date": "2026-08-11",
