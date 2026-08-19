@@ -411,6 +411,15 @@
       "bundleIdentifier": "com.kodjodevf.mangayomi",
       "versions": [
         {
+          "version": "0.8.6",
+          "buildVersion": "114",
+          "date": "2026-08-18",
+          "localizedDescription": "## What's Changed\r\n* fixed flickering when switching to another page by @Schnitzel5 in https://github.com/kodjodevf/mangayomi/pull/872\r\n* added toggle to auto start Zero by @Schnitzel5 in https://github.com/kodjodevf/mangayomi/pull/871\r\n* perf: stop the grouped list re-sorting on every rebuild by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/874\r\n* support render for AVIF images on iOS <16 by @Schnitzel5 in https://github.com/kodjodevf/mangayomi/pull/875\r\n* Continuous‑mode eviction fixes + O(1) evicted‑chapter checks by @NBA2K1 in https://github.com/kodjodevf/mangayomi/pull/876\r\n\r\n\r\n**Full Changelog**: https://github.com/kodjodevf/mangayomi/compare/v0.8.5...v0.8.6\n\nUpstream release: https://github.com/kodjodevf/mangayomi/releases/tag/v0.8.6",
+          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.8.6/Mangayomi-v0.8.6-ios.ipa",
+          "size": 108058802,
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "0.8.5",
           "buildVersion": "113",
           "date": "2026-08-15",
