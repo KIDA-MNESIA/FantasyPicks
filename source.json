@@ -420,6 +420,15 @@
       "bundleIdentifier": "com.kodjodevf.mangayomi",
       "versions": [
         {
+          "version": "0.8.8",
+          "buildVersion": "116",
+          "date": "2026-08-20",
+          "localizedDescription": "## What's Changed\r\n* Fix extension list row overflow with NSFW badge + repo name by @not-akari in https://github.com/kodjodevf/mangayomi/pull/883\r\n* fix(download): restore downloads to downloads folder instead of local library\r\n* fix #878\r\n\r\n\r\n**Full Changelog**: https://github.com/kodjodevf/mangayomi/compare/v0.8.7...v0.8.8\n\nUpstream release: https://github.com/kodjodevf/mangayomi/releases/tag/v0.8.8",
+          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.8.8/Mangayomi-v0.8.8-ios.ipa",
+          "size": 108136104,
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "0.8.6",
           "buildVersion": "114",
           "date": "2026-08-18",
