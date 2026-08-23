@@ -119,6 +119,15 @@
       "bundleIdentifier": "com.example.piliplus",
       "versions": [
         {
+          "version": "2.1.1",
+          "buildVersion": "5231",
+          "date": "2026-08-22",
+          "localizedDescription": "自定义定时关闭时长改为滑动选择 #2632\r\n\r\n修复 #2631 #2636\r\n修复 #1967 #2634 by @My-Responsitories\r\n修复复制 VideoTrack 信息 #2633 by @My-Responsitories\n\nUpstream release: https://github.com/bggRGjQaUbCoE/PiliPlus/releases/tag/2.1.1.2",
+          "downloadURL": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.1.1.2/PiliPlus_ios_2.1.1%2B5231.ipa",
+          "size": 23906848,
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "2.1.0",
           "buildVersion": "5109",
           "date": "2026-07-12",
