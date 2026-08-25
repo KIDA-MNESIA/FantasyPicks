@@ -119,6 +119,15 @@
       "bundleIdentifier": "com.example.piliplus",
       "versions": [
         {
+          "version": "2.1.2",
+          "buildVersion": "5241",
+          "date": "2026-08-24",
+          "localizedDescription": "支持设置蜂窝网络解码格式 #2571 by @ucxn\r\n合并字体设置 #2611 by @My-Responsitories\r\n增加楼中楼评论排序设置 #2655 by @Meteor-3\r\nmacOS Command+R 刷新推荐 #2537 by @xiejiaxue\r\nAndroid、Windows、Linux 支持从已安装字体中选择字体 #2611 by @My-Responsitories\r\n\r\n修复部分安卓无法播放 #2631 #2642\r\n修复账号退出逻辑 #2666 by @KIDA-MNESIA\r\n修复导入设置 WebDav 配置未更新 #2667 by @KIDA-MNESIA\n\nUpstream release: https://github.com/bggRGjQaUbCoE/PiliPlus/releases/tag/2.1.2",
+          "downloadURL": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.1.2/PiliPlus_ios_2.1.2%2B5241.ipa",
+          "size": 23940004,
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "2.1.1",
           "buildVersion": "5231",
           "date": "2026-08-22",
@@ -437,6 +446,15 @@
     {
       "bundleIdentifier": "com.kodjodevf.mangayomi",
       "versions": [
+        {
+          "version": "0.8.9",
+          "buildVersion": "117",
+          "date": "2026-08-24",
+          "localizedDescription": "## What's Changed\r\n* Fix migration screen row overflow by @not-akari in https://github.com/kodjodevf/mangayomi/pull/884\r\n* Fix History screen scroll lag by @not-akari in https://github.com/kodjodevf/mangayomi/pull/885\r\n* Fix Updates and chapter list scroll lag by @not-akari in https://github.com/kodjodevf/mangayomi/pull/886\r\n* Fix warning by @NBA2K1 in https://github.com/kodjodevf/mangayomi/pull/887\r\n* New feature: backup encryption by @NBA2K1 in https://github.com/kodjodevf/mangayomi/pull/888\r\n* fix: read downloaded chapters from disk instead of the source by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/889\r\n* Fix chapter sort incorrectly and Added Missing Chapter Header by @not-akari in https://github.com/kodjodevf/mangayomi/pull/890\r\n* Fix overflow in global search result cards by @not-akari in https://github.com/kodjodevf/mangayomi/pull/891\r\n* Add live connection status to Sync screen, redesign layout by @not-akari in https://github.com/kodjodevf/mangayomi/pull/892\r\n* Fixed reader where it launch and causing blank screen by @not-akari in https://github.com/kodjodevf/mangayomi/pull/893\r\n* Fix Isar nested-transaction crash after backup restore and settings sync by @not-akari in https://github.com/kodjodevf/mangayomi/pull/894\r\n* Fix blank reader screen on chapter change by @not-akari in https://github.com/kodjodevf/mangayomi/pull/895\r\n* Surface the real error when an image fails to load by @not-akari in https://github.com/kodjodevf/mangayomi/pull/896\r\n* Fix overflow in tracker library section screen by @not-akari in https://github.com/kodjodevf/mangayomi/pull/897\r\n* Fix migration screen lag by @not-akari in https://github.com/kodjodevf/mangayomi/pull/898\r\n* fix: stop a running update from the updates screen, and a grey box in its list by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/900\r\n* fix: stop dropping decimal chapters and mismatching them on migration (#812) by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/899\r\n* feat: a first run for a fresh install by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/901\r\n* fix: stop settings writes putting back what changed in the meantime by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/904\r\n* Cloudflare Issue Fixed by @not-akari in https://github.com/kodjodevf/mangayomi/pull/910\r\n* Push restored data to sync server after a restore, guarding against r… by @not-akari in https://github.com/kodjodevf/mangayomi/pull/905\r\n* Add dyslexia-friendly font options for novel reader text by @not-akari in https://github.com/kodjodevf/mangayomi/pull/908\r\n* Use correct file extension for images by @NBA2K1 in https://github.com/kodjodevf/mangayomi/pull/909\r\n* Fix source-installed detection and add mangayomi-backup merge parity by @not-akari in https://github.com/kodjodevf/mangayomi/pull/907\r\n* fix: stop share throwing on Linux, and give it something useful to do by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/903\r\n* feat: keep the errors the app catches, and offer to report them by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/906\r\n\r\n\r\n**Full Changelog**: https://github.com/kodjodevf/mangayomi/compare/v0.8.8...v0.8.9\n\nUpstream release: https://github.com/kodjodevf/mangayomi/releases/tag/v0.8.9",
+          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.8.9/Mangayomi-v0.8.9-ios.ipa",
+          "size": 108580643,
+          "minOSVersion": "15.0"
+        },
         {
           "version": "0.8.8",
           "buildVersion": "116",
