@@ -430,6 +430,15 @@
       "bundleIdentifier": "com.minh-ton.Reynard",
       "versions": [
         {
+          "version": "0.11.1",
+          "buildVersion": "d5f40af",
+          "date": "2026-08-30",
+          "localizedDescription": "## Changes\r\n\r\n**Full Changelog**: https://github.com/minh-ton/reynard-browser/compare/0.11.0...0.11.1\r\n\r\nThis is a minor release that addresses issues found in 0.11.0. For the full changelog, see the [0.11.0 release notes](https://github.com/minh-ton/reynard-browser/releases/tag/0.11.0).\r\n\r\n### Bug Fixes\r\n- Fixed a regression on some iOS versions where the iPad keyboard shortcuts bar appeared while the keyboard was inactive, obscuring web content at the bottom of the screen.\n\nUpstream release: https://github.com/minh-ton/reynard-browser/releases/tag/0.11.1",
+          "downloadURL": "https://github.com/minh-ton/reynard-browser/releases/download/0.11.1/Reynard.ipa",
+          "size": 110003529,
+          "minOSVersion": "13.0"
+        },
+        {
           "version": "0.10.1",
           "buildVersion": "a7e06a6",
           "date": "2026-08-17",
@@ -464,6 +473,15 @@
     {
       "bundleIdentifier": "com.kodjodevf.mangayomi",
       "versions": [
+        {
+          "version": "0.9.0",
+          "buildVersion": "118",
+          "date": "2026-08-30",
+          "localizedDescription": "## What's Changed\r\n* fix: say when a JS source fails to load instead of showing it as empty by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/921\r\n* fix: restore bundled TLS roots so Android stops panicking on HTTPS by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/920\r\n* fix: track anime on Simkl as anime, not as a TV show by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/932\r\n* Use correct image extensions by @NBA2K1 in https://github.com/kodjodevf/mangayomi/pull/926\r\n* fix: stop the library disposing a TabController the tabs still paint from by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/930\r\n* fix: say why AniList refused, stop asking, and fall back where we can by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/911\r\n* fix: only file things that belong in the tracker by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/919\r\n* fix: stop using the player after the reader has left it by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/931\r\n* feat: a live memory readout, so the TV questions can be measured by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/929\r\n* feat: TV is only asked for source and nothing else on the welcome screen cus anime only gate now by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/938\r\n* feat: show what a title is related to, and open it in your sources by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/939\r\n* feat: show which account a tracker is signed in to, and fix the id sent as a name by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/940\r\n* perf(tv): show only the tab the television is on by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/941\r\n* fix: say why a global search had nothing to search by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/943\r\n* fix: raise the two things sitting under a minimum by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/945\r\n* refactor: one definition for the alpha ladder by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/946\r\n* fix: pure black dark mode was not pure, and not black by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/947\r\n* refactor: the chapter dialog follows the theme by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/948\r\n* fix: a season is part of which chapter a chapter is by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/950\r\n* fix: stop telling Linux to use a resolver it does not have by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/952\r\n* Add DbWriteQueue + repository layer, migrate all from raws DB logics into Repositories Logic  by @not-akari in https://github.com/kodjodevf/mangayomi/pull/954\r\n* refactor: one row of pills on the detail page, not a column of buttons by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/942\r\n* fix: the novel reader's controller is gone by the time dispose needs it by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/955\r\n* feat: catch the crashes Dart cannot see by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/913\r\n\r\n\r\n**Full Changelog**: https://github.com/kodjodevf/mangayomi/compare/v0.8.9...v0.9.0\n\nUpstream release: https://github.com/kodjodevf/mangayomi/releases/tag/v0.9.0",
+          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.0/Mangayomi-v0.9.0-ios.ipa",
+          "size": 109850240,
+          "minOSVersion": "15.0"
+        },
         {
           "version": "0.8.9",
           "buildVersion": "117",
