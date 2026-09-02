@@ -474,6 +474,15 @@
       "bundleIdentifier": "com.kodjodevf.mangayomi",
       "versions": [
         {
+          "version": "0.9.1",
+          "buildVersion": "119",
+          "date": "2026-09-01",
+          "localizedDescription": "## What's Changed\r\n* Fix cache collision via chapter hash in filename by @NBA2K1 in https://github.com/kodjodevf/mangayomi/pull/967\r\n* fix(mihon-service): update genre parsing to handle string input\r\n* refactor(crash-report): remove crash report banner functionality on launch\r\n\r\n\r\n**Full Changelog**: https://github.com/kodjodevf/mangayomi/compare/v0.9.0...v0.9.1\n\nUpstream release: https://github.com/kodjodevf/mangayomi/releases/tag/v0.9.1",
+          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.1/Mangayomi-v0.9.1-ios.ipa",
+          "size": 109840449,
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "0.9.0",
           "buildVersion": "118",
           "date": "2026-08-30",
