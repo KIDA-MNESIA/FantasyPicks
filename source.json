@@ -22,6 +22,15 @@
       "bundleIdentifier": "app.aidoku.Aidoku",
       "versions": [
         {
+          "version": "0.9",
+          "buildVersion": "2",
+          "date": "2026-09-03",
+          "localizedDescription": "- OCR dictionary support (iOS 18+): import Yomitan-compatible dictionaries in the app and look up words while reading.\r\n- Suwayomi built-in source: read and track from a Suwayomi instance, just like Komga and Kavita.\r\n- Auto scroll for webtoon reader: enable and press the play button to scroll without touching your device.\r\n- Fixed CloudFlare handling: CloudFlare issues that caused external sources to break should be resolved.\r\n- Overall performance improvements: the library loads much faster (@Amqx), and the webtoon reader was improved.\r\n- Source stability fixes and disable option: the issue where sources were causing the app to crash should not happen again, and now you can even disable a source that is broken until it receives an update.\r\n- Many more things: see [the website](https://aidoku.app/release-notes/) for a more complete list.\n\nUpstream release: https://github.com/Aidoku/Aidoku/releases/tag/v0.9",
+          "downloadURL": "https://github.com/Aidoku/Aidoku/releases/download/v0.9/Aidoku.ipa",
+          "size": 11864382,
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "0.8.4",
           "buildVersion": "1",
           "date": "2026-07-03",
@@ -473,6 +482,15 @@
     {
       "bundleIdentifier": "com.kodjodevf.mangayomi",
       "versions": [
+        {
+          "version": "0.9.2",
+          "buildVersion": "120",
+          "date": "2026-09-03",
+          "localizedDescription": "## What's Changed\r\n* Add assets to constant file by @NBA2K1 in https://github.com/kodjodevf/mangayomi/pull/968\r\n* fix: triage error reports and resolve reported crashes by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/970\r\n* feat(experimental): add support for Aidoku extensions by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/969\r\n* Optimize local image-folder pages and image handling by @NBA2K1 in https://github.com/kodjodevf/mangayomi/pull/973\r\n\r\n\r\n**Full Changelog**: https://github.com/kodjodevf/mangayomi/compare/v0.9.1...v0.9.2\n\nUpstream release: https://github.com/kodjodevf/mangayomi/releases/tag/v0.9.2",
+          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.2/Mangayomi-v0.9.2-ios.ipa",
+          "size": 114010180,
+          "minOSVersion": "15.0"
+        },
         {
           "version": "0.9.1",
           "buildVersion": "119",
