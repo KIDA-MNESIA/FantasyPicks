@@ -27,7 +27,8 @@
     "org.ppsspp.ppsspp",
     "com.kdt.livecontainer",
     "com.stik.stikdebug",
-    "com.utmapp.UTM-SE"
+    "com.utmapp.UTM-SE",
+    "moye.MeloX"
   ],
   "apps": [
     {
@@ -1308,6 +1309,32 @@
           "NSLocalNetworkUsageDescription": "The virtual machine may access the local network. UTM may also use the network to communicate with local servers.",
           "NSMicrophoneUsageDescription": "Permission is required for any virtual machine to record from the microphone."
         }
+      }
+    },
+    {
+      "bundleIdentifier": "moye.MeloX",
+      "versions": [
+        {
+          "version": "2.0",
+          "buildVersion": "9110201",
+          "date": "2026-09-05",
+          "localizedDescription": "## English\n\nThis MeloX iOS + Apple Watch release was built automatically by GitHub Actions.\n\n### MeloX Website\n\nVisit the [MeloX website](https://melox.luoxe.cn/) for project information and the latest news.\n\n### Download\n\n- `MeloX-iOS-unsigned.ipa`: unsigned iOS package containing the Apple Watch app\n\n### Installation\n\nThe IPA is unsigned and must be signed before installation.\n\n### Build Information\n\n- Version: `v1.2.1`\n- Commit: `1fe5fbab3f554e8529c4847fc54281a472b7b61a`\n- Build: `104`\n\n## 简体中文\n\n这是由 GitHub Actions 自动构建的 MeloX iOS + Apple Watch 发行版本。\n\n### MeloX 官网\n\n访问 [MeloX 官网](https://melox.luoxe.cn/) 了解项目与最新动态。\n\n### 下载说明\n\n- `MeloX-iOS-unsigned.ipa`：包含 Apple Watch App 的 iOS 未签名安装包\n\n### 安装说明\n\n该 IPA 未签名，需要自行签名后安装。\n\n### 版本信息\n\n- 版本：`v1.2.1`\n- Commit：`1fe5fbab3f554e8529c4847fc54281a472b7b61a`\n- 构建编号：`104`\n\n## What's New / 更新内容\n\n## 简体中文\n\n- 增加了多声部同时唱词与独立逐字高亮\n- 增加了收藏专辑入口\n- 修复了蓝牙音频设备断开后播放未自动暂停的问题\n- 修复了逐字歌词切换时的闪烁问题\n- 优化了歌词加载性能和动效连贯性\n- 完善了 TTML 歌词解析\n- 优化了 Apple Watch 逐字歌词获取与回退\n- 优化了播放器菜单的歌词源选择\n\n## English\n\n- Added simultaneous vocal parts with independent word highlighting\n- Added access to favorite albums\n- Fixed playback not pausing when a Bluetooth audio device disconnects\n- Fixed flickering during word-synced lyric transitions\n- Improved lyric loading performance and animation continuity\n- Improved TTML lyric parsing\n- Improved word-synced lyric fetching and fallback on Apple Watch\n- Refined lyric source selection in the player menu\n\n\nUpstream release: https://github.com/youshen2/MeloX/releases/tag/v1.2.1",
+          "downloadURL": "https://github.com/youshen2/MeloX/releases/download/v1.2.1/MeloX-iOS-unsigned.ipa",
+          "size": 27542233,
+          "minOSVersion": "26.0"
+        }
+      ],
+      "name": "MeloX",
+      "developerName": "youshen2",
+      "subtitle": "第三方网易云音乐客户端",
+      "localizedDescription": "MeloX 是一款使用原生 SwiftUI 构建的第三方网易云音乐客户端，界面参考 Apple Music 液体玻璃设计，支持逐字歌词、均衡器与离线下载。本条目仅索引原作者 GitHub Releases 中发布的未签名 iOS IPA。",
+      "iconURL": "https://raw.githubusercontent.com/youshen2/MeloX/main/MeloX/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "tintColor": "#4185A9",
+      "category": "entertainment",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
       }
     }
   ],
