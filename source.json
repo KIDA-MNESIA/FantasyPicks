@@ -128,6 +128,15 @@
       "bundleIdentifier": "com.example.piliplus",
       "versions": [
         {
+          "version": "2.1.3",
+          "buildVersion": "5315",
+          "date": "2026-09-05",
+          "localizedDescription": "限制直播聊天缓存条目\r\n音频播放页配置音量均衡 #2598 by @Eazed-Yu\r\n限制离线弹幕下载并发 #2800 by @KIDA-MNESIA\r\n关注分组支持切换排序方式 #2772 co-by @defghy\r\nLinux 支持 WebView #2843 by @Tobiichi-Origuchi\r\n支持显示定时关闭剩余时间 #2461 co-by @SXP-Simon\r\n更新直播弹幕屏蔽页面，实现直播弹幕屏蔽 #2821 by @Starfallan\r\niOS 设置 `ITSAppUsesNonExemptEncryption` 属性 #2789 by @maoawa\r\n评论输入框增加 LaTeX 公式转 Unicode 开关 #2792 by @milk2715093695\r\n修复部分视频画质切换问题 #2810 #2828 by @TomorrowX6 co-by @My-Responsitories\r\n\r\n优化字体自重 #2787 by @My-Responsitories\r\n优化/修复账号逻辑 #2794 #2797 by @KIDA-MNESIA #2817 by @My-Responsitories\r\n\r\n修复 #2709 #2816 #2836 #2837\n\nUpstream release: https://github.com/bggRGjQaUbCoE/PiliPlus/releases/tag/2.1.3.1",
+          "downloadURL": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.1.3.1/PiliPlus_ios_2.1.3%2B5315.ipa",
+          "size": 23970852,
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "2.1.2",
           "buildVersion": "5281",
           "date": "2026-08-30",
@@ -260,6 +269,15 @@
     {
       "bundleIdentifier": "com.github.lingyan000.fluxdo",
       "versions": [
+        {
+          "version": "0.2.28",
+          "buildVersion": "2026090421",
+          "date": "2026-09-04",
+          "localizedDescription": "这一版重点补齐了多人私信的成员管理，也重新梳理了下载、保存和导出的整套体验。表情包市场更好找、更快打开，弱网看图、Mac 粘贴和反复验证等实际问题也得到修复。\n\n### 💌 多人私信\n\n- 多人私信现在会展示全部成员和群组，长对话在首楼和帖子流底部都能方便查看。\n- 可以继续邀请用户或群组加入；新建私信时，原本预填的收件人也可以自由增删。\n- 有权限的管理者可以移除成员或群组，参与者也可以主动退出。成员变动会及时反映在当前会话中，被移出的用户会自动离开该私信页面。\n- 私信可以从更多菜单归档，之后也能移回收件箱；其他设备上的归档变化会同步过来。\n- 成员标签统一为更紧凑的单行样式，点击用户即可打开资料卡片，查看信息或继续互动。\n\n### 📤 下载、保存与导出\n\n- 导出文章的面板重新整理为「范围、文件格式、去向」三部分。选好后可以直接保存、另存为、分享或发送到 Notion，执行进度会显示在对应选项旁。\n- Android 可以把文章直接保存到公共下载目录；iPhone 和 iPad 改用系统文件导出面板，导出楼层很多的长文章时也更省内存、更稳定。\n- 下载列表新增长按菜单，可以按当前平台选择打开、保存到文件、另存为、分享或删除，不必再到应用目录里找文件。\n- 导出历史也有了长按菜单，可打开文件或所在文件夹、在浏览器中打开、再次分享，或者只删除这条记录。\n- 正文图片的长按或右键菜单新增「保存图片」。移动端保存到相册，桌面端选择保存位置，Linux 上不再错误提示相册权限。\n- 备份文件现在只保存到本地，避免误分享到聊天软件；日志则明确拆成「保存」和「分享」。分享、导出产生的临时文件会定期自动清理。\n\n### 😀 表情包市场\n\n- 表情包市场支持按分类浏览和按名称搜索，找表情包不再需要从完整列表一路翻下去。\n- 搜索会先给出已经加载的结果，再自动补齐当前分类；快速切换分类或边加载边搜索时，也不会再出现列表空白、内容串到错误分类的问题。\n- 修复部分表情包详情打不开，以及名称以特殊 emoji 开头时占位字符显示乱码的问题。\n- 市场面板可以上拉放大、下拉收起；打开键盘搜索时，标题栏和搜索框不会再被顶出屏幕。\n- 已订阅的表情分组会更快出现在面板中，市场暂时无法访问时也能保留分组入口。\n\n### ✍️ 发帖与回复\n\n- 支持社区为不同分类设置各自的最低字数。标题或正文不足时，会在编辑区显示悬浮提示；达到要求后提示立即消失，不再长期占用底栏。\n- 字数提示与实际提交校验现在采用同一套规则，避免看起来已经达标、发送时却仍被拦下。\n- 在启用了回复扣积分的社区，发送前会明确显示本次所需积分并请求确认，取消后不会误发。\n\n### 🖼️ 看图与分享\n\n- 弱网打开大图时会继续保留清晰可辨的缩略图，并用环形进度显示加载状态，不再先变成空白画面。\n- 从聊天气泡等裁切缩略图打开或关闭大图时，过渡过程不再忽然裁掉图片中间部分。\n- 分享图片会尽量保留原文件名和扩展名，不再变成难辨认的哈希名或无后缀文件。\n- 图片浮起菜单打开时，按系统返回键会先收起菜单，而不是直接退出底下的页面；支持预测式返回的设备上，手势动画也会跟随操作。\n\n### 🛠️ 兼容性与稳定性\n\n- 内容过滤新增「显示过滤提示」开关。关闭后，标题关键词和本地屏蔽仍然生效，但话题列表顶部不再显示「已隐藏 N 条话题」；相关设置说明也能完整换行显示。\n- 修复 macOS 上语音输入法、剪贴板管理器和文本扩展工具通过 Command+V 粘贴时没有反应的问题，物理键盘的正常粘贴行为不受影响。\n- 修复验证通过后仍被旧状态覆盖、导致短时间内反复弹出验证页面的问题，取消验证后也能正常重新尝试。\n- 加解密工具箱现在能正确还原部分来源生成的 Base64、Hex 和 Base32 文本，中文与 emoji 不会再整段乱码，也不会轻易把普通文本误判为加密内容。\n- 修复一类长期存在的文字渲染崩溃；多个同名下载同时开始时会自动编号保存，不再互相抢占路径或覆盖文件。\n\n<details>\n<summary>📋 完整更新明细(点击展开)</summary>\n\n## [0.2.28] - 2026-09-04\n\n\n### 🌟 新功能\n\n- 表情包市场:分类浏览 + 搜索,修分组详情路径 (#392) ([#392](https://github.com/lingyan000/fluxdo/pull/392)) by @stevessr\n\n- 按分类的最小字数(warden) + 字数不足悬浮提示 by @Lingyan000\n\n- 站点插件框架 + 回复扣积分(discourse-reply-cost) by @Lingyan000\n\n- 私信成员管理:成员/群组面板 + 邀请 + 退出踢人 + 归档收件箱 (#391) ([#391](https://github.com/lingyan000/fluxdo/pull/391)) by @stevessr\n\n- 下载管理:新增「保存到文件 / 另存为」出口 by @Lingyan000\n\n- 导出历史长按菜单 + 临时文件自清理,删死文案 by @Lingyan000\n\n- 图片保存收口:桌面改另存为,补图片菜单保存项 by @Lingyan000\n\n- 导出文章:去向重排 + 保存到公共目录 by @Lingyan000\n\n- 「显示过滤提示」开关:话题列表隐藏数量可关闭 + 设置项长说明自然换行 (#350) ([#350](https://github.com/lingyan000/fluxdo/pull/350)) by @Ooxygen7\n\n\n### 🐛 修复\n\n- 表情包市场面板改可拖拽外壳,修键盘顶出标题栏 by @Lingyan000\n\n- 修 macOS 语音输入法/剪贴板管理器的 Cmd+V 粘贴失效 by @Lingyan000\n\n- 诊断报告改导出文件,底栏分享补匿名偏好 by @Lingyan000\n\n- 修 iOS 保存落点:撤销 Documents 暴露,改走另存为 by @Lingyan000\n\n- 修复下载文件名路径穿越 (#387) by @KIDA-MNESIA\n\n- 修复下载目标路径竞态 by @Lingyan000\n\n- 修复下载文件名路径穿越 by @KIDA-MNESIA\n\n- 修 Base64 CESU-8 文本误判与乱码 (#386) ([#386](https://github.com/lingyan000/fluxdo/pull/386)) by @soaringmz\n\n- 优先复用图片查看器入口缩略图 by @Lingyan000\n\n- 优化弱网查看大图：保留缩略图并显示环形进度 by @Lingyan000\n\n- 浮起菜单接管系统返回:先关菜单而非 pop 页面 by @Lingyan000\n\n- 修复 cf_clearance 同步判定改用「在位值粘性」,墓碑机制整体撤除 by @Lingyan000\n\n- 修分享图片变无后缀文件/哈希名:缓存文件名对齐 Telegram 带扩展名(md5.url-ext),出 App 边界复制可读命名临时文件(接口/cooked 原名 → URL 末段 → 时间戳),保存相册同口径 by @Lingyan000\n\n- 修 cover 源飞行「两端完整、中间帧被裁」 by @Lingyan000\n\n\n### ⚡ 性能\n\n- ️ 表情面板去掉全市场元信息拉取,订阅时就把 name/icon 落本地 by @Lingyan000\n\n- ️ iOS 另存为改走原生导出面板,去掉全量读入内存 by @Lingyan000\n\n\n### ♻️ 重构\n\n- 分享/保存语义对齐:备份只落盘,删除双语义遗留函数 by @Lingyan000\n\n\n### 📝 文档\n\n- Docs: 添加 v0.2.28 版本亮点 by @Lingyan000\n\n\n### 🔧 其他\n\n- ⬆️ fluxdo_render: 修 Paragraph 缓存 UAF 崩溃 by @Lingyan000\n\n- 🔍 崩溃/ANR 现场带上当前页面与导航轨迹 by @Lingyan000\n\n- 🔍 ANR 全线程栈取证 + 开启 NDK 符号上传 by @Lingyan000\n\n- 💄 私信成员胶囊:统一单行 + 点击出用户卡片 by @Lingyan000\n\n</details>\n\n**Full Changelog**: https://github.com/lingyan000/fluxdo/compare/v0.2.27...v0.2.28\n<div align=center>\n\n[![Release Downloads](https://img.shields.io/github/downloads/lingyan000/fluxdo/v0.2.28/total?style=flat-square&logo=github)](https://img.shields.io/github/downloads/lingyan000/fluxdo/v0.2.28/)\n\n</div>\n\n**Download based on your device:**\n\n<div align=left>\n<table>\n    <thead ali\n\n…",
+          "downloadURL": "https://github.com/Lingyan000/fluxdo/releases/download/v0.2.28/fluxdo-unsigned.ipa",
+          "size": 54824957,
+          "minOSVersion": "14.0"
+        },
         {
           "version": "0.2.27",
           "buildVersion": "2026082115",
