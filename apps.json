@@ -409,5 +409,18 @@
         "NSMicrophoneUsageDescription": "Permission is required for any virtual machine to record from the microphone."
       }
     }
+  },
+  {
+    "name": "MeloX",
+    "github": "youshen2/MeloX",
+    "assetRegex": "^MeloX-iOS-unsigned\\.ipa$",
+    "includePrereleases": false,
+    "releaseLimit": 30,
+    "developerName": "youshen2",
+    "subtitle": "第三方网易云音乐客户端",
+    "description": "MeloX 是一款使用原生 SwiftUI 构建的第三方网易云音乐客户端，界面参考 Apple Music 液体玻璃设计，支持逐字歌词、均衡器与离线下载。本条目仅索引原作者 GitHub Releases 中发布的未签名 iOS IPA。",
+    "iconURL": "https://raw.githubusercontent.com/youshen2/MeloX/main/MeloX/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+    "category": "entertainment",
+    "tintColor": "#4185A9"
   }
 ]

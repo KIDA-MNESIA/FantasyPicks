@@ -22,6 +22,7 @@
 | LiveContainer | `LiveContainer/LiveContainer` | `^LiveContainer\.ipa$` |
 | StikDebug | `StikDebug/StikDebug` | `^StikDebug-[0-9.]+\.ipa$` |
 | UTM SE | `utmapp/UTM` | `^UTM-SE\.ipa$` |
+| MeloX | `youshen2/MeloX` | `^MeloX-iOS-unsigned\.ipa$` |
 
 ## 文件说明
 
