@@ -23,6 +23,15 @@
       "versions": [
         {
           "version": "0.9",
+          "buildVersion": "3",
+          "date": "2026-09-03",
+          "localizedDescription": "- OCR dictionary support (iOS 18+): import Yomitan-compatible dictionaries in the app and look up words while reading.\r\n- Suwayomi built-in source: read and track from a Suwayomi instance, just like Komga and Kavita.\r\n- Auto scroll for webtoon reader: enable and press the play button to scroll without touching your device.\r\n- Fixed CloudFlare handling: CloudFlare issues that caused external sources to break should be resolved.\r\n- Overall performance improvements: the library loads much faster (@Amqx), and the webtoon reader was improved.\r\n- Source stability fixes and disable option: the issue where sources were causing the app to crash should not happen again, and now you can even disable a source that is broken until it receives an update.\r\n- Many more things: see [the website](https://aidoku.app/release-notes/) for a more complete list.\n\nUpstream release: https://github.com/Aidoku/Aidoku/releases/tag/v0.9",
+          "downloadURL": "https://github.com/Aidoku/Aidoku/releases/download/v0.9/Aidoku.ipa",
+          "size": 14731108,
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "0.9",
           "buildVersion": "2",
           "date": "2026-09-03",
           "localizedDescription": "- OCR dictionary support (iOS 18+): import Yomitan-compatible dictionaries in the app and look up words while reading.\r\n- Suwayomi built-in source: read and track from a Suwayomi instance, just like Komga and Kavita.\r\n- Auto scroll for webtoon reader: enable and press the play button to scroll without touching your device.\r\n- Fixed CloudFlare handling: CloudFlare issues that caused external sources to break should be resolved.\r\n- Overall performance improvements: the library loads much faster (@Amqx), and the webtoon reader was improved.\r\n- Source stability fixes and disable option: the issue where sources were causing the app to crash should not happen again, and now you can even disable a source that is broken until it receives an update.\r\n- Many more things: see [the website](https://aidoku.app/release-notes/) for a more complete list.\n\nUpstream release: https://github.com/Aidoku/Aidoku/releases/tag/v0.9",
@@ -456,6 +465,15 @@
     {
       "bundleIdentifier": "com.minh-ton.Reynard",
       "versions": [
+        {
+          "version": "0.12.0",
+          "buildVersion": "9f99073",
+          "date": "2026-09-06",
+          "localizedDescription": "## Changes\r\n\r\n**Full Changelog**: https://github.com/minh-ton/reynard-browser/compare/0.11.1...0.12.0\r\n\r\n### New Features\r\n- Added DNS over HTTPS support.\r\n- Added session state restoration, which restores per-page details such as your scroll position, form data, and zoom level on startup or when a tab becomes active again.\r\n\r\n### Bug Fixes & Improvements\r\n- Webpage media now correctly pauses when media from another app starts playing.\r\n- Fixed an issue where the arrow keys would continue to be pressed after releasing the Command key on a physical keyboard.\r\n- Fixed several UI issues.\r\n\r\n### Translations\r\n\r\nAdded Chinese (Traditional) and German translations.\r\n\r\nIf you want to translate the project into your language or improve existing translations, feel free to contribute to the [Crowdin](https://crowdin.com/project/reynard-browser) project!\r\n\r\n### Engine\r\nUpdated Gecko to [155.0.1](https://github.com/mozilla-firefox/firefox/commit/FIREFOX_155_0_1_RELEASE) (released Sep 4, 2026).\n\nUpstream release: https://github.com/minh-ton/reynard-browser/releases/tag/0.12.0",
+          "downloadURL": "https://github.com/minh-ton/reynard-browser/releases/download/0.12.0/Reynard.ipa",
+          "size": 110390729,
+          "minOSVersion": "13.0"
+        },
         {
           "version": "0.11.1",
           "buildVersion": "d5f40af",
