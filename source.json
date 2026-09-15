@@ -422,6 +422,15 @@
       "bundleIdentifier": "com.xycz.simple-live",
       "versions": [
         {
+          "version": "1.13.0",
+          "buildVersion": "11300",
+          "date": "2026-09-08",
+          "localizedDescription": "## Build: `1.13.0+11300`\r\n\r\n> [!IMPORTANT]\r\n>\r\n>- 9.9已更新之前由于没有解压导致的ios这些无法安装的问题。\r\n>- 文件大小大幅上升，是因为加入了许多游戏分类的icon，因为抖音最近更新了分类，但是并未提供游戏icon，所以都是我一个个通过各>种公开渠道拿到的icon文件，塞进来的。\r\n>- 但是抖音的游戏细分类是动态的，比如当前时段如果没有这个游戏主播在播，他就不会有这个分类。\r\n\r\n\r\n## 链接解析与清晰度记忆（2026-09-08 更新）\r\n\r\n### 链接解析修复\r\n\r\n- **修复房间号含点号时解析失败**：房间号如 `123.456` 的虎牙/抖音直播间现在可以正常解析，旧版会在点号处截断导致 API 报错。\r\n- **新增抖音 www 域名支持**：\r\n  - `https://www.douyin.com/live/数字` 可直接解析\r\n  - `https://www.douyin.com/follow/live/数字` 可直接解析（从关注页打开的链接）\r\n- 解析改用结构化 URI 处理，所有平台 host 匹配改为大小写不敏感。\r\n- 短链递归解析新增深度限制，防止短链互跳死循环。\r\n- 解析帮助文案更新，补充新支持的抖音链接格式。\r\n\r\n### 清晰度记忆\r\n\r\n- **播放设置新增”记住上次”选项**：在”默认清晰度”和”数据网络清晰度”下拉菜单中新增第 4 项”记住上次”。\r\n- **按平台记忆**：每个直播平台独立记忆用户上次手动选择的清晰度。\r\n- **智能匹配策略**：\r\n  - 优先按清晰度名称精确匹配（如”蓝光8M”）\r\n  - 名称不存在时按距最高档的偏移兜底（如上次选第 1 档，本房间列表不同也选第 1 档）\r\n  - 都匹配不到时回落到”中等”策略\r\n- 每次手动切换清晰度（包括开启功能前的切换）都会自动保存，无需额外操作。\r\n- **全端支持**：主应用（Android、iOS、Windows、macOS、Linux）与 TV 应用（Android TV、Windows TV）均可使用。\r\n\r\n## Windows 播放兼容性\r\n\r\n### libmpv 升级至最新版本（2026-09-04 更新）\r\n\r\n- **libmpv 已升级至 v0.41.0-1011-g182fa6ca4**（2026-08-28 构建，120MB）\r\n  - 从旧版 2023 年构建（29.7MB）升级，包含最新 ffmpeg 解码器\r\n  - **修复 [[issue #115](https://github.com/June6699/dart_simple_live/issues/115)](https://github.com/June6699/dart_simple_live/issues/115)**：手动设置 `hwdec=d3d11va` 现在正确生效，不再回退到 `d3d11va-copy`\r\n  - 改善硬件解码兼容性和性能\r\n  - 已通过完整验证：视频画面正常、默认硬解使用 d3d11va、手动 hwdec 设置生效、硬解开关正常、窗口操作正常\r\n\r\n### 播放器稳定性说明\r\n\r\n- Windows 播放器页面、控制层和 native runtime 与 v1.12.8-test 已验证可用的组合保持一致。\r\n- Windows 灰屏不能只通过替换 `libmpv-2.dll` 判断；播放器页面/控制层的纹理生命周期和 native runtime 必须作为整体验证。\r\n- 实际解码路径仍取决于显卡、驱动、视频编码和直播流；播放器诊断页会显示当前使用的解码器。\r\n\r\n## 主应用更新\r\n\r\n### 播放暂停/继续\r\n\r\n- 直播间新增暂停/继续功能：全屏与非全屏控制栏均提供暂停按钮，暂停时画面冻结。\r\n- 继续播放时会自动刷新直播流回到最新画面，避免长时间暂停后画面落后于直播。\r\n- 桌面端默认支持空格键触发暂停/继续，可在 设置 → 播放设置 → 快捷键 中改绑或关闭；快捷键仅在直播间且输入框未聚焦时生效。\r\n\r\n### 抖音直播分类\r\n\r\n- 抖音直播分类支持继续进入子分类，不再只显示第一层分类。例如可按”游戏 → 射击游戏 → 无畏契约”逐层浏览。\r\n- 分类数据按嵌套层级解析，后续出现更多层级时可继续进入。\r\n- 游戏子分类补充本地图标，普通 App 和 TV App 均可显示；图片按显示尺寸缓存，减少分类浏览时的内存占用。\r\n\r\n### 关注标签刷新\r\n\r\n- 关注列表支持选择自定义标签进行显示，例如”上午开播”。\r\n- 手动刷新可仅处理当前选中的标签；选择”全部”时刷新全部关注。\r\n- 标签刷新范围独立于搜索、平台、直播状态和”仅显示开播”等临时显示筛选，避免误刷新或漏刷新。\r\n- 普通 App 和 TV App 均支持标签筛选；标签数据可随关注列表同步到 TV 端。\r\n- 直播间内新增”标签”入口，关注主播后可直接选择或修改自定义关注标签；主 App（Android、iOS、Windows、macOS、Linux）与 TV App（Android TV、Windows TV）均支持。\r\n\r\n### 桌面端（Windows、macOS、Linux）\r\n\r\n- 最小窗口尺寸调整为 `200 x 150`。\r\n- 小窗弹幕可按设置缩小字体、限制行数和降低透明度。\r\n- ❌修复失败：Windows 中文输入法状态下桌面快捷键（F/D/M/R/空格等）不生效的问题，当前逻辑是进入直播间后快捷键捕获期间临时分离输入法，离开直播间或聚焦输入框时自动恢复，无需再切换英文输入法。但是貌似并未生效。\r\n- 修复窗口顶部标题栏偶尔消失的问题。\r\n- 全屏控制栏新增小窗按钮（Windows、macOS、Linux）。\r\n- 小窗模式下控制栏改为紧凑布局（暂停、弹幕开关、静音、退出小窗），顶部栏隐藏截图与快捷访问按钮，避免小窗口内按钮溢出。\r\n\r\n### Android 主应用\r\n\r\n- 画中画模式可选择显示滚动弹幕，默认关闭。\r\n- Android 明确使用 Roboto 字体，改善部分设备的字体显示。\r\n\r\n### 播放与稳定性\r\n\r\n- 主应用将播放停滞检测缩短为 10 秒，检测到停滞时尝试刷新播放。\r\n- 主应用会定期清理过多的聊天消息和已过期的 SuperChat，减少长期观看时的内存累积。\r\n- 抖音的 QuickJS 初始化增加降级处理，减少 Linux 缺少相关动态库时的启动失败。\r\n- Windows 播放渲染路径按 v1.12.8-test 基线恢复。\r\n\r\n\n\nUpstream release: https://github.com/June6699/dart_simple_live/releases/tag/v1.13.0-pre",
+          "downloadURL": "https://github.com/June6699/dart_simple_live/releases/download/v1.13.0-pre/ios_no_sign.ipa",
+          "size": 100800781,
+          "minOSVersion": "13.0"
+        },
+        {
           "version": "1.12.8",
           "buildVersion": "11208",
           "date": "2026-08-19",
@@ -474,6 +483,15 @@
     {
       "bundleIdentifier": "com.minh-ton.Reynard",
       "versions": [
+        {
+          "version": "0.13.1",
+          "buildVersion": "2dbc75e",
+          "date": "2026-09-14",
+          "localizedDescription": "## Changes\r\n\r\n**Full Changelog**: https://github.com/minh-ton/reynard-browser/compare/0.13.0...0.13.1\r\n\r\nThis is a minor release that addresses issues found in 0.13.0. For the full changelog, see the [0.13.0 release notes](https://github.com/minh-ton/reynard-browser/releases/tag/0.13.0).\r\n\r\n### Bug Fixes & Improvements\r\n- Improved the reliability of text input fields repositioning above the software keyboard when editing.\r\n- Fixed issues with the new toolbar minimizing behavior introduced in 0.13.0, including mistaken taps, misaligned page elements, and out-of-place sticky headers and menus, along with better behavior when resizing or zooming.\n\nUpstream release: https://github.com/minh-ton/reynard-browser/releases/tag/0.13.1",
+          "downloadURL": "https://github.com/minh-ton/reynard-browser/releases/download/0.13.1/Reynard.ipa",
+          "size": 108070190,
+          "minOSVersion": "13.0"
+        },
         {
           "version": "0.13.0",
           "buildVersion": "182a287",
@@ -536,6 +554,15 @@
     {
       "bundleIdentifier": "com.kodjodevf.mangayomi",
       "versions": [
+        {
+          "version": "0.9.3",
+          "buildVersion": "121",
+          "date": "2026-09-14",
+          "localizedDescription": "## What's Changed\n* feat: refresh the library on a schedule by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/975\n* fix(player): persist completed episodes before navigation by @1Selxo in https://github.com/kodjodevf/mangayomi/pull/979\n* fix(downloads): preserve queue and select the next unread chapters by @1Selxo in https://github.com/kodjodevf/mangayomi/pull/978\n* Fixes memory and bugs where it would lag over time by @not-akari in https://github.com/kodjodevf/mangayomi/pull/977\n* fix: keep Discord chapter presence current by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/981\n* fix: decode current VOE video payloads by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/982\n* fix(restore): preserve Kotatsu category assignments by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/983\n* fix(player): retire native video surfaces safely by @1Selxo in https://github.com/kodjodevf/mangayomi/pull/984\n* fix(download): harden workers and HLS recovery by @1Selxo in https://github.com/kodjodevf/mangayomi/pull/985\n* fix(reader): sort local pages naturally by @1Selxo in https://github.com/kodjodevf/mangayomi/pull/986\n* fix(library): keep read titles last in unread sort by @1Selxo in https://github.com/kodjodevf/mangayomi/pull/988\n* fix(reader): make bulk read actions uniform by @1Selxo in https://github.com/kodjodevf/mangayomi/pull/989\n* fix(player): preserve shortcuts when controls hide by @1Selxo in https://github.com/kodjodevf/mangayomi/pull/990\n* fix(linux): fall back when Documents lookup fails by @1Selxo in https://github.com/kodjodevf/mangayomi/pull/994\n* Rework API Sync Server by @not-akari in https://github.com/kodjodevf/mangayomi/pull/976\n* feat: redesign anime player by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/980\n* Add Korean translation by @jang-geon in https://github.com/kodjodevf/mangayomi/pull/1000\n* feat(l10n): complete Korean translation by @Abdellox in https://github.com/kodjodevf/mangayomi/pull/1004\n* fix(player): preserve local file URIs by @1Selxo in https://github.com/kodjodevf/mangayomi/pull/987\n* fix(player): fall back from unsupported audio tracks by @1Selxo in https://github.com/kodjodevf/mangayomi/pull/991\n* fix(repositories): await extension repository writes by @1Selxo in https://github.com/kodjodevf/mangayomi/pull/993\n\n## New Contributors\n* @1Selxo made their first contribution in https://github.com/kodjodevf/mangayomi/pull/979\n* @jang-geon made their first contribution in https://github.com/kodjodevf/mangayomi/pull/1000\n* @Abdellox made their first contribution in https://github.com/kodjodevf/mangayomi/pull/1004\n\n**Full Changelog**: https://github.com/kodjodevf/mangayomi/compare/v0.9.2...v0.9.3\n\nUpstream release: https://github.com/kodjodevf/mangayomi/releases/tag/v0.9.3",
+          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.3/Mangayomi-v0.9.3-ios.ipa",
+          "size": 114239272,
+          "minOSVersion": "15.0"
+        },
         {
           "version": "0.9.2",
           "buildVersion": "120",
