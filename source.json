@@ -555,6 +555,15 @@
       "bundleIdentifier": "com.kodjodevf.mangayomi",
       "versions": [
         {
+          "version": "0.9.4",
+          "buildVersion": "122",
+          "date": "2026-09-15",
+          "localizedDescription": "## What's Changed\n* Fix double/int cast crash when syncing settings by @not-akari in https://github.com/kodjodevf/mangayomi/pull/1009\n\n\n**Full Changelog**: https://github.com/kodjodevf/mangayomi/compare/v0.9.3...v0.9.4\n\nUpstream release: https://github.com/kodjodevf/mangayomi/releases/tag/v0.9.4",
+          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.4/Mangayomi-v0.9.4-ios.ipa",
+          "size": 114238780,
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "0.9.3",
           "buildVersion": "121",
           "date": "2026-09-14",
