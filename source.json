@@ -137,6 +137,15 @@
       "bundleIdentifier": "com.example.piliplus",
       "versions": [
         {
+          "version": "2.1.5",
+          "buildVersion": "5410",
+          "date": "2026-09-25",
+          "localizedDescription": "支持自定义主题颜色 #3009\r\n综合搜索用户过滤黑名单 #3043\r\n可复制文本工具栏默认添加站内搜索按钮 #2984\r\n支持保存 SC 为图片 co-by @My-Responsitories\r\n支持 Windows deeplink #2673 by @HChaZZY\r\n支持 Linux deeplink #2931 by @Tobiichi-Origuchi\r\n降低桌面端 PIP 大小限制 #2735 #2982 by @Aclguh\r\n桌面端支持保存全部图片 #2920 #2983 by @My-Responsitories\r\nLinux 支持内嵌 WebView #3014 #3016 by @Tobiichi-Origuchi co-by @My-Responsitories\r\n其他调整 #2962 #3025 #3027 by @My-Responsitories\r\n\r\n修复分 P 视频链接 #2963\r\n修复滑动快进/退震动失效 #2966\r\n修复小窗模式下画面被 SC 遮挡 #3005\r\n修复无痕模式出现直播入场提示 #2971\r\n修复多次点击截图保存退出视频页面 #3017\r\n修复更新媒体通知、后台连播 #2761 #2943\r\n修复 iOS 静音模式下偶发视频无声修复 #3039 @sounfury\r\n修复部分安卓无法登录 #2930 #3063 by @Tobiichi-Origuchi\r\n修复 macOS 切换全屏控件无法点击 #2917 #2976 by @milk2715093695\n\nUpstream release: https://github.com/bggRGjQaUbCoE/PiliPlus/releases/tag/2.1.5",
+          "downloadURL": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.1.5/PiliPlus_ios_2.1.5%2B5410.ipa",
+          "size": 23999265,
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "2.1.4",
           "buildVersion": "5348",
           "date": "2026-09-13",
@@ -421,6 +430,15 @@
     {
       "bundleIdentifier": "com.xycz.simple-live",
       "versions": [
+        {
+          "version": "1.13.1",
+          "buildVersion": "11301",
+          "date": "2026-09-25",
+          "localizedDescription": "### 0.1、前言\r\n\r\n提前发布，祝大家双节快乐，因为一想到可以给很多宅男宅女们，提供假期更好的直播体验（尤其是斗鱼用户），我就充满了干劲，极致抽空完成更新，应该是最快的斗鱼断流修复分支吧？\r\n\r\n但是由于我一直没出现过斗鱼的这个断流问题，所以加了cookie之后是否能规避，仍需你们自己实测，猜测是斗鱼对于匿名用户的最高画质的限制，普遍出现在十分钟左右。\r\n\r\n### 0.2、文件大小优化\r\n\r\n- 全设备平台的安装包大小优化\r\n\r\n### 1、直播播放与账号\r\n\r\n- 虎牙及其他直播流新增更灵敏的播放看门狗：每 2 秒检查播放位置、缓冲状态和缓冲区是否耗尽，连续停滞约 4 秒即可刷新，避免弹幕继续滚动但画面卡死。\r\n- 斗鱼每次取流前会刷新播放签名并校验响应，降低播放约十分钟后断流且无法恢复的问题。\r\n- 账号管理新增斗鱼 Cookie 配置；登录 Cookie 只保存在本机并注入斗鱼播放请求，匿名高画质仍可能受到平台时长限制。[Cookie导入教程](https://june6699.github.io/posts/simple-live-%E6%8A%96%E9%9F%B3-cookie-%E8%8E%B7%E5%8F%96%E5%92%8C%E5%AF%BC%E5%85%A5%E6%95%99%E7%A8%8B/)\r\n- 断流恢复会重新获取播放地址，并阻止旧请求覆盖新流。\r\n- 自动切换检索增强：跳过已下播或状态请求失败的房间，继续查找下一个可播放直播间。\r\n- 修复\"未开播\"房间卡住自动切换的问题：打开的直播间本身未开播时（例如通过观看记录进入已关播直播间，或自动切换后落在刚下播的房间），会自动继续检索下一个正在直播的关注房间，不再一直停留在\"未开播\"页面；连续多个直播间都未开播时会自动停止换台，避免异常情况下无限切换。\r\n- 修复账号管理页斗鱼条目的响应式构建异常；该异常在 Windows 发布包中会显示为 B 站下方的大块灰色区域，并遮住斗鱼、虎牙、抖音和快手。修复覆盖 Windows、Android、macOS、iOS 和 Linux 共用页面。\r\n\r\n### 2、移动端后台播放（Android / iOS）\r\n\r\n- 修复后台播放一报错就撤销前台服务、重连期间被系统清理的问题：重连期间保持前台服务并显示\"正在重新连接\"通知，恢复后自动续播。\r\n- 前台服务接入 MediaSession 与媒体样式通知：显示主播名和房间标题，提供播放/暂停/停止按钮，锁屏与通知栏可控，系统按媒体应用保活。\r\n- 新增音频焦点管理：来电、其他应用占用音频时自动暂停或降音，结束后自动恢复播放。\r\n- 后台也启用播放看门狗，后台断流卡死可自动刷新恢复。\r\n- iOS 配置后台音频会话，处理来电/Siri 中断（挂断后自动恢复）与拔耳机暂停，重连期间向系统申请额外后台时间。\r\n- 新增默认 mpv 网络参数（网络超时、断线重连、解码缓存），降低直播流瞬时抖动直接断播的概率；\"高级参数\"中自定义配置仍可覆盖。\r\n- 新增\"后台保活设置指引\"页：电池优化白名单一键申请，小米/华为/OPPO/vivo/三星分品牌自启动设置步骤与最近任务加锁说明；播放设置页与直播间设置均有入口。\r\n\r\n### 3、关注与搜索\r\n\r\n- 修复新增或重命名关注标签时，8 个字符长度限制未生效的问题；同时补齐空白名称和重名校验。\r\n- 修复关注页卡片在系统字体较大或徽标较多时底部内容被裁切的问题。\r\n- 修复虎牙搜索翻页重复，增加客户端去重兜底，并将可搜索结果上限由 40 条提升至 100 条。\r\n- 已同步检查斗鱼、B站、快手和抖音搜索分页，未发现相同问题。\r\n\r\n### 4、其他修复\r\n\r\n- 修复\"链接解析\"中的正则表达式损坏导致无法编译的问题。\n\nUpstream release: https://github.com/June6699/dart_simple_live/releases/tag/v1.13.1",
+          "downloadURL": "https://github.com/June6699/dart_simple_live/releases/download/v1.13.1/ios_no_sign.ipa",
+          "size": 34998027,
+          "minOSVersion": "13.0"
+        },
         {
           "version": "1.13.0",
           "buildVersion": "11300",
