@@ -75,6 +75,15 @@
       "bundleIdentifier": "io.github.haukuen.venera",
       "versions": [
         {
+          "version": "1.16.0",
+          "buildVersion": "210",
+          "date": "2026-10-02",
+          "localizedDescription": "## What's Changed\n* feat: 下载章节弹窗增加全选/反选/取消全选 by @haukuen in https://github.com/haukuen/venera/pull/140\n* Feat: 新增更新页面，优化更新逻辑 by @bgzo in https://github.com/haukuen/venera/pull/142\n* fix: CBZ 分章节导出重名章节互相覆盖 by @haukuen in https://github.com/haukuen/venera/commit/d91349cb2d0dd534cb542d4f93f57ac80361a62b\n* feat: 分章节导出支持选择章节段命名格式 by @haukuen in https://github.com/haukuen/venera/commit/947fe6932a293eb0098dbbeb7ffa7ebbc3cc1e30\n* feat: 单章导出 CBZ 的 ComicInfo.xml 写入章节标题与序号 by @haukuen in https://github.com/haukuen/venera/commit/5833205ab18186db07315ec6da6d9c9e253013cb\n* test: 同步 sanitizeFileNameWithSuffix 的 middle trim 行为 by @haukuen in https://github.com/haukuen/venera/commit/78a62ecbc9896eee9197c45049273774d9f804b8\n* fix: ComicType.sourceKey 在漫画源缺失时回退为 Unknown 键而非空指针崩溃 by @haukuen in https://github.com/haukuen/venera/commit/289d19a6af807c5bf68ba40281f0cced5edbf83d\n* chore: Android manifest configChanges 增加 navigation by @haukuen in https://github.com/haukuen/venera/commit/06a4b60642d7b3a6624483b68120f6d4c318e679\n* refactor: 统一 Material 3 设计系统 by @haukuen in https://github.com/haukuen/venera/pull/149\n* fix: 修复关闭自动同步后仍发生 WebDAV 传输 by @KIDA-MNESIA in https://github.com/haukuen/venera/pull/145\n\n## New Contributors\n* @KIDA-MNESIA made their first contribution in https://github.com/haukuen/venera/pull/145\n\n**Full Changelog**: https://github.com/haukuen/venera/compare/v1.15.0...v1.16.0\n\n\nUpstream release: https://github.com/haukuen/venera/releases/tag/v1.16.0",
+          "downloadURL": "https://github.com/haukuen/venera/releases/download/v1.16.0/venera-ios-1.16.0%2B210.ipa",
+          "size": 16147396,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.15.0",
           "buildVersion": "209",
           "date": "2026-07-29",
