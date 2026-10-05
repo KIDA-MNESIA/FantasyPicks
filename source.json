@@ -511,6 +511,15 @@
       "bundleIdentifier": "com.minh-ton.Reynard",
       "versions": [
         {
+          "version": "0.16.0",
+          "buildVersion": "63fb54d",
+          "date": "2026-10-04",
+          "localizedDescription": "## Changes\r\n**Full Changelog**: https://github.com/minh-ton/reynard-browser/compare/0.15.0...0.16.0\r\n\r\n### Bug Fixes & Improvements\r\n- Fixed an issue where the iPad floating keyboard pushed the web view upward.\r\n\r\n### Engine\r\nUpdated Gecko to [157.0](https://github.com/mozilla-firefox/firefox/commit/FIREFOX_157_0_RELEASE) (released Sep 29, 2026).\n\nUpstream release: https://github.com/minh-ton/reynard-browser/releases/tag/0.16.0",
+          "downloadURL": "https://github.com/minh-ton/reynard-browser/releases/download/0.16.0/Reynard.ipa",
+          "size": 109163229,
+          "minOSVersion": "13.0"
+        },
+        {
           "version": "0.15.0",
           "buildVersion": "a3315eb",
           "date": "2026-09-27",
