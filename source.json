@@ -627,6 +627,15 @@
       "bundleIdentifier": "com.kodjodevf.mangayomi",
       "versions": [
         {
+          "version": "0.9.8",
+          "buildVersion": "126",
+          "date": "2026-10-06",
+          "localizedDescription": "## What's Changed\r\n* fix(tracker): improve Trakt.tv multi-season mapping, watchlist, and ratings sync by @lee-gangjin in https://github.com/kodjodevf/mangayomi/pull/1024\r\n* feat(tracker): Add backlog sections (Plan to read/Watchlist), handle AniList 429 rate limits, and prioritize Trakt series by @lee-gangjin in https://github.com/kodjodevf/mangayomi/pull/1030\r\n* fix(mihon): use the Cloudflare proxy for extension-server sources by @matsukiender-star in https://github.com/kodjodevf/mangayomi/pull/1026\r\n* fix(mihon): identify which source of an extension a call is for by @matsukiender-star in https://github.com/kodjodevf/mangayomi/pull/1027\r\n* Improve LNReader extension compatibility\r\n* fix: stale chapter page lists and add WebP decoding on Linux by @MenaHere in https://github.com/kodjodevf/mangayomi/pull/1031\r\n* fix: remember window geometry on Linux; add missing libavif to AppImage to resolve closure by @MenaHere in https://github.com/kodjodevf/mangayomi/pull/1032\r\n\r\n## New Contributors\r\n* @lee-gangjin made their first contribution in https://github.com/kodjodevf/mangayomi/pull/1024\r\n* @matsukiender-star made their first contribution in https://github.com/kodjodevf/mangayomi/pull/1026\r\n* @MenaHere made their first contribution in https://github.com/kodjodevf/mangayomi/pull/1031\r\n\r\n**Full Changelog**: https://github.com/kodjodevf/mangayomi/compare/v0.9.7...v0.9.8\n\nUpstream release: https://github.com/kodjodevf/mangayomi/releases/tag/v0.9.8",
+          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.8/Mangayomi-v0.9.8-ios.ipa",
+          "size": 114518028,
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "0.9.7",
           "buildVersion": "125",
           "date": "2026-09-22",
