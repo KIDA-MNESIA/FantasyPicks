@@ -15,7 +15,19 @@
     "com.github.lingyan000.fluxdo",
     "com.xycz.simple-live",
     "com.minh-ton.Reynard",
-    "com.kodjodevf.mangayomi"
+    "com.kodjodevf.mangayomi",
+    "com.anxcye.anxReader",
+    "com.aimessoft.nipaplay",
+    "com.example.kazumi",
+    "oss.krtirtho.spotube.stable",
+    "psyche.kelivo",
+    "com.vibe.v2ex",
+    "com.xitrix.iTorrent2",
+    "MikeMichael225.qBitControl",
+    "org.ppsspp.ppsspp",
+    "com.kdt.livecontainer",
+    "com.stik.stikdebug",
+    "com.utmapp.UTM-SE"
   ],
   "apps": [
     {
@@ -782,6 +794,421 @@
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
+      }
+    },
+    {
+      "bundleIdentifier": "com.anxcye.anxReader",
+      "versions": [
+        {
+          "version": "1.14.0",
+          "buildVersion": "6321",
+          "date": "2026-03-19",
+          "localizedDescription": "## 1.14.0\n- Fix(translate): Remove legacy Microsoft reverse-engineered translation service and migrate saved full-text translation preference to Microsoft Azure API\n- Fix(l10n): Remove legacy Microsoft translation localization entries\n- Feat(ai): Support separate AI reasoning content with lightweight collapsible thinking UI in chat and stream views (#787)\n- Feat(reader): Add background image fit mode setting with cover and stretch options\n- Feat(appearance): Add setting to toggle action button labels visibility in selection context menu\n- Feat(reader): Add background image blur and opacity controls in reading settings (#753)\n- Feat(tts): Add Narrator option to text selection toolbar to start TTS from selected text (#794) Thanks @deskangel\n- Feat(tts): Add click to pause/resume TTS playback on currently reading text (#794) Thanks @deskangel\n- Feat(tts): Add floating action button in reader for quick TTS controls (previous, pause/resume, next, stop) (#723)\n- Feat(reader): Add Ctrl+[ and Ctrl+] page turning shortcuts on macOS, support Logitech Options+ mouse button mapping (#794) Thanks @deskangel\n- Feat(ai): Add global AI RPM rate limiting in AI service layer\n- Feat(ai): Add AI Provider Configuration Center with support for OpenAI-compatible, Claude, and Gemini protocols\n- Feat(ai): Support multiple API keys per provider with round-robin rotation\n- Feat(ai): Add provider-level reasoning_effort configuration with auto mode and advanced settings entry\n- Feat(ai): Add provider test connection with streaming preview\n- Feat(ai): Add AI chat display mode settings with adaptive, split, and popup options\n- Feat(ai): Add resizable AI panel with drag to resize, sizes persisted\n- Feat(ai): Add AI panel position settings (bottom/right) for non-popup modes\n- Feat(ai): Add font size setting for AI chat via three-dot menu\n- Feat(ai): Add quick model switcher in AI chat input bar (tune icon button)\n- Feat(ai): Add model picker in provider detail page with showMenu dropdown after fetching\n- Fix(ui): Fix context menu action buttons layout and icon color issues when labels are hidden\n- Fix(reader): Fix background image effects not applying and switch reader background fill mode to cover (#753)\n- Fix(reader): Fix RangeError crash when read theme color is null/invalid (#759)\n- Fix(tts): Fix TTS type selection having no effect when changed in reading interface (#794) Thanks @deskangel\n- Fix(tts): Fix incorrect reading position after modifying pitch or rate (#794) Thanks @deskangel\n- Fix(tts): Fix crash when SystemTts speak() receives null text from WebView\n- Fix(ai): Fix unable to use AI for full-text translation\n- Fix(ai): Fix test connection using default provider instead of current provider\n- Fix(ai): Fix AI crash prevention by adding guards for null webViewEnvironment on Windows\n- Fix(ai): Fix type cast error when using Gemini AI with tools (#747)\n- Fix(reader): Desktop resource lifecycle, WebView stability, and scroll UX optimization (#790) Thanks @yi124773651\n- Fix(reader): Fix window close cleanup to properly stop server, dispose WebView2, close database, and destroy window\n- Fix(reader): Add scroll debounce mechanism for smoother page turning experience\n- Fix(reader): Fix image saving permission issue on Android 10+ devices by removing unnecessary storage permission requests (#793)\n- Fix(reader): Disable WebView2 right-click context menu (back, reload, save as, print) on Windows (#746)\n- Fix(reader): Fix images with large inline max-width overflowing column width and appearing on wrong page (#742)\n- Fix(reader): Fix epub heading color not following theme color when useBookStyles is disabled (#749)\n- Fix(toc): Show full chapter titles in TOC by wrapping long text instead of truncating with ellipsis (#751)\n- Fix(l10n): Fallback to English when system language is unsupported on first launch (#785)\n- Feat(reader): Support independent left/right mar\n\n…",
+          "downloadURL": "https://github.com/Anxcye/anx-reader/releases/download/v1.14.0/Anx-Reader-ios-1.14.0-unsigned.ipa",
+          "size": 28677588,
+          "minOSVersion": "15.2"
+        }
+      ],
+      "name": "Anx Reader",
+      "developerName": "Anxcye",
+      "subtitle": "电子书阅读与 WebDAV 同步",
+      "localizedDescription": "Anx Reader 是一款开源电子书阅读器，支持多种电子书格式、朗读、阅读笔记、WebDAV 同步与 AI 辅助阅读。AI 功能需配置对应模型服务。本条目仅索引原作者 GitHub Releases 中发布的稳定版 unsigned IPA。",
+      "iconURL": "https://raw.githubusercontent.com/Anxcye/anx-reader/v1.14.0/ios/Runner/Assets.xcassets/AppIcon.appiconset/Anx-logo.png",
+      "tintColor": "#4185A9",
+      "category": "other",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSPhotoLibraryAddUsageDescription": "We need access to your photo library to save images.",
+          "NSPhotoLibraryUsageDescription": "We need access to your photo library to save images."
+        }
+      }
+    },
+    {
+      "bundleIdentifier": "com.aimessoft.nipaplay",
+      "versions": [
+        {
+          "version": "1.11.9",
+          "buildVersion": "1.11.9",
+          "date": "2026-10-02",
+          "localizedDescription": "## 新功能\n\n**外挂字幕编辑框与多字幕交互** ([#933](https://github.com/AimesSoft/NipaPlay-Reload/pull/933))\n\n播放界面支持多条外挂字幕同时加载，各字幕拥有独立时间轴。长按字幕文字可弹出编辑框，拖动编辑框可同步调整全局字幕位置偏移。切换视频或跳转到下一句台词时编辑框自动收起，避免弹幕层因编辑框持续重绘而出现闪烁。字幕轨道菜单和字幕设置菜单同步提供 Cupertino 与 NipaPlay 两套主题样式。关联：[#920](https://github.com/AimesSoft/NipaPlay-Reload/issues/920)、[#922](https://github.com/AimesSoft/NipaPlay-Reload/issues/922)\n\n**VobSub (.sub+.idx) 图形字幕支持** ([#957](https://github.com/AimesSoft/NipaPlay-Reload/pull/957))\n\n新增对 VobSub 图形字幕格式的完整支持，包括本地文件选择器、WebDAV/SMB 等远程来源及自动配对下载。加载视频时自动优先选择简体中文或日语字幕轨道，其余候选字幕堆叠在轨道菜单中供手动切换，切换时不会打断当前正在播放的字幕。远程缓存的字幕文件始终以原始文件名显示，冷启动后也能正确还原。\n\n**播放器快捷调节与媒体库 NEW 标识开关** ([#945](https://github.com/AimesSoft/NipaPlay-Reload/pull/945))\n\n在\"设置 → 播放器\"新增\"播放器菜单快捷调节\"开关，开启后可在播放器菜单顶部直接调整倍速和音量增强，默认关闭。在\"设置 → 外观\"新增\"媒体库 NEW 标识\"开关，关闭后隐藏桌面、手机和电视媒体库卡片上的 NEW 角标，新内容追踪与排序逻辑不受影响，默认开启。两项设置重启后均保持选择。\n\n**首页新番回顾板块** ([#953](https://github.com/AimesSoft/NipaPlay-Reload/pull/953))\n\n首页新增限时开启的新番回顾板块，可在设置中关闭。\n\n**Linux 平台启用 Erika 播放内核** ([#972](https://github.com/AimesSoft/NipaPlay-Reload/pull/972))\n\nLinux 源码构建现在支持使用 Erika 原生播放内核。Wayland 环境下视频、字幕和弹幕通过原生视图渲染，Flutter 控件以透明层叠加；X11 使用兼容纹理视图。新安装默认使用 Erika，已保存的内核选择不受影响。源码构建安装器支持 `NIPAPLAY_WSL_GPU_COPY=1` 选项，可在 WSL 环境下启用 D3D12 GPU 帧直传，减少解码帧在 GPU 与 CPU 之间的往返传输。\n\n**升级 Erika 至 0.2.1，Linux 发布包内置 Erika** ([#982](https://github.com/AimesSoft/NipaPlay-Reload/pull/982))\n\n将 Erika 播放引擎升级至 0.2.1，Linux 正式发布包现在随包携带 Erika 内核，新安装默认启用，已有用户的内核选择保留。amd64 和 arm64 均静态链接 FFmpeg 8，并启用 NVDEC、VA-API 和 Vulkan 互操作。\n\n**媒体信息页剧集多版本绑定** ([#971](https://github.com/AimesSoft/NipaPlay-Reload/pull/971))\n\n新版媒体信息页支持将同一剧集绑定多个视频文件版本，播放前弹窗供用户选择对应版本，也可快速解除匹配。同时新增剧集自动定位，修复鼠标滚轮在剧集列表中滚动速度过慢的问题。\n\n**Jellyfin 剧集添加日期排序** ([#979](https://github.com/AimesSoft/NipaPlay-Reload/pull/979))\n\n新增 Jellyfin 的\"剧集添加日期\"排序选项，使近期新增剧集的番剧可以排在前面，支持升序和降序。同时修复 Emby/Jellyfin 旧排序存档字段缺失时打开排序菜单或加载媒体库触发空值异常的问题。关联：[#795](https://github.com/AimesSoft/NipaPlay-Reload/issues/795)\n\n---\n\n## 体验改进\n\n**跳过片头/片尾按钮改为无容器阴影样式** ([#954](https://github.com/AimesSoft/NipaPlay-Reload/pull/954))\n\n移除\"跳过片头/片尾\"按钮的半透明胶囊背景和边框，改为直接显示图标和文字并添加阴影，在视频画面上可读性更好，视觉更简洁。\n\n**GIF 导出支持复制到系统剪贴板** ([#953](https://github.com/AimesSoft/NipaPlay-Reload/pull/953))\n\n桌面端 GIF 导出菜单中的\"复制到剪贴板\"现在可将实际图片内容写入系统剪贴板，可直接粘贴到聊天软件等位置，而非此前的文件路径。移动端因系统限制隐藏此按钮。同时修复 JavaScript 弹幕引擎在播放前几秒使用默认配置的问题，以及视频加载失败时错误弹窗改为展示 URL 解码后的地址，方便排查。\n\n**Android TV 启动时自动适配界面缩放** ([#951](https://github.com/AimesSoft/NipaPlay-Reload/pull/951))\n\nAndroid TV 现在在启动时根据实际输出分辨率和逻辑密度自动选择全局缩放比例，解决 1920×1080 输出下界面过大的问题。\"设置 → 外观\"新增\"自动适配界面大小\"开关，没有手动缩放记录的 Android TV 默认启用，每次启动重新计算；已有手动值继续保留。全局缩放范围扩展至 0.5～1.3。TV 顶部状态栏和底部菜单栏改为完全不透明的主题底色。\n\n**弹幕随视频缓冲同步启停** ([#973](https://github.com/AimesSoft/NipaPlay-Reload/pull/973))\n\nDFM+ 和 JavaScript 弹幕引擎现在接入播放器内核的缓冲信号，视频缓冲时弹幕同步暂停，缓冲结束后恢复，避免弹幕与画面不同步。同时修复鼠标指针在进度条上悬浮时时间提示频闪的问题。\n\n**iOS DFM+ 弹幕渲染对齐显示时钟** ([#969](https://github.com/AimesSoft/NipaPlay-Reload/pull/969))\n\n修复 iOS DFM+ 弹幕由 Rust 定时器与 CADisplayLink 各自出帧导致的重复帧、跳帧和位移抖动问题，现在统一由原生显示时钟驱动出帧。同时修复暂停后小幅跳转（如 8.0 → 8.1 秒）被时钟校正阈值吞掉、弹幕不跟随 seek 的问题。\n\n**媒体库排序弹窗使用 NipaPlay 原生控件** ([#958](https://github.com/AimesSoft/NipaPlay-Reload/pull/958))\n\n修复桌面和平板端\"媒体库排序\"弹窗使用 Material 默认控件、与整体界面风格不一致的问题，改为使用 NipaPlay 原生窗口和控件，并修正向下拖动时的目标索引计算错误。\n\n**下载器可靠性与交互改进** ([#950](https://github.com/AimesSoft/NipaPlay-Reload/pull/950))\n\n修复点击添加后需等待下一次轮询才显示任务、磁力预览后再次联网解析、暂停/恢复/保存任务和完成后入库不可靠等问题。添加任务后立即显示处理状态，操作结束后立即刷新任务状态，其他任务可继续操作。Android/鸿蒙任务数据库改用固定应用支持目录，合并旧记录并保留下载位置和暂停状态。下载状态改为纯文本，移除多处弹窗和设置面板标题前的装饰图标。\n\n**插件市场支持直接卸载已安装插件** ([#949](https://github.com/AimesSoft/NipaPlay-Reload/pull/949))\n\n插件市场中已安装的非内置插件现在显示\"删除\"按钮；有可用更新时\"更新\"和\"删除\"并列显示。删除前需确认，执行期间显示进度，完成后卡片恢复为\"安装\"状态。\n\n**Windows 中文字形渲染修复** ([#944](https://github.com/AimesSoft/NipaPlay-Reload/pull/944))\n\n修复 Windows 端大量界面文字使用日文异形字而非中文汉字的问题。同时修复新版媒体信息页视频时长显示错误、无观看记录时\"继续播放\"按钮错误显示为最后一话的问题，以及推荐栏过滤无实际内容的\"未知动画\"空壳条目。番剧删除新增多端同步墓碑机制，防止批量删除观看记录后云端残留数据重新同步回本地。\n\n---\n\n## Bug 修复\n\n**修复切换播放内核时界面卡死** ([#935](https://github.com/AimesSoft/NipaPlay-Reload/p\n\n…",
+          "downloadURL": "https://github.com/AimesSoft/NipaPlay-Reload/releases/download/v1.11.9/NipaPlay_1.11.9_iOS_arm64.ipa",
+          "size": 83618551,
+          "minOSVersion": "13.0"
+        }
+      ],
+      "name": "NipaPlay-Reload",
+      "developerName": "AimesSoft",
+      "subtitle": "本地与 NAS 媒体弹幕播放器",
+      "localizedDescription": "NipaPlay-Reload 支持本地视频与 Emby、Jellyfin、SMB、WebDAV 媒体库，提供弹幕、多字幕、多音轨和番剧管理。需要用户自己的媒体资源；网络弹幕服务可能要求登录。本条目仅索引原作者 GitHub Releases 中发布的 iOS IPA。",
+      "iconURL": "https://raw.githubusercontent.com/AimesSoft/NipaPlay-Reload/v1.11.9/icons/new-icon-apple.png",
+      "tintColor": "#4185A9",
+      "category": "entertainment",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "NipaPlay 需要使用相机拍摄远程访问二维码以连接共享媒体库和遥控器。",
+          "NSDocumentsFolderUsageDescription": "NipaPlay 需要访问文稿目录以管理您的文件。",
+          "NSLocalNetworkUsageDescription": "NipaPlay 需要访问本地网络以发现局域网设备、启用远程访问并共享本机媒体库。",
+          "NSPhotoLibraryAddUsageDescription": "NipaPlay 需要将截图保存到相册。",
+          "NSPhotoLibraryUsageDescription": "NipaPlay需要访问您的相册以上传和选择视频文件。"
+        }
+      }
+    },
+    {
+      "bundleIdentifier": "com.example.kazumi",
+      "versions": [
+        {
+          "version": "2.3.8",
+          "buildVersion": "20308",
+          "date": "2026-10-07",
+          "localizedDescription": "- 优化截图交互 (#2599) (@Predidit)\r\n- 统一应用内下拉菜单样式 (@Predidit)\r\n- 修复大字体下番剧详情页追番按钮与其他按钮重叠而无法点击的问题 (#2622) (@Predidit)\r\n- 修复宽屏设置页重复点击已选中分类时二级页面重复嵌套的问题 (#2607) (@Predidit)\r\n- 修复鼠标悬停时播放器控制栏动画反复重启的问题 (@Predidit)\r\n- 修复分集评论标题栏显示多余副标题的问题 (@Predidit)\r\n- 其他UI改进 (@Predidit)\n\nUpstream release: https://github.com/Predidit/Kazumi/releases/tag/2.3.8",
+          "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.3.8/Kazumi_ios_2.3.8_no_sign.ipa",
+          "size": 30463104,
+          "minOSVersion": "15.0"
+        }
+      ],
+      "name": "Kazumi",
+      "developerName": "Predidit",
+      "subtitle": "规则追番与弹幕播放器",
+      "localizedDescription": "Kazumi 是一款基于自定义规则的开源番剧播放器，支持追番、弹幕、下载与跨设备同步。播放可用性取决于所配置规则及上游服务。本条目仅索引原作者 GitHub Releases 中发布的未签名 iOS IPA。",
+      "iconURL": "https://raw.githubusercontent.com/Predidit/Kazumi/2.3.8/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "tintColor": "#4185A9",
+      "category": "entertainment",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSPhotoLibraryAddUsageDescription": ""
+        }
+      }
+    },
+    {
+      "bundleIdentifier": "oss.krtirtho.spotube.stable",
+      "versions": [
+        {
+          "version": "5.1.2",
+          "buildVersion": "45",
+          "date": "2026-06-05",
+          "localizedDescription": "### Bug Fixes\r\n\r\n- **newpipe**: Fallback to muxed streams if no audio stream is available\r\n- Dismiss search dropdown and keyboard on submission\r\n- Custom image helper null exception\r\n\r\n**Full Changelog**: https://github.com/KRTirtho/spotube/compare/v5.1.1...v5.1.2\n\nUpstream release: https://github.com/team-spotube/spotube/releases/tag/v5.1.2",
+          "downloadURL": "https://github.com/team-spotube/spotube/releases/download/v5.1.2/Spotube-iOS.ipa",
+          "size": 34853093,
+          "minOSVersion": "14.0"
+        }
+      ],
+      "name": "Spotube",
+      "developerName": "Spotube Team",
+      "subtitle": "插件驱动的开源音乐播放器",
+      "localizedDescription": "Spotube 是一款插件驱动的开源音乐播放器，可整合音乐来源、歌单与元数据服务。需要配置相应插件，具体功能受所连接服务影响。本条目仅索引原作者 GitHub Releases 中发布的稳定版 iOS IPA。",
+      "iconURL": "https://raw.githubusercontent.com/team-spotube/spotube/v5.1.2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "tintColor": "#4185A9",
+      "category": "entertainment",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "This app require access to the device camera",
+          "NSMicrophoneUsageDescription": "This app does not require access to the device microphone",
+          "NSPhotoLibraryUsageDescription": "This app require access to the photo library"
+        }
+      }
+    },
+    {
+      "bundleIdentifier": "psyche.kelivo",
+      "versions": [
+        {
+          "version": "1.3.0",
+          "buildVersion": "79",
+          "date": "2026-09-22",
+          "localizedDescription": "## What's Changed\r\n\r\n- feat: Add workspaces with desktop terminals, Android and iOS sandboxes, skills, and mobile MCP stdio.\r\n- feat: Add scheduled assistant tasks on Android, desktop, and iOS.\r\n- feat: Add mobile background execution with notifications, overlays, and Live Activities.\r\n- feat: Add ChatGPT, Grok, and Kimi Code OAuth login, with mobile browser sign-in and cache TTL settings.\r\n- feat: Add Accessibility phone control on Android.\r\n- feat: Add Kimi Basic, Kimi Pro, and Kagi search providers.\r\n- feat: Add settings search.\r\n- feat: Add sticky, cooldown, and delay effects for world books, plus per-conversation prompts.\r\n- feat: Add reordering for TTS and speech recognition services.\r\n- feat: Preview SVG code blocks inline.\r\n- feat: Collapse long user messages behind an expand toggle.\r\n- feat: Restore Google Fonts with on-demand downloads.\r\n- feat: Add assistant gradient backgrounds.\r\n- feat: Show the context message count in the context management sheet.\r\n- feat: Restore backup snapshots from startup recovery.\r\n- feat: Add an optional ISO 8601 format for appended message time.\r\n- feat: Add an option to hide the system title bar on Linux.\r\n- feat: Adapt DeepSeek V4.1 Flash, MiMo v2.6 vision, and Grok 4.7 reasoning.\r\n- fix: Bundle the MSVC runtime so Windows can launch without a separate Visual C++ install.\r\n- fix: Restore the Windows window position after display changes, and fix clipboard history paste.\r\n- fix: Fix Gemini tool follow-ups by dropping unsigned empty text and keeping the text thought signature.\r\n- fix: Keep hosted search cards inline, and migrate Grok built-in search to Responses tools.\r\n- fix: Render inline thinking next to tool calls, and keep reasoning state when creating a conversation.\r\n- fix: Honor the Qwen Audio capture sample rate, and ignore premature empty Google STOP frames.\r\n- fix: Paginate `memory_read`, send custom provider headers when listing models, and stop the default SiliconFlow balance lookup.\r\n- fix: Improve Android high refresh rate compatibility.\r\n- fix: Honor the chat background mask strength on tablets.\r\n- fix: Speed up streaming and long-message Markdown rendering.\r\n- fix: Fix several other known bugs and UI issues.\r\n\r\nFull Changelog: https://github.com/Chevey339/kelivo/compare/v1.2.6...v1.3.0\n\nUpstream release: https://github.com/Chevey339/kelivo/releases/tag/v1.3.0",
+          "downloadURL": "https://github.com/Chevey339/kelivo/releases/download/v1.3.0/Kelivo_ios_1.3.0%2B79.ipa",
+          "size": 42750537,
+          "minOSVersion": "15.0"
+        }
+      ],
+      "name": "Kelivo",
+      "developerName": "Chevey339",
+      "subtitle": "多模型 AI 对话客户端",
+      "localizedDescription": "Kelivo 是一款支持多服务商、自定义 API、多模态对话与本地工作区的开源 AI 客户端。模型服务需自行配置；系统工具、分享及实时活动等功能受设备、授权和签名条件影响。本条目仅索引原作者 GitHub Releases 中发布的普通侧载 IPA。",
+      "iconURL": "https://raw.githubusercontent.com/Chevey339/kelivo/v1.3.0/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024%401x.png",
+      "tintColor": "#4185A9",
+      "category": "utilities",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCalendarsFullAccessUsageDescription": "Kelivo 需要访问日历，以便 AI 助手在您授权后查询和创建日程；数据仅在设备上处理，我们不会收集这些信息。 / Kelivo needs calendar access so the AI assistant can query and create events when you enable the calendar tools; data is processed on-device and Kelivo does not collect this information.",
+          "NSCalendarsUsageDescription": "Kelivo 需要访问日历，以便 AI 助手在您授权后查询和创建日程；数据仅在设备上处理，我们不会收集这些信息。 / Kelivo needs calendar access so the AI assistant can query and create events when you enable the calendar tools; data is processed on-device and Kelivo does not collect this information.",
+          "NSCameraUsageDescription": "Kelivo 需要使用相机拍摄照片，以便您将图片发送给 AI 助手进行分析。您可以选择是否上传照片。 / Kelivo uses the camera to capture photos that you can share with AI assistants for analysis. Your photo may be uploaded by your choice.",
+          "NSHealthShareUsageDescription": "Kelivo 需要读取您选择的健康数据，以便生成健康活动摘要。摘要可能会发送给您选择的 AI 服务以生成回答。 / Kelivo needs to read the health data you choose so it can build an activity summary. That summary may be sent to the AI provider you selected to generate answers.",
+          "NSHealthUpdateUsageDescription": "Kelivo 不会写入健康数据。此说明仅用于满足系统对 HealthKit 的要求。 / Kelivo does not write health data. This description is required by HealthKit.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "仅当您开启定位辅助保活且有后台任务时，Kelivo 使用低精度定位辅助执行，不保存或发送坐标。 / When you enable location-assisted execution, Kelivo uses coarse location only during current background tasks. These coordinates are not stored or transmitted.",
+          "NSLocationWhenInUseUsageDescription": "Kelivo 可按您的选择使用定位提供天气或位置工具（工具定位可能发送给您选择的 AI 服务），也可在您开启辅助保活后，用低精度定位维持当前后台任务；保活坐标不会保存或发送。 / Kelivo uses location for location and weather tools you request (tool coordinates may be sent to your chosen AI provider), or coarse location to support current background tasks when you enable that option. Keep-alive coordinates are not stored or transmitted.",
+          "NSMicrophoneUsageDescription": "Kelivo 使用麦克风录制您主动提交的语音并转换为文字；我们不会收集这些信息。 / Kelivo uses the microphone to record audio you choose to submit for transcription; Kelivo does not collect this information.",
+          "NSPhotoLibraryAddUsageDescription": "允许保存图片到相册，您的数据将保存在本地。/ Allow saving images to your photo library.Your data will be saved locally.",
+          "NSPhotoLibraryUsageDescription": "允许访问相册以选择头像图片 / Allow access to your photos to pick an avatar.",
+          "NSRemindersFullAccessUsageDescription": "Kelivo 需要访问提醒事项，以便在您确认后查询、创建和完成提醒。提醒内容可能会发送给您选择的 AI 服务以生成回答。 / Kelivo needs reminders access so it can query, create, and complete reminders after you confirm. Reminder content may be sent to the AI provider you selected to generate answers.",
+          "NSRemindersUsageDescription": "Kelivo 需要访问提醒事项，以便在您确认后查询、创建和完成提醒。提醒内容可能会发送给您选择的 AI 服务以生成回答。 / Kelivo needs reminders access so it can query, create, and complete reminders after you confirm. Reminder content may be sent to the AI provider you selected to generate answers.",
+          "NSSpeechRecognitionUsageDescription": "Kelivo 使用系统语音识别将您主动录制的语音转换为文字。您的数据由系统处理；我们不会收集这些信息。 / Kelivo uses system speech recognition to turn audio you choose to record into text. Your data is processed by the system; Kelivo does not collect this information."
+        }
+      }
+    },
+    {
+      "bundleIdentifier": "com.vibe.v2ex",
+      "versions": [
+        {
+          "version": "1.2.0",
+          "buildVersion": "45",
+          "date": "2026-09-08",
+          "localizedDescription": "## 更新内容（自 v1.2.0 起）\n\n### 浏览\n\n- 首页新增 R2 信息流。\n- 「全部」、关注节点和节点详情支持继续加载更多；无需 Token 也能浏览分页内容。\n- 修正列表时间解析。\n\n### 账号与通知\n\n- 屏蔽名单与 V2EX 官网同步，被屏蔽用户的相关内容会从列表、话题和通知中隐藏。\n- 支持读取官网未读数量，并通过网页登录会话同步「全部已读」。\n- 修复两步验证未完成时被误判为已登录的问题；网页登录增加原生粘贴，并能正确识别已连接会话。\n\n### 界面\n\n- 调整话题详情、节点和个人中心的信息层级。\n- 统一节点与个人中心的图标样式。\n\n## 安装\n\nTestFlight 公测版本：**1.2.0 (45)**  \nhttps://testflight.apple.com/join/jUBsFk9u\n\n### 未签名 IPA\n\n附件 `V2EX-1.2.0-45-unsigned.ipa` 为 arm64 设备版未签名 IPA，需使用自己的证书重新签名后安装。\n\nSHA-256：\n\n```text\nSHA-256 (V2EX-1.2.0-45-unsigned.ipa) = b7768b369dfc6113dcac2350205b07bbae880e975efade0a2421d27957afeaf1\n```\n\n附件同时提供 `V2EX-1.2.0-45-unsigned.ipa.sha256`，可使用 `shasum -a 256 -c` 校验。\n\n**完整变更**：https://github.com/xinghelee/v2ex/compare/v1.2.0...v1.2.0-45\n\n\nUpstream release: https://github.com/xinghelee/v2ex/releases/tag/v1.2.0-45",
+          "downloadURL": "https://github.com/xinghelee/v2ex/releases/download/v1.2.0-45/V2EX-1.2.0-45-unsigned.ipa",
+          "size": 4834983,
+          "minOSVersion": "18.0"
+        }
+      ],
+      "name": "v2Explore",
+      "developerName": "xinghelee",
+      "subtitle": "原生 V2EX 社区客户端",
+      "localizedDescription": "v2Explore 是一款适用于 iPhone 和 iPad 的原生 V2EX 客户端，支持话题、节点、搜索、离线收藏与双栏阅读。通知等账户功能需要 Token，回复与收藏同步需要网页登录；发帖草稿可转到网页发布。本条目仅索引原作者 GitHub Releases 中发布的未签名 IPA。",
+      "iconURL": "https://raw.githubusercontent.com/xinghelee/v2ex/v1.2.0-45/V2EX/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+      "tintColor": "#4185A9",
+      "category": "social",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "bundleIdentifier": "com.xitrix.iTorrent2",
+      "versions": [
+        {
+          "version": "2.2.0",
+          "buildVersion": "1",
+          "date": "2026-07-19",
+          "localizedDescription": "## What's new:\r\n* Meet the new built-in VLC player. Play compatible video and audio files directly in iTorrent, even while they are still downloading.\r\n* Enjoy Picture in Picture, playback speeds from 0.5x to 2x, audio and subtitle track selection, precise seeking, and system media controls.\r\n* Take playback to a bigger screen with AirPlay or a compatible player discovered on your local network.\r\n* Choose how pieces are downloaded with Sequential and First & Last priority modes, making it easier to start watching sooner.\r\n* Select and share multiple completed files or entire folders in one go.\r\n\r\n## Improvements:\r\n* Refreshed the interface for iOS 26, with Liquid Glass styling, cleaner dialogs, and more polished navigation.\r\n* Made torrent details smoother and easier to use, with clearer download-priority controls and private-torrent information.\r\n* Improved media previewing so iTorrent can offer the best available player for each file.\r\n* Updated the torrent and media engines for better compatibility, stability, and recovery from unexpected errors.\r\n* Expanded and refined translations across all supported languages.\r\n\r\n## Fixes:\r\n* Fixed cases where magnet links could be saved incorrectly.\r\n* Fixed a startup race condition that could interfere with launching the app or completing initial setup.\r\n* Fixed toolbars and navigation behaving incorrectly in iPad split-screen mode.\r\n* Fixed RSS downloads returning to the wrong screen.\r\n* Fixed torrent details sometimes getting stuck in a continuous update loop.\r\n* Fixed several playback, AirPlay, and local-device connection issues.\r\n\r\n**Full Changelog**: https://github.com/XITRIX/iTorrent/compare/v2.1.1-1...v2.2.0-1\n\nUpstream release: https://github.com/XITRIX/iTorrent/releases/tag/v2.2.0-1",
+          "downloadURL": "https://github.com/XITRIX/iTorrent/releases/download/v2.2.0-1/iTorrent.ipa",
+          "size": 24288935,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "name": "iTorrent",
+      "developerName": "XITRIX",
+      "subtitle": "iOS 本地 BT 下载工具",
+      "localizedDescription": "iTorrent 是一款 iOS BitTorrent 客户端，支持磁力链接、后台下载、Files 文件管理与 RSS。普通侧载请使用上游支持的 AltStore 或 SideStore。本条目仅索引原作者 GitHub Releases 中发布的 iTorrent.ipa。",
+      "iconURL": "https://raw.githubusercontent.com/XITRIX/iTorrent/v2.2.0-1/iTorrent/Core/Assets/Assets.xcassets/AppIcons/AppIcon.appiconset/Frame%2018.png",
+      "tintColor": "#4185A9",
+      "category": "utilities",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.security.application-groups"
+        ],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "iTorrent uses the local network to discover playback devices and cast video on your network."
+        }
+      }
+    },
+    {
+      "bundleIdentifier": "MikeMichael225.qBitControl",
+      "versions": [
+        {
+          "version": "1.4.1",
+          "buildVersion": "21",
+          "date": "2026-07-23",
+          "localizedDescription": "## 📊 Performance & Efficiency\r\n\r\n- **Reduced Data Usage:** Network traffic reduced by **93%** thanks to optimized data syncing.\r\n- **Smooth Charts:** Statistics charts now scroll continuously and smoothly instead of updating every two seconds.\r\n- **Responsive Progress Bars:** Progress indicators now feature fluid animations for a more natural feel.\r\n\r\n## 🛠️ Interface & Usability\r\n\r\n- **Custom Headers:** Specify custom HTTP headers for server connections—offering seamless support for reverse proxies and zero-trust networks (e.g., Cloudflare Access, Authelia).\r\n- **Reworked Server Addition:** Redesigned server setup and edit screens with an updated *Advanced* settings page and deferred saving.\r\n- **Limit Configuration:** Configure precise speed limits, seeding time limits, and share ratios for individual torrents directly in-app.\r\n- **Cleaner Torrent List:** Torrent rows now adapt dynamically to show the most relevant details depending on whether a transfer is downloading, seeding, or paused.\r\n- **Repositioned Add Button:** Moved the \"Add Torrent\" button to the toolbar for cleaner, more intuitive access.\r\n- **Offline Banner:** A clear overlay banner now appears whenever your connection drops.\r\n- **In-App Logs:** Added a built-in log viewer to review and easily share system events directly inside the app.\r\n\r\n## 🐛 Fixes & Refinements\r\n\r\n- **Self-Signed Certificate Support:** Full support for untrusted and self-signed SSL certificates, making it easier to connect to home-hosted servers.\r\n- **Stable RSS Downloads:** Fixed an issue in the RSS view where tapping a row to download a torrent caused the confirmation sheet to glitch and reopen unexpectedly.\r\n- **Connection Timeouts:** Implemented strict network timeouts to prevent the app from hanging indefinitely on the launch screen if a server is unresponsive.\r\n- **Clearer Error Alerts:** If adding a `.torrent` file or magnet link fails, a clear error message now pops up explaining what went wrong.\n\nUpstream release: https://github.com/Michael-128/qBitControl/releases/tag/release-1.4.1",
+          "downloadURL": "https://github.com/Michael-128/qBitControl/releases/download/release-1.4.1/qBitControl.ipa",
+          "size": 4777720,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "name": "qBitControl",
+      "developerName": "Michael-128",
+      "subtitle": "qBittorrent 远程管理客户端",
+      "localizedDescription": "qBitControl 是一款原生 iOS qBittorrent 远程客户端，可添加任务、查看进度及管理下载和 RSS。需要连接已部署的 qBittorrent 服务。本条目仅索引原作者 GitHub Releases 中发布的稳定版 IPA。",
+      "iconURL": "https://raw.githubusercontent.com/Michael-128/qBitControl/release-1.4.1/qBitControl/Assets.xcassets/AppIcon.appiconset/logo1.png",
+      "tintColor": "#4185A9",
+      "category": "utilities",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [
+          "beta-reports-active"
+        ],
+        "privacy": {}
+      }
+    },
+    {
+      "bundleIdentifier": "org.ppsspp.ppsspp",
+      "versions": [
+        {
+          "version": "1.20.4",
+          "buildVersion": "1.20.4",
+          "date": "2026-05-16",
+          "localizedDescription": "PPSSPP is a cross-platform PSP emulator. Visit PPSSPP [official website](https://ppsspp.org) for a [full changelog](https://ppsspp.org/index.html#news) as well as the [downloads section](https://ppsspp.org/downloads.html) for other platforms.\n\n\nUpstream release: https://github.com/hrydgard/ppsspp/releases/tag/v1.20.4",
+          "downloadURL": "https://github.com/hrydgard/ppsspp/releases/download/v1.20.4/PPSSPP-iOS-v1.20.4.ipa",
+          "size": 31124277,
+          "minOSVersion": "11.0"
+        }
+      ],
+      "name": "PPSSPP",
+      "developerName": "PPSSPP Team",
+      "subtitle": "开源 PSP 模拟器",
+      "localizedDescription": "PPSSPP 是一款开源 PSP 模拟器，支持存档、画面设置与控制器。需要用户自行提供游戏文件；JIT 属于可选加速能力。本条目仅索引原作者 GitHub Releases 中发布的 iOS IPA。",
+      "iconURL": "https://raw.githubusercontent.com/hrydgard/ppsspp/v1.20.4/ios/assets.xcassets/AppIcon.appiconset/icon_backfill_1024.png",
+      "tintColor": "#4185A9",
+      "category": "games",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.kernel.extended-virtual-addressing",
+          "com.apple.developer.kernel.increased-memory-limit",
+          "com.apple.private.security.container-required",
+          "com.apple.private.security.no-container",
+          "com.apple.private.security.no-sandbox",
+          "com.apple.private.security.storage.AppDataContainers",
+          "com.apple.private.security.storage.MobileDocuments",
+          "com.apple.security.iokit-user-client-class",
+          "get-task-allow",
+          "platform-application"
+        ],
+        "privacy": {
+          "NSCameraUsageDescription": "Your camera may be used to emulate Go!Cam, a camera accessory",
+          "NSLocalNetworkUsageDescription": "Your local network needs to be accessed by PPSSPP for network multiplayer support.",
+          "NSLocationWhenInUseUsageDescription": "Your location may be used to emulate Go!Explore, a GPS accessory",
+          "NSMicrophoneUsageDescription": "Your microphone may be used to emulate Go!Cam/Talkman, a microphone accessory",
+          "NSPhotoLibraryUsageDescription": "Access to your photos is needed to allow setting a background image."
+        }
+      }
+    },
+    {
+      "bundleIdentifier": "com.kdt.livecontainer",
+      "versions": [
+        {
+          "version": "3.8.0",
+          "buildVersion": "3.8.0",
+          "date": "2026-07-17",
+          "localizedDescription": "# LiveContainer 3.8.0\r\n\r\n> [!Warning]\r\n> The standalone version requires **SideStore 0.6.2+** or **AltStore 2.2.1+** for installation.\r\n> To install LiveContainer with built-in SideStore (`LiveContainer+SideStore.ipa`), please use [Impactor](https://github.com/khcrysalis/Impactor) or [iloader](https://github.com/nab138/iloader). See [our installation guide](https://livecontainer.github.io/docs/installation/lc_sidestore) for details.\r\n\r\n# New Features\r\n\r\n## Storage Management\r\n\r\n- Added a new storage management view with a breakdown of app bundles, containers, temporary files, app group data, tweaks, and other files. (Hidden apps' size is included in \"other\" section until unlocked)\r\n- Added per-app storage details, including app bundle size, container sizes, and last-used date.\r\n- Added actions to clean temporary files and caches, including guest app caches and LiveContainer's own caches.\r\n\r\n## Multiple LiveContainers\r\n- Added configurable launch priority for multiple LiveContainer instances, making shared-app shortcuts choose available instances in the order you prefer. (#1367)\r\n\r\n## Share to Apps in LiveContainer\r\nAdded a share extension to LiveContainer. When you share a URL or a file from iOS's share sheet, LiveContainer will ask which app you would like to open the URL/file in, so the old share to LiveContainer shortcut method is no longer needed. When an ipa file is shared in this way, LiveContainer will ask if you want to install it in LiveContainer or in the built-in SideStore (if installed) (#1357)\r\n\r\n## Multitasking\r\n\r\n- Added per-app multitask preferences. Each app can now follow the global setting, always launch in multitask mode, or avoid multitask mode. (#1208)\r\n- Improved multitask dock behavior: the dock can be made smaller, hidden more cleanly, and has improved padding. (#1228, #1250)\r\n- Added more multitask window animations and improved native-window scene handling.\r\n- URL schemes and `open-url` payloads can be passed to already-running multitask apps and native windows.\r\n\r\n## JIT\r\n- Added StosDebug support as a JIT enabler.\r\n\r\n## TweakLoader\r\nYou can now disable tweaks in the \"Tweaks\" page in LiveContainer's UI. by @SAOMDVN\r\n\r\n# Improvements\r\n- Added support for manually setting a container's IDFV. (#1194)\r\n- IDFV spoofing works even when Tweakloader is not loaded.\r\n- Reworked signing logic for tweaks and app installation, with multithreaded signing support.\r\n- Download alerts now block tab switching while a download is in progress.\r\n- Crash reports are shown in a sheet instead of a large alert for better performance on newer iOS versions.\r\n- Add a \"Clear Notification\" button (#1388)\r\n- Added some popular NSBonjourServices keys so apps can discover AirPlay devices and remote pairing pairable hosts in the local network. (#1417)\r\n\r\n# Bug Fixes\r\n\r\n- Fixed `livecontainer://open-url` dropping the deep link when launching an app from a cold start. (#1339)\r\n- Fixed the Add to Home Screen menu failing or behaving incorrectly by replacing the SwiftUI context menu implementation. (#1209)\r\n- Fixed a crash when opening Container Preferences if the app did not contain an `en.lproj` path. (#1239)\r\n- Fixed apps and AltStore sources not being searchable in some cases. (#1365, #1368)\r\n- Fixed converting a shared app back to private after aborting an install with the same bundle identifier, which could leave stale container state behind. (#1347)\r\n- Fixed shortcuts and JIT flows getting stuck on a busy LiveContainer instance instead of using another available instance. (#1386)\r\n- Fixed file picker not workings for some apps because Tweakloader is not loaded after enabling \"Hide LiveContainer from dyld API\". (#1430)\r\n- Fixed several app launch compatibility issues on iOS 26.5 beta, and some multitask/JIT app launches. (#1300, #1310, #1329)\r\n- Fixed multitask keyboard focus issues on iOS 17.4+, including cases where the keyboard w\n\n…",
+          "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/3.8.0/LiveContainer.ipa",
+          "size": 4707271,
+          "minOSVersion": "15.0"
+        }
+      ],
+      "name": "LiveContainer",
+      "developerName": "LiveContainer Team",
+      "subtitle": "应用容器与独立数据环境",
+      "localizedDescription": "LiveContainer 可在容器中运行应用并管理独立数据环境。请按上游文档使用 AltStore 或 SideStore 安装并配置签名证书；无需 JIT 的模式也有相应签名要求，部分功能和客体应用受系统及签名条件限制。本条目仅索引原作者 GitHub Releases 中发布的独立 LiveContainer.ipa。安装说明：https://livecontainer.github.io/docs/installation",
+      "iconURL": "https://raw.githubusercontent.com/LiveContainer/LiveContainer/3.8.0/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon1024.png",
+      "tintColor": "#4185A9",
+      "category": "utilities",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.healthkit",
+          "com.apple.developer.healthkit.access",
+          "com.apple.developer.healthkit.background-delivery",
+          "com.apple.developer.kernel.increased-memory-limit",
+          "com.apple.security.application-groups",
+          "get-task-allow",
+          "keychain-access-groups"
+        ],
+        "privacy": {
+          "NFCReaderUsageDescription": "The guest app is requesting for this permission.",
+          "NSAppleMusicUsageDescription": "The guest app is requesting for this permission.",
+          "NSBluetoothAlwaysUsageDescription": "The guest app is requesting for this permission.",
+          "NSBluetoothPeripheralUsageDescription": "The guest app is requesting for this permission.",
+          "NSCalendarsFullAccessUsageDescription": "The guest app is requesting for this permission.",
+          "NSCalendarsWriteOnlyAccessUsageDescription": "The guest app is requesting for this permission.",
+          "NSCameraUsageDescription": "The guest app is requesting for this permission.",
+          "NSContactsUsageDescription": "The guest app is requesting for this permission.",
+          "NSFaceIDUsageDescription": "The guest app is requesting for this permission.",
+          "NSFallDetectionUsageDescription": "The guest app is requesting for this permission.",
+          "NSGKFriendListUsageDescription": "The guest app is requesting for this permission.",
+          "NSHealthClinicalHealthRecordsShareUsageDescription": "The guest app is requesting for this permission.",
+          "NSHealthShareUsageDescription": "The guest app is requesting for this permission.",
+          "NSHealthUpdateUsageDescription": "The guest app is requesting for this permission.",
+          "NSHomeKitUsageDescription": "The guest app is requesting for this permission.",
+          "NSIdentityUsageDescription": "The guest app is requesting for this permission.",
+          "NSLocalNetworkUsageDescription": "The guest app is requesting for this permission.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "The guest app is requesting for this permission.",
+          "NSLocationTemporaryUsageDescriptionDictionary": "The guest app is requesting for this permission.",
+          "NSLocationUsageDescription": "The guest app is requesting for this permission.",
+          "NSLocationWhenInUseUsageDescription": "The guest app is requesting for this permission.",
+          "NSMicrophoneUsageDescription": "The guest app is requesting for this permission.",
+          "NSMotionUsageDescription": "The guest app is requesting for this permission.",
+          "NSNearbyInteractionAllowOnceUsageDescription": "The guest app is requesting for this permission.",
+          "NSNearbyInteractionUsageDescription": "The guest app is requesting for this permission.",
+          "NSPhotoLibraryAddUsageDescription": "The guest app is requesting for this permission.",
+          "NSPhotoLibraryUsageDescription": "The guest app is requesting for this permission.",
+          "NSRemindersFullAccessUsageDescription": "The guest app is requesting for this permission.",
+          "NSSensorKitUsageDescription": "The guest app is requesting for this permission.",
+          "NSSiriUsageDescription": "The guest app is requesting for this permission.",
+          "NSSpeechRecognitionUsageDescription": "The guest app is requesting for this permission.",
+          "NSUserTrackingUsageDescription": "The guest app is requesting for this permission."
+        }
+      }
+    },
+    {
+      "bundleIdentifier": "com.stik.stikdebug",
+      "versions": [
+        {
+          "version": "3.1.13",
+          "buildVersion": "1",
+          "date": "2026-09-28",
+          "localizedDescription": "Fix MeloCafé auto assign\n\n**Full Changelog**: https://github.com/StikDebug/StikDebug/compare/3.1.12...3.1.13\n\nUpstream release: https://github.com/StikDebug/StikDebug/releases/tag/3.1.13",
+          "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.1.13/StikDebug-3.1.13.ipa",
+          "size": 13544310,
+          "minOSVersion": "17.4"
+        }
+      ],
+      "name": "StikDebug",
+      "developerName": "StikDebug",
+      "subtitle": "设备端 JIT 与调试辅助工具",
+      "localizedDescription": "StikDebug 是一款设备端 JIT 与调试辅助工具。需要配对文件、回环 VPN 及满足调试条件的目标应用；初始配对仍需按上游说明完成。本条目仅索引原作者 GitHub Releases 中发布的普通 iOS IPA。",
+      "iconURL": "https://raw.githubusercontent.com/StikDebug/StikDebug/3.1.13/assets/StikDebug.png",
+      "tintColor": "#4185A9",
+      "category": "developer",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "StikDebug needs access to devices on your local network so it can connect to the targets you add to the Device Library.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "StikDebug uses location to stay running in the background and maintain your JIT connection.",
+          "NSLocationWhenInUseUsageDescription": "StikDebug uses location to stay running in the background and maintain your JIT connection."
+        }
+      }
+    },
+    {
+      "bundleIdentifier": "com.utmapp.UTM-SE",
+      "versions": [
+        {
+          "version": "4.7.5",
+          "buildVersion": "118",
+          "date": "2026-01-03",
+          "localizedDescription": "## Highlights\r\n* **QEMU v10.0.2**: The backend has been updated to the latest upstream QEMU which brings with it a variety of bug fixes and performance improvements.\r\n* **Liquid Glass**: UTM adopts the Liquid Glass design on *OS 26.\r\n* **App Intents**: New support for automation with Shortcuts.\r\n* **Keyboard Shortcuts**: Define custom key combinations (such as Ctrl+Alt+Del) that can be sent to the VM from the new Keyboard menu.\r\n* **Improved Wizard**: Simplify the creation of emulated machines by selecting from a list of well-supported configurations. The updated wizard can create more working configurations such as RISC-V64 Ubuntu, classic Mac OS 8.x/9.x, and Windows 95/98.\r\n\r\n## Changes (v4.7.5)\r\n* Fixed some rare conditions that could lead to a VM fail to start and spin infinitely\r\n* Fixed some rare crashes that can happen after a VM stops\r\n* Fixed parsing of file paths with commas in the name (thanks @nikolan123)\r\n* ANGLE: Fixed a memory leak issue in the GLES backend (#7546) (thanks @cnnn)\r\n* ANGLE: Fixed a memory leak issue in the Metal backend (#4958)\r\n* Localization: Updated Chinese (Hong Kong, Simplified) (thanks @changanmoon)\r\n* (macOS) Fixed App Intents on macOS 26 (#7412) (thanks @peterneutron)\r\n* (macOS) Fixed an error when file locking is disabled and a removable drive with no image selected is started (#7527)\r\n* (macOS) AVF: Fixed shared directory disconnecting when window is resized (#7488) (thanks @evan314159)\r\n* Hotfix: (1/3/25) An earlier release of v4.7.5 has an issue that prevented VMs from starting. Make sure you are on build 118.\r\n\r\n## Changes (v4.7.4)\r\n* (macOS) Fixed a crash on VM start when a toolbar menu was reinitialized (note v4.7.4 was re-released to address this) (#7408)\r\n* Home: Fixed layout issue with button titles\r\n* (macOS) Fixed a crash when VM exits while USB is active\r\n* (iOS) Support for StikDebug on iOS 26 (non-SE only)\r\n\r\n## Changes (v4.7.3)\r\n* Fixed a crash when starting a VM results in a block device error\r\n* Stop button can now be used a second time to force kill a VM if it is unresponsive after stopping for the first time\r\n* libusb: Fixed multiple race conditions that caused crashes when using USB capture\r\n* CocoaSpice: Fixed multiple race conditions that caused crashes during VM start\r\n* Localization: Updated Chinese (Hong Kong, Simplified) (thanks @changanmoon)\r\n* (macOS) Scripting: Fixed broken commands due to name collision (#7360)\r\n* (macOS) Fixed crash when exiting full screen (#7377)\r\n\r\n## Changes (v4.7.2)\r\n* (macOS) AVF: Fixed a crash when starting any Apple Virtualization VM (#7355) (We are re-releasing v4.7.2 with build 112 due to this critical bug.)\r\n* Home: Display network details and active IP addresses on the home details screen (thanks @gabefair)\r\n* Home: Show a security warning message when importing a .utm with custom arguments (#6252)\r\n* Config: Option to reset UEFI without pre-loading Secure Boot keys (useful for custom TPM configurations) (#7005)\r\n* Config: Pre-loading Secure Boot keys will now install Microsoft UEFI 2023 certificates (#7257)\r\n* Config: When PS/2 device is enabled, no longer create USB mouse and keyboard devices. This allows older Windows install to work out of the box.\r\n* Config: Quotes in custom arguments are no longer stripped (unless the only quotes wrap the entire argument) (#6343)\r\n* Config: Provide a fixed serial number for VirtIO block devices (#7332)\r\n* QEMU: Fixed an issue which causes Windows 98 to BSoD (#7342)\r\n* QEMU: Do not create a default floppy drive when -nodefaults is used. UTM configuration will set up a FDC device and this is the only way to set up bootindex for floppy.\r\n* Wizard: Legacy Windows configurations will now use PS/2 controller by default\r\n* Wizard: Update OS logos to be consistent with other icons\r\n* Wizard: Windows + i440fx hardware will now instantiate default devices (sound, VGA, networking) that should work with\n\n…",
+          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v4.7.5/UTM-SE.ipa",
+          "size": 213878374,
+          "minOSVersion": "14.0"
+        }
+      ],
+      "name": "UTM SE",
+      "developerName": "UTM",
+      "subtitle": "无需 JIT 的计算机模拟器",
+      "localizedDescription": "UTM SE 是 UTM 的解释执行版本，无需 JIT，可运行 DOS 等复古系统和轻量虚拟机。需要自行准备系统镜像；解释执行性能有限。本条目仅索引原作者 GitHub Releases 中发布的 UTM-SE.ipa。",
+      "iconURL": "https://raw.githubusercontent.com/utmapp/UTM/v4.7.5/Platform/Assets.xcassets/AppIcon.appiconset/Icon.png",
+      "tintColor": "#4185A9",
+      "category": "utilities",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.kernel.extended-virtual-addressing",
+          "com.apple.developer.kernel.increased-memory-limit"
+        ],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "The virtual machine may access the local network. UTM may also use the network to communicate with local servers.",
+          "NSMicrophoneUsageDescription": "Permission is required for any virtual machine to record from the microphone."
+        }
       }
     }
   ],
