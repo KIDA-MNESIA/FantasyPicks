@@ -1216,6 +1216,15 @@
       "bundleIdentifier": "com.stik.stikdebug",
       "versions": [
         {
+          "version": "3.1.15",
+          "buildVersion": "1",
+          "date": "2026-10-15",
+          "localizedDescription": "**Full Changelog**: https://github.com/StikDebug/StikDebug/compare/3.1.14...3.1.15\r\nAttempt to fix ServiceNotFound errors, add debugging\n\nUpstream release: https://github.com/StikDebug/StikDebug/releases/tag/3.1.15",
+          "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.1.15/StikDebug-3.1.15.ipa",
+          "size": 13543234,
+          "minOSVersion": "17.4"
+        },
+        {
           "version": "3.1.14",
           "buildVersion": "1",
           "date": "2026-10-12",
