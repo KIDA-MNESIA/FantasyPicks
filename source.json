@@ -35,6 +35,15 @@
       "versions": [
         {
           "version": "0.9",
+          "buildVersion": "4",
+          "date": "2026-10-16",
+          "localizedDescription": "A small build update for 0.9 with a number of bug fixes.\r\n\r\n- Fixed some pages not loading in webtoon reader\r\n- Improved webtoon reader memory usage (hopefully fixes crash after reading multiple chapters)\r\n- Fixed crash when searching anywhere in the macOS app\r\n- Various other bug fixes\n\nUpstream release: https://github.com/Aidoku/Aidoku/releases/tag/v0.9-4",
+          "downloadURL": "https://github.com/Aidoku/Aidoku/releases/download/v0.9-4/Aidoku.ipa",
+          "size": 14753154,
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "0.9",
           "buildVersion": "3",
           "date": "2026-09-03",
           "localizedDescription": "- OCR dictionary support (iOS 18+): import Yomitan-compatible dictionaries in the app and look up words while reading.\r\n- Suwayomi built-in source: read and track from a Suwayomi instance, just like Komga and Kavita.\r\n- Auto scroll for webtoon reader: enable and press the play button to scroll without touching your device.\r\n- Fixed CloudFlare handling: CloudFlare issues that caused external sources to break should be resolved.\r\n- Overall performance improvements: the library loads much faster (@Amqx), and the webtoon reader was improved.\r\n- Source stability fixes and disable option: the issue where sources were causing the app to crash should not happen again, and now you can even disable a source that is broken until it receives an update.\r\n- Many more things: see [the website](https://aidoku.app/release-notes/) for a more complete list.\n\nUpstream release: https://github.com/Aidoku/Aidoku/releases/tag/v0.9",
@@ -1263,6 +1272,15 @@
     {
       "bundleIdentifier": "com.utmapp.UTM-SE",
       "versions": [
+        {
+          "version": "5.0.8",
+          "buildVersion": "128",
+          "date": "2026-10-17",
+          "localizedDescription": "## Highlights\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple Virtualization VMs on macOS 27.\n* (macOS) **Apple Virtualization on macOS 27**: Pass USB devices through to your VM, turn on Secure Boot for Linux, run a VM without saving changes, and let VMs talk to each other with new networking modes.\n* (iOS) **Better touch controls**: Gestures respond immediately, with new middle-click and right-drag actions and a new drag-to-scroll touch mode.\n* (iOS) **iPhone Duo**: Fold your iPhone Duo like a laptop, and the bottom half becomes a keyboard or touchpad for your VM.\n\n## Notes\n* Suspended VMs may not resume correctly after updating. We recommend shutting down all VMs before you update UTM.\n* The minimum supported versions are now macOS 12 and iOS 15.\n* We now have a [development blog](https://blog.getutm.app)! Follow us for in-depth technical deep dives such as how we brought DirectX to QEMU.\n* (macOS) To use the new graphics driver for Windows 11, we recommend a fresh install because the driver is still experimental and its use could lead to instability in the system. During the install of the guest tools, you will be prompted to select the experimental graphics driver. If you wish to install the new driver on a system that already is running the older display only driver, you need to run the uninstall script provided on the guest tools install ISO first.\n* (macOS) Apple CoreGL backend does not support Vulkan or DirectX.\n* Linux desktop rendering in Vulkan does not work due to lack of support for indirect draws for geometry shaders. Please configure your guest to use the older VirGL Gallium driver.\n\n## Changes (v5.0.8)\n* Fixed several changes listed for v5.0.7 being left out of that build by mistake.\n* (macOS) Fixed Windows 3D acceleration on Apple Silicon Macs without Rosetta by falling back to DXMT\n* (macOS) QEMU: Fixed Windows installs from the USB CD drive stalling repeatedly, which made them much slower in v5.0.7 (#7970)\n\n## Changes (v5.0.7)\n* Updated the virglrenderer, MoltenVK and DXMT graphics backends with fixes for Windows 3D acceleration\n* QEMU: Windows guests now use the host display's refresh rate instead of always 60 Hz, which also fixes 3D acceleration failing on displays faster than 125 Hz (#7820)\n* QEMU: Fixed VirtIO GPU stalls that hung Windows at shutdown, stalled 3D benchmarks on Linux, and could leave the Windows 3D driver without a display\n* Snapshots: Fixed saving and restoring the state of VMs with compressed disks (#7916)\n* Localization: Updated Chinese (Hong Kong, Simplified) (thanks @changanmoon)\n* (iOS 27.1) Support for iPhone Duo: the VM toolbar sits in the outer display's camera strip, and a new laptop mode turns the bottom half of the folded screen into a keyboard or touchpad\n* (macOS) Fixed headless VMs keeping the Mac from sleeping after they were paused or stopped\n* (macOS) Closing a VM window or quitting UTM while a VM runs now confirms with \"Close\" or \"Quit\" instead of \"OK\"\n* (macOS) Fixed shaders using instancing or integer vertex attributes drawing incorrectly with the Apple Core OpenGL backend (#7944)\n* (macOS) Updated the D3DMetal graphics backend with fixes for DirectX 12\n* (macOS) Display: The option to use the area beside the camera housing in full screen is now available on macOS 12 and later (#6183)\n* (macOS) Wizard: Fixed the Name field's focus ring being cli\n\n…",
+          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.8/UTM-SE.ipa",
+          "size": 237108214,
+          "minOSVersion": "15.0"
+        },
         {
           "version": "4.7.5",
           "buildVersion": "118",
