@@ -911,6 +911,15 @@
       "bundleIdentifier": "com.aimessoft.nipaplay",
       "versions": [
         {
+          "version": "1.11.10",
+          "buildVersion": "1.11.10",
+          "date": "2026-10-23",
+          "localizedDescription": "## 新功能\n\n**截图格式可选无损 PNG** ([#996](https://github.com/AimesSoft/NipaPlay-Reload/pull/996))\n\n手动截图现在可以在设置中选择 JPEG 或无损 PNG。JPEG 保留原有的 70/85/92/100 质量档，切到 PNG 后隐藏无意义的质量选项。原有配置继续默认 JPEG，格式选择会持久保存并同步到实际编码、文件扩展名和 Android 相册导出的 MIME 类型。截图开始时固定所选格式，避免异步过程中改设置导致文件内容与扩展名不一致。关联：[#713](https://github.com/AimesSoft/NipaPlay-Reload/issues/713)\n\n**弹幕轨道独立调轴** ([#997](https://github.com/AimesSoft/NipaPlay-Reload/pull/997))\n\n每条弹幕轨道现在可以单独设置小数秒偏移并随时重置，正数提前、负数延后，与原整体偏移叠加生效。合并显示、导出和新发送的弹幕统一使用调整后的时间，原始弹幕保持不变，反复编辑不会累积。两套主题都提供轨道调轴入口，弹窗跨切集时不会改写新轨道。偏移仅对当前播放中的轨道有效，界面已说明这一生命周期。关联：[#711](https://github.com/AimesSoft/NipaPlay-Reload/issues/711)\n\n**WebDAV / SMB 支持同时配置内网与公网地址** ([#1018](https://github.com/AimesSoft/NipaPlay-Reload/pull/1018))\n\n连接配置现在可以同时填写内网和公网地址。应用启动阶段在后台检测媒体库可用性，自动切换到合适线路（内网优先）。配置已接入备份和同步系统，升级后原地址会自动无感迁移到新字段。顺带把内嵌的预设正则屏蔽插件升级到与商店版本一致。\n\n**Linux 支持构建 Flatpak 安装包** ([#1026](https://github.com/AimesSoft/NipaPlay-Reload/pull/1026))\n\n新增符合 Flathub 规范的 Flatpak 构建清单、桌面文件、AppStream 元数据与多尺寸图标，支持 x86_64 与 aarch64 双架构，并把打包接入 Linux 构建发布流水线。清单已适配本版新增的 Erika 原生运行库、游戏手柄与 mimalloc 动态库依赖。\n\n---\n\n## 体验改进\n\n**综合性能优化** ([#1004](https://github.com/AimesSoft/NipaPlay-Reload/pull/1004))\n\n对 UI 动画、启动流程、后台服务和操作细节做了一轮系统性优化。界面侧收窄了状态订阅与通知范围，日志列表、弹层标题、GIF 预览等控件改为局部刷新；启动阶段延后非首帧必需的服务，去掉默认启动的媒体权限请求与固定等待，SMB 改为按需初始化。列表与图片侧加入在途请求共享、解码尺寸限制与及时释放，Jellyfin/Emby 大列表改为分批请求和逐页解析，弹幕缓存、字幕索引和番剧详情都改为按需加载并做有界缓存。隐藏标签页与后台页面会停止轮播、下载和媒体库轮询，播放缩略图的解码、缩放与编码移到后台 isolate。\n\n**播放器控制栏提示气泡不再与弹层重叠** ([#988](https://github.com/AimesSoft/NipaPlay-Reload/pull/988))\n\n画面比例、播放器菜单和播放列表按钮的悬浮提示气泡会浮在按钮上方 20px，弹层也从按钮上方展开，于是出现两个气泡叠在一起（Windows 桌面最明显），气泡还会挡住下面菜单项的点击。现在任一播放器弹层打开时提示气泡自动隐藏，并整体忽略鼠标事件，不再拦截输入。同时把画面比例按钮的提示精简为功能名，避免长文案在 12px 下折行。\n\n**Bangumi 访问令牌页面可直接打开** ([#1007](https://github.com/AimesSoft/NipaPlay-Reload/pull/1007))\n\n个人中心 → Bangumi 的按钮恢复为在外部浏览器打开官方访问令牌页面，按钮文案改为「前往 Bangumi 创建访问令牌」。打开失败时（例如 Web 端）回退到说明弹窗并展示纯文本链接。关联：[#1006](https://github.com/AimesSoft/NipaPlay-Reload/issues/1006)\n\n**Steam 状态同步与插件外挂程序优化** ([#1029](https://github.com/AimesSoft/NipaPlay-Reload/pull/1029))\n\n优化插件对外挂程序的启动方式与运行环境变量传递，关闭软件时自动清理相关进程；窗口改为最小化启动，避免放在后台时无法操作也看不到报错。\n\n---\n\n## 问题修复\n\n**Android TV 大屏遥控焦点、文件夹封面与返回键** ([#986](https://github.com/AimesSoft/NipaPlay-Reload/pull/986))\n\n修复 Android TV 大屏模式的三个问题：从 Jellyfin/Emby 媒体库进入详情页后焦点丢失、无法用遥控器选择剧集；网络媒体库文件夹即使有服务端封面也只显示文件夹图标；播放时按系统返回键可能直接退出应用，而返回与菜单共用逻辑还会出现未开菜单却打开菜单的情况。现在详情页在内容加载后把焦点落到第一集或播放按钮，封面在 URL 有效时统一显示服务端图片，返回键与菜单键各自独立：面板打开时返回只关闭面板，没有面板时返回结束播放回到媒体库。\n\n**大屏模式详情焦点、WebDAV 播放与封面加载卡顿** ([#985](https://github.com/AimesSoft/NipaPlay-Reload/pull/985))\n\n从 Jellyfin/Emby 剧集进入大屏详情页时没有初始焦点，第一次按方向键会跳到右上角关闭按钮；共享库中未匹配剧集 ID 的 WebDAV/SMB 文件在大屏详情页无法播放，点开只提示视频文件不存在；海报墙会在加载到一半时停住。前两项分别通过给详情页设置初始焦点目标、把剧集轨道改为按条目建模修复；第三项给通用图片下载加了 20 秒超时与 6 路并发上限，并按网格实际请求尺寸限制封面解码分辨率，避免低配电视盒子被大量并发连接和内存回收拖住。\n\n**WebDAV 旧连接 ID 导致媒体库条目无法播放** ([#989](https://github.com/AimesSoft/NipaPlay-Reload/pull/989))\n\n旧版本连接没有持久化 ID，媒体库条目里写的是按 URL 和用户名派生的稳定 ID；连接删除重建后新连接拿到随机 ID，旧条目就找不到连接，播放报「无法解析远程媒体路径」，而 WebDAV 浏览页却正常。现在 ID 派生规则统一收敛到一处，查找未命中时按同一规则对现有连接重算并重绑，播放、字幕和下一话等所有入口同时受益，无需迁移存库数据，URL 和用户名都对不上时不会误绑。\n\n**Emby UHD 媒体库逐库接口兼容** ([#995](https://github.com/AimesSoft/NipaPlay-Reload/pull/995))\n\n部分 Emby 兼容服务能通过 Views 列出媒体库，但不支持全局 Items 或库详情接口，导致逐库的最新、排序和随机列表为空。现在复用已加载的 Views 库类型，改用用户范围的 Items 接口查询逐库内容。关联：[#570](https://github.com/AimesSoft/NipaPlay-Reload/issues/570)\n\n**Windows 方向键误触窗口控制按钮** ([#1008](https://github.com/AimesSoft/NipaPlay-Reload/pull/1008))\n\n标题栏的最小化、最大化和关闭按钮此前参与键盘焦点遍历，播放中按方向键会把焦点移到关闭按钮，再按空格或回车就直接关窗。现在按钮区排除 Flutter 焦点，鼠标点击、悬停和按钮反馈不变。关联：[#981](https://github.com/AimesSoft/NipaPlay-Reload/issues/981)\n\n**Linux 纹理插件随机崩溃** ([#1009](https://github.com/AimesSoft/NipaPlay-Reload/pull/1009))\n\nLinux 播放视频时进程会随机 SIGSEGV（约三次里两次），1.11.9 官方 deb 和源码构建都能复现，有时表现为持续刷 `FL_IS_PLUGIN_REGISTRAR` 断言失败。修复在插件注册阶段就捕获 FlView 引用，不再使用已失效的注册器。\n\n**macOS DFM+ 弹幕卡死整个应用** ([#1011](https://github.com/AimesSoft/NipaPlay-Reload/pull/1011))\n\n使用 DFM+ 弹幕引擎（新安装的默认设置）播放弹幕密集的视频时，主线程同步等待渲染线程\n\n…",
+          "downloadURL": "https://github.com/AimesSoft/NipaPlay-Reload/releases/download/v1.11.10/NipaPlay_1.11.10_iOS_arm64.ipa",
+          "size": 83752803,
+          "minOSVersion": "13.0"
+        },
+        {
           "version": "1.11.9",
           "buildVersion": "1.11.9",
           "date": "2026-10-02",
@@ -942,6 +951,15 @@
     {
       "bundleIdentifier": "com.example.kazumi",
       "versions": [
+        {
+          "version": "2.4.1",
+          "buildVersion": "20401",
+          "date": "2026-10-22",
+          "localizedDescription": "- 修复规则镜像在部分地区无法访问的问题 (#2747 #2748) (@Predidit)\r\n- 修复 linux 平台 deeplink 无法使用的问题 (@Tobiichi-Origuchi)\r\n> [!NOTE]\r\n> 这是 2.4.0 的热修复版本，更多更新日志参考 2.4.0\n\nUpstream release: https://github.com/Predidit/Kazumi/releases/tag/2.4.1",
+          "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.1/Kazumi_ios_2.4.1_no_sign.ipa",
+          "size": 30514613,
+          "minOSVersion": "15.0"
+        },
         {
           "version": "2.3.9",
           "buildVersion": "20309",
