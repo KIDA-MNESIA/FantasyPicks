@@ -952,6 +952,15 @@
       "bundleIdentifier": "com.example.kazumi",
       "versions": [
         {
+          "version": "2.4.2",
+          "buildVersion": "20402",
+          "date": "2026-10-23",
+          "localizedDescription": "- 修复部分地区规则仓库无法访问的问题\n\nUpstream release: https://github.com/Predidit/Kazumi/releases/tag/2.4.2",
+          "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.2/Kazumi_ios_2.4.2_no_sign.ipa",
+          "size": 30521004,
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "2.4.1",
           "buildVersion": "20401",
           "date": "2026-10-22",
