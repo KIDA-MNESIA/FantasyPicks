@@ -578,6 +578,15 @@
       "bundleIdentifier": "com.minh-ton.Reynard",
       "versions": [
         {
+          "version": "0.19.0",
+          "buildVersion": "24a99b7",
+          "date": "2026-10-26",
+          "localizedDescription": "## Changes\r\n\r\n**Full Changelog**: https://github.com/minh-ton/reynard-browser/compare/0.18.0...0.19.0\r\n\r\n### New Features\r\n- Added support for game controllers.\r\n- You can now import and export your bookmarks, history, and add-ons:\r\n  - Bookmarks can be imported from and exported to other browsers as an HTML file.\r\n  - History can be imported from Safari or Google Takeout (Chrome), and exported in Safari's format.\r\n  - Add-ons can be imported from and exported to another Reynard install.\r\n\r\n### Bug Fixes & Improvements\r\n- Webpages that fail to load now show an error page explaining what went wrong, with options to try again or go back.\r\n- You can now right-click a Favorite site on the homepage using a pointer device to reveal its context menu.\r\n- Fixed an issue where pull to refresh would occasionally get stuck, with the refresh spinner appearing indefinitely.\r\n- Fixed numerous UI issues.\r\n\r\n### Engine\r\n\r\nUpdated Gecko to [158.0.1](https://github.com/mozilla-firefox/firefox/commit/FIREFOX_158_0_1_RELEASE) (released Oct 20, 2026).\n\nUpstream release: https://github.com/minh-ton/reynard-browser/releases/tag/0.19.0",
+          "downloadURL": "https://github.com/minh-ton/reynard-browser/releases/download/0.19.0/Reynard.ipa",
+          "size": 111139976,
+          "minOSVersion": "13.0"
+        },
+        {
           "version": "0.18.0",
           "buildVersion": "860bb6f",
           "date": "2026-10-18",
@@ -1036,6 +1045,15 @@
     {
       "bundleIdentifier": "psyche.kelivo",
       "versions": [
+        {
+          "version": "1.3.2",
+          "buildVersion": "81",
+          "date": "2026-10-26",
+          "localizedDescription": "## What's Changed\r\n\r\n- feat: Rebuild Markdown rendering, with GitHub alerts, directive cards, inline HTML, themed highlights, math, and bounded SVG.\r\n- feat: Copy a message as Markdown, and copy a selection as rich HTML.\r\n- feat: Add an integrated browser with tabs, bookmarks, history, downloads, and agent browser tools. Browser steps appear as page cards on the timeline, with workspace page previews.\r\n- feat: Add IntelligentUI, including layouts, forms, charts, tables, and restricted web previews, with a built-in visualize skill.\r\n- feat: Add reversible context management. Compress a chat into an editable summary or mark a context boundary, then undo either one. Original messages are kept.\r\n- feat: Add per-conversation tool permissions, with ask-for-approval and full access.\r\n- feat: Add grouped MCP server management and a unified tools panel.\r\n- feat: Add optional password encryption for backups.\r\n- feat: Add a custom data directory on Windows.\r\n- feat: Copy world book entries, and move them between books in a batch.\r\n- feat: Add an optional native text selection menu on iOS 26 and later.\r\n- feat: Add DeepSeek web search and full-page fetch, including publication dates.\r\n- feat: Add Groq and Mistral speech transcription.\r\n- feat: Choose memory types that are always injected in full, ignoring the per-type item limit.\r\n- feat: Add Gemini 4 support, including thinking levels and thought-signature replay.\r\n- fix: Replay Gemini tool calls one round at a time, keep each round's text and thinking, and keep code-execution IDs unique.\r\n- fix: Correct Claude adaptive thinking modes and model defaults, and leave synthetic citation cards out of history.\r\n- fix: Keep Responses tool history in order, retain tool images, and merge reasoning fragments before replay.\r\n- fix: Send MCP tool images when a turn continues or history is replayed.\r\n- fix: Keep assistant identities and their chats attached after an upgrade.\r\n- fix: Refresh the Codex model list after the app version changes.\r\n- fix: Preserve Android IME edits in long messages, including select all, cut, and composition.\r\n- fix: Stop Windows from attaching the same image twice on a newly sent message.\r\n- fix: Keep long-image exports at full precision, and speed up their previews.\r\n- fix: Keep data when an import or migration fails, recover a missing installation, and resume a Windows restore blocked by a locked folder.\r\n- fix: Leave iOS app data out of system backups.\r\n- fix: Keep the desktop composer focused when switching windows, and restore title-bar double-click zoom on macOS.\r\n- fix: Follow the bottom of a streaming reply directly, instead of delayed auto-scroll.\r\n- fix: Run the sandbox on 32-bit Android, and pass the app proxy into guest processes.\r\n- fix: Keep calculator results exact, correct GPT-5 reasoning defaults, and enable reasoning for OpenRouter Auto.\r\n- fix: Normalize Qwen WAV audio before playback.\r\n- fix: Sign and notarize macOS release builds.\r\n- fix: Speed up search, long histories, avatar loading, and reasoning-slider dragging.\r\n- fix: Fix several other known bugs and UI issues.\r\n\r\nFull Changelog: https://github.com/Chevey339/kelivo/compare/v1.3.1...v1.3.2\n\nUpstream release: https://github.com/Chevey339/kelivo/releases/tag/v1.3.2",
+          "downloadURL": "https://github.com/Chevey339/kelivo/releases/download/v1.3.2/Kelivo_ios_1.3.2%2B81.ipa",
+          "size": 46210644,
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.3.1",
           "buildVersion": "80",
