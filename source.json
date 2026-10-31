@@ -28,7 +28,8 @@
     "com.kdt.livecontainer",
     "com.stik.stikdebug",
     "com.utmapp.UTM-SE",
-    "moye.MeloX"
+    "moye.MeloX",
+    "org.spotube.spotube.Spotube"
   ],
   "apps": [
     {
@@ -1397,6 +1398,15 @@
       "versions": [
         {
           "version": "2.0",
+          "buildVersion": "9110401",
+          "date": "2026-10-30",
+          "localizedDescription": "## English\n\nThis MeloX iOS + Apple Watch release was built automatically by GitHub Actions.\n\n### MeloX Website\n\nVisit the [MeloX website](https://melox.luoxe.cn/) for project information and the latest news.\n\n### Download\n\n- `MeloX-iOS-unsigned.ipa`: unsigned iOS package containing the Apple Watch app\n\n### Installation\n\nThe IPA is unsigned and must be signed before installation.\n\n### Build Information\n\n- Version: `v1.4.1`\n- Commit: `09713edb847a0f0a3515a34f779cc630d4fe5985`\n- Build: `148`\n\n## 简体中文\n\n这是由 GitHub Actions 自动构建的 MeloX iOS + Apple Watch 发行版本。\n\n### MeloX 官网\n\n访问 [MeloX 官网](https://melox.luoxe.cn/) 了解项目与最新动态。\n\n### 下载说明\n\n- `MeloX-iOS-unsigned.ipa`：包含 Apple Watch App 的 iOS 未签名安装包\n\n### 安装说明\n\n该 IPA 未签名，需要自行签名后安装。\n\n### 版本信息\n\n- 版本：`v1.4.1`\n- Commit：`09713edb847a0f0a3515a34f779cc630d4fe5985`\n- 构建编号：`148`\n\n## What's New / 更新内容\n\n## 简体中文\n\n- 首页每日推荐等快捷入口默认使用更小的紧凑卡片，可在通用设置中切换大小\n- 新增首页推荐、音乐库和歌单信息自动缓存，再次打开时优先显示已有内容，网络刷新失败时保留缓存\n- 修复了播放队列中播放模式控件吸顶切换时，歌曲列表和滚动指示条位置跳动的问题（感谢 @Fab1e2000）\n\n## English\n\n- Home shortcuts, including Daily Recommendations, now use smaller cards by default, with a compact layout toggle in General settings\n- Added automatic caching for home recommendations, library lists, and playlist details, with cached content shown first and preserved when network refreshes fail\n- Fixed jumps in the song list and scroll indicator when playback mode controls pin or unpin at the top of the queue (thanks to @Fab1e2000)\n\n\nUpstream release: https://github.com/youshen2/MeloX/releases/tag/v1.4.1",
+          "downloadURL": "https://github.com/youshen2/MeloX/releases/download/v1.4.1/MeloX-iOS-unsigned.ipa",
+          "size": 30440912,
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "2.0",
           "buildVersion": "9110400",
           "date": "2026-10-24",
           "localizedDescription": "## English\n\nThis MeloX iOS + Apple Watch release was built automatically by GitHub Actions.\n\n### MeloX Website\n\nVisit the [MeloX website](https://melox.luoxe.cn/) for project information and the latest news.\n\n### Download\n\n- `MeloX-iOS-unsigned.ipa`: unsigned iOS package containing the Apple Watch app\n\n### Installation\n\nThe IPA is unsigned and must be signed before installation.\n\n### Build Information\n\n- Version: `v1.4.0`\n- Commit: `9c2f87b57b54ddbab76a4a53736f4840719a0947`\n- Build: `138`\n\n## 简体中文\n\n这是由 GitHub Actions 自动构建的 MeloX iOS + Apple Watch 发行版本。\n\n### MeloX 官网\n\n访问 [MeloX 官网](https://melox.luoxe.cn/) 了解项目与最新动态。\n\n### 下载说明\n\n- `MeloX-iOS-unsigned.ipa`：包含 Apple Watch App 的 iOS 未签名安装包\n\n### 安装说明\n\n该 IPA 未签名，需要自行签名后安装。\n\n### 版本信息\n\n- 版本：`v1.4.0`\n- Commit：`9c2f87b57b54ddbab76a4a53736f4840719a0947`\n- 构建编号：`138`\n\n## What's New / 更新内容\n\n## 简体中文\n\n- 初步适配 iPhone Duo\n- 增加了听歌识曲的应用内音频来源，以及 iOS 27 的跨 App 本机内录\n- 增加了歌单、专辑和收藏歌曲的「定位到正在播放」功能\n- 修复了音乐库分类切换入口只有标题收起后才显示的问题\n- 修复了蜂窝网络下无法修改无线网络播放音质的问题\n- 修复了歌单与专辑收藏失败的问题（感谢 @Fab1e2000）\n- 修复了切歌后沿用上一首播放进度，以及延迟网络回调可能导致崩溃的问题（感谢 @Arcdiverrr1026）\n- 修复了音译歌词逐字高亮错乱、换行后提前变白的问题\n- 修复了同一句歌词换行后各行文字大小不一致的问题\n\n## English\n\n- Added initial iPhone Duo support\n- Added App Audio for Song Recognition and cross-app System Audio capture on iOS 27\n- Added “Locate Now Playing” to playlists, albums, and favorite songs\n- Fixed the library category switcher being available only after the navigation title collapsed\n- Fixed Wi-Fi playback quality changes being applied to cellular quality when using cellular data\n- Fixed failures when adding playlists and albums to favorites (thanks to @Fab1e2000)\n- Fixed tracks inheriting the previous song's playback position and potential crashes from late network callbacks (thanks to @Arcdiverrr1026)\n- Fixed incorrect word-by-word highlighting and premature highlighting after line wrapping in transliterated lyrics\n- Fixed inconsistent text sizes across wrapped lines of the same lyric\n\n\nUpstream release: https://github.com/youshen2/MeloX/releases/tag/v1.4.0",
@@ -1434,6 +1444,36 @@
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
+      }
+    },
+    {
+      "bundleIdentifier": "org.spotube.spotube.Spotube",
+      "versions": [
+        {
+          "version": "1.0",
+          "buildVersion": "1",
+          "date": "2026-10-30",
+          "localizedDescription": "## Spotube V6 Beta is here 🎉🚀\r\n\r\n### 🔥Highlights\r\n\r\n- Migration from Flutter to Compose Multiplatform, [learn why we did it](https://spotube.cc/blog/compose-multiplatform-migration/)\r\n- UI redesign, introducing [Millennium](https://github.com/team-spotube/millennium/) UI. 2000s look and feel with 2026's modernity\r\n- Jam session integration, play music with friends and family\r\n- Full Android Auto integration. Browse, Library, Search all are there now, not just queue\r\n- Migration from hetu_script to Kotlin for plugin development. Powered by [Zipline by Cashapp](https://github.com/cashapp/zipline/)\r\n- More extensibility, plugin support for Lyrics provider and Scrobbling providers\r\n- Native Android APK, with reduced apk size, performance improvements and more native android integrations.\r\n- Relicensed from BSD-4-Clause to AGPL-3.0-or-later for a more Open Source friendly licensing. And for preventing distribution of closed source and maliciously modified Spotube.\r\n\r\n### 💫 Features\r\n\r\n- Migration to Compose Multiplatform\r\n- Add ChipTab component and refactor SearchScreen to use it\r\n- Add AutocompleteTextField component and integrate it into SearchScreen\r\n- Enhance AutocompleteTextField with focus management and dropdown behavior\r\n- Enhance AppSidebar with improved button interactions and visual feedback\r\n- Implement endless playback recommendations in DeviceAudioPlayerQueue\r\n- Add GhostIconButton component and enhance button interactions in TrackList\r\n- Replace IconButton with GhostIconButton in AppExpandedPlayer and AppLargePlayer for improved visual consistency\r\n- Replace IconButton with GhostIconButton in PlayerQueueContent and PlayableCard for visual consistency\r\n- Enhance UI components with LocalBaseUITheme for consistent styling and improved interactions\r\n- Enhance button styles and interactions in Buttons and Theme components for improved UI consistency\r\n- Simplify highlight implementation in UI components for improved readability and maintainability\r\n- Add genre selection and tabs to HomeScreen for improved content navigation\r\n- Implement artist overview screen with loading, error handling, and pagination for albums, related artists, and featured playlists\r\n- Add genre and featured browsing capabilities to MediaBrowseHelper\r\n- Implement playlist creation and editing functionality with UI components\r\n- Add 'Add to Playlist' functionality with UI components and dialogs\r\n- Add Toggle component and update UI to use it in place of Switch\r\n- Implement settings section cards for updates, desktop, language, caching, and plugins\r\n- Update icons in settings sections to use Iconsax library for improved UI consistency\r\n- Replace FeatherIcons with Iconsax in PluginCard and PluginPermissionsDialog for improved UI consistency\r\n- Refactor PluginPermissionsDialog to use custom UI components for improved consistency and readability\r\n- Enhance UI with shared element transitions and improve state management in album and playlist screens\r\n- Integrate Uniffi for audio metadata reading and writing with Lofty library\r\n- Replace FeatherIcons with Iconsax in window controls and update sidebar with better design\r\n- Implement haze effect and UI enhancements in AppLargePlayer and AppShell\r\n- Enhance haze effect integration in AppShell and AppSidebar for improved UI experience\r\n- Add adaptive dialog bottom sheet component and enhance plugin installation UI\r\n- Enhance AdaptiveDialogBottomSheet with dismiss icon and improve plugin screen layout\r\n- Implement CollectionView component and refactor Album, Playlist, SavedTracks screens for improved UI consistency\r\n- Add current time management in AudioPlayer for improved playback control\r\n- Simplify playback control logic in AudioPlayer by removing redundant state checks\r\n- Introduce AudioPlayerInterface and refactor AudioPlayer implementations for better abstraction\r\n- Update skipToNext and skipToPrevious metho\n\n…",
+          "downloadURL": "https://github.com/team-spotube/spotube/releases/download/v6.0.0-beta.0/Spotube-ios.ipa",
+          "size": 30157790,
+          "minOSVersion": "18.2"
+        }
+      ],
+      "name": "Spotube",
+      "developerName": "Spotube Team",
+      "subtitle": "插件驱动的开源音乐播放器",
+      "localizedDescription": "Spotube 是一款插件驱动的开源音乐播放器，可整合音乐来源、歌单与元数据服务。需要配置相应插件，具体功能受所连接服务影响。本条目仅索引原作者 GitHub Releases 中发布的稳定版 iOS IPA。",
+      "iconURL": "https://raw.githubusercontent.com/team-spotube/spotube/v5.1.2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "tintColor": "#4185A9",
+      "category": "entertainment",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "This app require access to the device camera",
+          "NSMicrophoneUsageDescription": "This app does not require access to the device microphone",
+          "NSPhotoLibraryUsageDescription": "This app require access to the photo library"
+        }
       }
     }
   ],
