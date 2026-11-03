@@ -170,6 +170,15 @@
       "versions": [
         {
           "version": "2.2.0",
+          "buildVersion": "5598",
+          "date": "2026-11-03",
+          "localizedDescription": "更新投屏依赖 https://github.com/bggRGjQaUbCoE/PiliPlus/issues/2680#issuecomment-6597938908\r\n修复部分视频评论显示不全 #3458\r\n修复播放课堂视频 #3454 by @ucxn\r\n修复 macOS 关闭系统标题栏后无法拖动 #3453 by @NalCol\r\n修复点赞弹幕跳转未留提前量，导致跳转到弹幕时无法加载 #3459 by @Rim-World\r\nChromeOS(ARC) 上不再主动请求屏幕方向，由系统决定窗口方向 #3406 co-by @selcarpa\n\nUpstream release: https://github.com/bggRGjQaUbCoE/PiliPlus/releases/tag/2.2.0.2",
+          "downloadURL": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.2.0.2/PiliPlus_ios_2.2.0%2B5598.ipa",
+          "size": 24933082,
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "2.2.0",
           "buildVersion": "5580",
           "date": "2026-11-01",
           "localizedDescription": "设置选项调整\r\n支持切换`番剧`/`剧集` PV\r\npgc/pugv api 迁移至 ogv\r\n`我的订阅`详情默认倒序显示\r\n相关推荐过滤屏蔽黑名单 #3276\r\n用户主页支持显示粉丝勋章 #3202\r\n键盘方向键支持长按持续回退 #3379\r\n同步空降助手新片段类型`惊吓` #3368\r\n桌面端进度条支持鼠标悬停预览视频画面\r\n增加桌面端视频底栏时长字体大小 #3372\r\n增加滚轮调节音量开关 #3340 by @Hdy08\r\n侧边栏支持隐藏文字 #3343 by @illumiat\r\n支持`,`/`.`键逐档切换倍速 #3294 by @lzblack\r\n重构 Linux 内嵌 WebView #3423 by @moluopro\r\nLinux 构建依赖调整 #3277 by @Tobiichi-Origuchi\r\nLinux 支持多媒体控制 #3355 by @Tobiichi-Origuchi\r\nLinux 支持检测网络类型 #3164 #3374 by @Tobiichi-Origuchi\r\n`我的`页面支持显示`观看记录`、`稍后再看`、`我的订阅`\r\n支持自定义`buvid` #3253 #3349 co-by @My-Responsitories\r\n缓存面板支持选择音质，修复音质选取问题 #3309 co-by @azkbzxf\r\n支持导出/导入所有数据到压缩包 #3248 by @nlsdt #3313 by @My-Responsitories\r\n其他调整 #3349 by @My-Responsitories\r\n构建脚本不再改写用户的全局 Git 配置 #3360 by @AmCh-Q\r\n\r\n适配更多专栏类型\r\n支持显示 UP 专栏文集 #3316\r\n\r\n首页直播置顶分类标签 #3363\r\n增加全屏 SC 是否显示/不透明度/缩放设置\r\n直播与视频的缓冲区大小区分开 #3308 by @azkbzxf\r\n\r\n支持查看折叠评论 #2391\r\n动态/视频评论 Scheme 改为跳转源页面后定位评论\r\n增加过滤复制视频介绍评论选项 #3312 by @My-Responsitories\r\n增加屏蔽`@`类型评论选项 #2808 #3241 co-by @My-Responsitories\r\n\r\n修复 bug\r\n修复 #3323 #3385\r\n修复专栏跳转评论后内容倒序显示 #3289\r\n修复长用户名被截断 #3359 by @ChenPeeer\r\n修复安卓启动时状态栏颜色 #3332 by @EX3124\r\n修复 Wayland 硬解黑屏 #3261 by @FeiLiuEM\r\n修复 pgc/pugv 分享链接 #3291 by @Starfallan\r\n修复安卓 17 投屏 #2897 #3365 by @TG-Twilight\r\n修复迁移托盘依赖 Linux 菜单显示问题 #3263 by @FeiLiuEM\r\n修复保留 Akamai 原始播放链接及签名参数 #3380 by @aierlma\r\n修复 OriginOS(vivo) 音量条无法二次按下自动收起 #3373 by @SekiBankiYa\n\nUpstream release: https://github.com/bggRGjQaUbCoE/PiliPlus/releases/tag/2.2.0",
@@ -1073,6 +1082,15 @@
     {
       "bundleIdentifier": "psyche.kelivo",
       "versions": [
+        {
+          "version": "1.3.4",
+          "buildVersion": "84",
+          "date": "2026-11-02",
+          "localizedDescription": "## What's Changed\r\n\r\nThis maintenance release focuses on message-saving stability and platform interaction fixes.\r\n\r\n- **Message-saving stability:** Fix an AOT compiler issue that could terminate the process when sending messages, regenerating replies, or saving edits to message history. Resolve checkpoint compatibility before the write loop while retaining incremental writes for changed message parts. This covers the persistence path used when saving an edit that removes images. (#1342)\r\n- **Android text selection:** Keep the editor's selection menu available after Select All so subsequent actions remain accessible. Retire replaced selection sessions before actions can use callbacks from an outdated selection. (#1343)\r\n- **iOS Live Activities:** Use the system background for the Lock Screen activity, correcting cases where a custom background could remain light in Dark Mode.\r\n- **Speech recognition settings:** Adjust hint colors and font weight to distinguish placeholders from entered values. Clarify the Workspace ID placeholder as “e.g. token-plan,” with English, Simplified Chinese, and Traditional Chinese localization.\r\n- **Native AOT regression coverage:** Add database integration coverage for first writes, empty assistant placeholders, unchanged and changed streaming checkpoints, timestamp invalidation, finalization, and edited message versions.\r\n- **Image-removal regression coverage:** Verify that saving history edits can remove one or all images, select the new revision, and preserve the original revision. Verify separately that removing restored images in the composer updates the draft without submitting it or deleting the source files.\r\n- **Selection and image-context tests:** Expand Android selection-menu coverage and correct the desktop image-context test to operate the intended switch directly.\r\n\r\n**Full Changelog:** [v1.3.3...v1.3.4](https://github.com/Chevey339/kelivo/compare/v1.3.3...v1.3.4)\r\n\n\nUpstream release: https://github.com/Chevey339/kelivo/releases/tag/v1.3.4",
+          "downloadURL": "https://github.com/Chevey339/kelivo/releases/download/v1.3.4/Kelivo_ios_1.3.4%2B84.ipa",
+          "size": 46627606,
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.3.3",
           "buildVersion": "83",
