@@ -1380,6 +1380,15 @@
       "bundleIdentifier": "com.stik.stikdebug",
       "versions": [
         {
+          "version": "3.2.1",
+          "buildVersion": "1",
+          "date": "2026-11-07",
+          "localizedDescription": "- More error cleanup\r\n- Chinese (Simplified) localization\r\n- Kill processes via name via url scheme\r\n- FYI- StikDebug now requires Xcode 27+\n\n## What's Changed\n* Added Chinese localization by @jlj1102 in https://github.com/StikDebug/StikDebug/pull/494\n\n## New Contributors\n* @jlj1102 made their first contribution in https://github.com/StikDebug/StikDebug/pull/494\n\n**Full Changelog**: https://github.com/StikDebug/StikDebug/compare/3.2.0...3.2.1\n\nUpstream release: https://github.com/StikDebug/StikDebug/releases/tag/3.2.1",
+          "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.1/StikDebug-3.2.1.ipa",
+          "size": 16924629,
+          "minOSVersion": "17.4"
+        },
+        {
           "version": "3.2.0",
           "buildVersion": "1",
           "date": "2026-10-30",
