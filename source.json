@@ -98,6 +98,15 @@
       "bundleIdentifier": "io.github.haukuen.venera",
       "versions": [
         {
+          "version": "1.17.0",
+          "buildVersion": "211",
+          "date": "2026-11-07",
+          "localizedDescription": "# 本次修改了webdav同步机制，以防万一请提前做好备份\r\n\r\n## What's Changed\r\n* refactor: 解耦分层架构并拆分大文件 by @haukuen in https://github.com/haukuen/venera/pull/151\r\n* feat: 桌面端分享改为复制到剪贴板 by @haukuen in https://github.com/haukuen/venera/pull/152\r\n* feat(sync): 重写 WebDAV 同步为基于操作记录的增量引擎 by @haukuen in https://github.com/haukuen/venera/pull/153\r\n\r\n\r\n**Full Changelog**: https://github.com/haukuen/venera/compare/v1.16.0...v1.17.0\n\nUpstream release: https://github.com/haukuen/venera/releases/tag/v1.17.0",
+          "downloadURL": "https://github.com/haukuen/venera/releases/download/v1.17.0/venera-ios-1.17.0%2B211.ipa",
+          "size": 16330547,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.16.0",
           "buildVersion": "210",
           "date": "2026-10-02",
