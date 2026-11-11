@@ -624,6 +624,15 @@
       "bundleIdentifier": "com.minh-ton.Reynard",
       "versions": [
         {
+          "version": "0.21.0",
+          "buildVersion": "85a507c",
+          "date": "2026-11-10",
+          "localizedDescription": "## Changes\r\n\r\n**Full Changelog**: https://github.com/minh-ton/reynard-browser/compare/0.20.1...0.21.0\r\n\r\n### New Features\r\n\r\n- Added preliminary support for Web MIDI, allowing websites to use your MIDI devices.\r\n- Webpages can now ask you to confirm before leaving, so you don't lose unsaved changes.\r\n- You can now long-press or right-click entries in the Bookmarks and History pages to copy, open in a new tab, edit, or delete them.\r\n\r\n### Engine\r\n\r\nUpdated Gecko to [159.0.1](https://github.com/mozilla-firefox/firefox/commit/FIREFOX_159_0_1_RELEASE) (released Nov 3, 2026).\n\nUpstream release: https://github.com/minh-ton/reynard-browser/releases/tag/0.21.0",
+          "downloadURL": "https://github.com/minh-ton/reynard-browser/releases/download/0.21.0/Reynard.ipa",
+          "size": 111496704,
+          "minOSVersion": "13.0"
+        },
+        {
           "version": "0.20.1",
           "buildVersion": "219bc31",
           "date": "2026-11-05",
