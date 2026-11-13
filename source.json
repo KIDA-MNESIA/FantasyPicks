@@ -29,7 +29,8 @@
     "com.stik.stikdebug",
     "com.utmapp.UTM-SE",
     "moye.MeloX",
-    "org.spotube.spotube.Spotube"
+    "org.spotube.spotube.Spotube",
+    "io.nekohasekai.swipt"
   ],
   "apps": [
     {
@@ -1617,6 +1618,35 @@
           "NSCameraUsageDescription": "This app require access to the device camera",
           "NSMicrophoneUsageDescription": "This app does not require access to the device microphone",
           "NSPhotoLibraryUsageDescription": "This app require access to the photo library"
+        }
+      }
+    },
+    {
+      "bundleIdentifier": "io.nekohasekai.swipt",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "buildVersion": "76",
+          "date": "2026-11-12",
+          "localizedDescription": "* Require iOS 26 for the accessibility API\n* Fix network lockdown connections closing without a heartbeat\n* Extend Swiplet icon colors\n* Add the chart and data grid components\n* Remove the guards against bad values from Swiplets\n* Add stream actions and the process API\n* Fix lifecycle and concurrency bugs\n* Simplify loopback VPN setup\n* Fix cancellation and validation bugs\n* Follow the Apple Style Guide in the CLI strings\n* Allow sideload install to downgrade Swipt\n* Fix fetch crashing in Swiplet interfaces\n* Clean up legacy designs\n* Pause services and the API while the device is unavailable\n* Replace the background audio with the developer service\n* Fix slow detection of unsupported networks\n* Resolve DNS with the system configuration on iOS\n* Detect the foreground app right after connecting\n* Connect touch input before the first tap\n* Send input without checking the lock state\n* Split the CLI commands into one file each\n* Fix the detection of the foreground app\n* Download swiplet updates on demand and show progress\n* Number enumerations with iota\n* Skip unchanged builds in dev install\n* Reformat code\n* Fix the position of the repository loading indicator\n* Fix choosing VPN addresses that do not loop back\n* Generate the CLI's Protobuf code as TypeScript\n* Move the CLI to TypeScript\n* Generate Protobuf code with buf\n* Version releases automatically and publish packages on release\n* Use the stable official swiplets feed in stable builds\n* Replace outdated Developer Disk Images\n* Fix tunnel uploads stalling on large TLS records\n* Fix loopback setup not advancing after the tunnel is found\n* Merge the release workflow into the build workflow\n* Fix publishing when the new draft is not listed yet\n* Reject outdated swiplets\n* Add available() and minimum iOS versions for swiplets\n* Support iOS 17.4\n* Fix calls hanging when their results can't be converted\n* Fix accessibility snapshots failing on infinite frames\n* Refactor the screen API\n* Cancel Vision requests when the call is aborted\n* Accept only file handles as files\n* Track the foreground app without accessibility and close idle accessibility connections\n* Fix setup failing to open Swipt\n* Fix slow device list\n* Fix screen-viewing notification dismissal\n* Add CONTRIBUTING.md\n* Fix leaked accessibility connections\n* Check the API level against the last stable release\n* Improve accessibility reads and taps\n* Add HTTP APIs\n* Restore missing localizations\n* Detect loopback VPNs with IPv6 addresses\n* Add swiplet API levels and an updates sheet\n* Add Tailscale support\n* Improve Cloudflare tunnel setup\n* Preserve error causes\n* Show that cellular data is unsupported in setup\n* Recover automation from dropped device connections\n* Update outdated Developer Disk Images\n* Add basic vphone support\n* Separate the app intents API and match the system dialogs\n* Move graphics to Objective-C in cgo\n* Fix setup failing while Swipt relaunches\n* Share the install flow between sideload and dev\n* Fix missing Developer Disk Image in IPA\n* Share the bundle identifier between sideload and dev builds\n* Preserve the swiplet order in swiplets.json\n* Add sideload setup command\n* Persist the simulated location\n* Add the official swiplet repository\n* Move preferredLocalizations to @swipt/api/localization\n* Remove the expo-localization shim from extensions\n* Add place search to swiplets\n* Add expo-maps to swiplets\n* Fix database change events firing before commit\n* Close the screen feed sooner when idle\n* Fix the swiplet runtime without the dev menu\n* Fix element taps and their timeline events\n* Fix updating Swipt on a locked device\n* Print API URLs after sideloading\n* Cache sideload downloads\n* Re-provision when the signing certificate is revoked\n* Add skills update workflow\n* Build only what changed\n* Localize the CLI\n* Add CLI translations\n* Move documentation to swipt.io\n* Fix sideload masking device errors\n\n\n…",
+          "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
+          "size": 48136565,
+          "minOSVersion": "16.4"
+        }
+      ],
+      "name": "Swipt",
+      "developerName": "nekohasekai",
+      "subtitle": "通用 iOS 自动化平台",
+      "localizedDescription": "Swipt 是一款适用于 iPhone 和 iPad 的通用自动化平台，支持通过 JavaScript Swiplet、CLI 与兼容 MCP 的 API 自动化控制设备。需要开启开发者模式并按官方文档（https://swipt.io）完成本机配对。由于上游目前仅发布 Nightly 预发布版，本条目直接跟踪原作者 GitHub Releases 中的 Swipt.ipa。",
+      "iconURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/icon.png",
+      "tintColor": "#4185A9",
+      "category": "utilities",
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "Swipt connects to developer services on this device and, if you publish its API, accepts connections on the local network.",
+          "NSLocationWhenInUseUsageDescription": "Swipt gets your approximate location only to keep automating this device while you use other apps or the device is locked. It doesn’t keep your location or send it anywhere."
         }
       }
     }

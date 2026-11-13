@@ -23,6 +23,7 @@
 | StikDebug | `StikDebug/StikDebug` | `^StikDebug-[0-9.]+\.ipa$` |
 | UTM SE | `utmapp/UTM` | `^UTM-SE\.ipa$` |
 | MeloX | `youshen2/MeloX` | `^MeloX-iOS-unsigned\.ipa$` |
+| Swipt | `swipt-automation/swipt` | `^Swipt\.ipa$` |
 
 ## 文件说明
 
@@ -50,6 +51,6 @@ GitHub Actions 会每日运行一次 `scripts/update_altstore_source.py`：
 
 ## 新增条目维护
 
-- 新增条目默认不跟踪预发布版本，使用精确的 iOS IPA 匹配规则。UTM SE、LiveContainer 独立版与 NipaPlay iOS 包不可与其他变体混用。
+- 新增条目默认不跟踪预发布版本（Swipt 因上游目前仅提供 Nightly 预发布版除外），使用精确的 iOS IPA 匹配规则。UTM SE、LiveContainer 独立版与 NipaPlay iOS 包不可与其他变体混用。
 - 版本号、构建号和最低系统版本继续读取实际 IPA，不能直接用 Release tag 代替。
 - 新增条目的 `appPermissions` 已按首次收录的官方 IPA 核对，包括应用扩展；上游升级如改变权限，应重新核对，不直接复制不同发行渠道或开发分支的声明。

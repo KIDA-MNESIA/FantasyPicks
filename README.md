@@ -12,15 +12,15 @@ https://kida-mnesia.github.io/FantasyPicks/source.json
 
 ## 收录应用
 
-当前收录 20 个应用，IPA 直接链接到原作者 GitHub Releases。
+当前收录 22 个应用，IPA 直接链接到原作者 GitHub Releases。
 
 | 方向 | 应用 |
 | --- | --- |
 | 阅读 | Aidoku、Venera、Mangayomi、Anx Reader |
-| 影音 | PiliPlus、Simple Live、NipaPlay-Reload、Kazumi、Spotube |
+| 影音 | PiliPlus、Simple Live、NipaPlay-Reload、Kazumi、Spotube、MeloX |
 | AI | Kelivo |
 | 社区 | FluxDO、v2Explore |
-| 工具 | Feather、Reynard Browser、iTorrent、qBitControl、LiveContainer、StikDebug |
+| 工具 | Feather、Reynard Browser、iTorrent、qBitControl、LiveContainer、StikDebug、Swipt |
 | 模拟器 | PPSSPP、UTM SE |
 
 完整上游与资产匹配规则见 [apps.json](apps.json)，具体版本和最低系统要求见 [source.json](source.json)。
@@ -30,6 +30,7 @@ https://kida-mnesia.github.io/FantasyPicks/source.json
 - NipaPlay-Reload 需要用户自己的本地或 NAS 媒体资源；qBitControl 需要已部署的 qBittorrent 服务；Kelivo 需要配置相应模型服务。
 - iTorrent 普通侧载使用上游支持的 AltStore 或 SideStore。
 - LiveContainer 收录独立版，请先阅读[官方安装说明](https://livecontainer.github.io/docs/installation)并完成证书配置；StikDebug 需要配对文件、回环 VPN 和满足调试条件的目标应用。
+- Swipt 需要开启开发者模式并按[官方文档](https://swipt.io)完成本机配对；由于上游暂未发布正式版，当前跟踪 Nightly 预发布包。
 - PPSSPP 的 JIT 为可选能力；UTM SE 无需 JIT，但解释执行性能有限。游戏文件和系统镜像由用户自行准备。
 - 本源直接引用上游 IPA；安装后的扩展和系统能力取决于设备、系统版本及签名方式。
 

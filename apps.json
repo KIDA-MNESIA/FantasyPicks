@@ -422,5 +422,25 @@
     "iconURL": "https://raw.githubusercontent.com/youshen2/MeloX/main/MeloX/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
     "category": "entertainment",
     "tintColor": "#4185A9"
+  },
+  {
+    "name": "Swipt",
+    "github": "swipt-automation/swipt",
+    "assetRegex": "^Swipt\\.ipa$",
+    "includePrereleases": true,
+    "releaseLimit": 30,
+    "developerName": "nekohasekai",
+    "subtitle": "通用 iOS 自动化平台",
+    "description": "Swipt 是一款适用于 iPhone 和 iPad 的通用自动化平台，支持通过 JavaScript Swiplet、CLI 与兼容 MCP 的 API 自动化控制设备。需要开启开发者模式并按官方文档（https://swipt.io）完成本机配对。由于上游目前仅发布 Nightly 预发布版，本条目直接跟踪原作者 GitHub Releases 中的 Swipt.ipa。",
+    "iconURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/icon.png",
+    "category": "utilities",
+    "tintColor": "#4185A9",
+    "appPermissions": {
+      "entitlements": [],
+      "privacy": {
+        "NSLocalNetworkUsageDescription": "Swipt connects to developer services on this device and, if you publish its API, accepts connections on the local network.",
+        "NSLocationWhenInUseUsageDescription": "Swipt gets your approximate location only to keep automating this device while you use other apps or the device is locked. It doesn’t keep your location or send it anywhere."
+      }
+    }
   }
 ]
