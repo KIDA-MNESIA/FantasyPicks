@@ -233,7 +233,12 @@ def update_one(source: dict[str, Any], config: dict[str, Any]) -> bool:
         if app_info.get("minOSVersion"):
             version_entry["minOSVersion"] = app_info["minOSVersion"]
 
-        app.setdefault("versions", []).insert(0, version_entry)
+        versions = [
+            item for item in app.get("versions", [])
+            if item.get("downloadURL") != ipa_url
+        ]
+        versions.insert(0, version_entry)
+        app["versions"] = versions
         print(f"[update] {repo}: added {version} ({build_version})")
         return True
 

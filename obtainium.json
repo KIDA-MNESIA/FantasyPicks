@@ -1,0 +1,106 @@
+[
+  {
+    "id": "app.lawnchair.nightly",
+    "url": "https://github.com/LawnchairLauncher/lawnchair",
+    "author": "LawnchairLauncher",
+    "name": "Lawnchair",
+    "allowIdChange": false,
+    "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"sortMethodChoice\":\"date\",\"versionDetection\":false,\"autoApkFilterByArch\":true,\"apkFilterRegEx\":\"^Lawnchair[.]Debug[.].*[.]apk$\",\"invertAPKFilter\":false,\"filterReleaseTitlesByRegEx\":\"^Lawnchair Nightly$\",\"releaseDateAsVersion\":true,\"refreshBeforeDownload\":true,\"about\":\"跟踪 Lawnchair Nightly 开发版，使用独立的 Nightly 包名。\"}"
+  },
+  {
+    "id": "com.coolapk.desktop",
+    "url": "https://github.com/daimiaopeng/coolapk-desktop",
+    "author": "daimiaopeng",
+    "name": "酷安开源版",
+    "allowIdChange": false,
+    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"sortMethodChoice\":\"date\",\"versionDetection\":true,\"autoApkFilterByArch\":true,\"apkFilterRegEx\":\"^coolapk-.*-android-.*[.]apk$\",\"invertAPKFilter\":false,\"about\":\"第三方酷安客户端。上游仓库已归档，当前 Android 发行包仅支持 ARM64。\"}"
+  },
+  {
+    "id": "com.github.molchuan.cfluxdo",
+    "url": "https://github.com/1molchuan/fluxdo",
+    "author": "1molchuan",
+    "name": "cfluxdo",
+    "allowIdChange": false,
+    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"sortMethodChoice\":\"date\",\"versionDetection\":true,\"autoApkFilterByArch\":true,\"apkFilterRegEx\":\"^cfluxdo-.*[.]apk$\",\"invertAPKFilter\":false,\"about\":\"Linux.do 第三方 Android 客户端 cfluxdo，使用独立于 FluxDO 的包名。\"}"
+  },
+  {
+    "id": "com.xycz.simple_live",
+    "url": "https://github.com/June6699/dart_simple_live",
+    "author": "June6699",
+    "name": "Simple Live",
+    "allowIdChange": false,
+    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"sortMethodChoice\":\"date\",\"versionDetection\":true,\"autoApkFilterByArch\":true,\"apkFilterRegEx\":\"^SimpleLive-v.*[.]apk$\",\"invertAPKFilter\":false}"
+  },
+  {
+    "id": "com.huanchengfly.tieba.post",
+    "url": "https://github.com/zzc10086/TiebaLite",
+    "author": "zzc10086",
+    "name": "贴吧 Lite",
+    "allowIdChange": false,
+    "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"sortMethodChoice\":\"date\",\"versionDetection\":false,\"autoApkFilterByArch\":true,\"apkFilterRegEx\":\"^release-.*[.]apk$\",\"invertAPKFilter\":false}"
+  },
+  {
+    "id": "com.github.zly2006.zhplus",
+    "url": "https://github.com/zly2006/zhihu-plus-plus",
+    "author": "zly2006",
+    "name": "知乎++",
+    "allowIdChange": false,
+    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"sortMethodChoice\":\"date\",\"versionDetection\":true,\"autoApkFilterByArch\":true,\"apkFilterRegEx\":\"^zhihu[+][+]-full[.]apk$\",\"invertAPKFilter\":false,\"appName\":\"Zhihu++\",\"about\":\"知乎第三方客户端 Full 版，包含本地 AI 组件。\"}"
+  },
+  {
+    "id": "com.weibox.app",
+    "url": "https://github.com/bidabrain/weiboX",
+    "author": "bidabrain",
+    "name": "WeiboX",
+    "allowIdChange": false,
+    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"sortMethodChoice\":\"date\",\"versionDetection\":true,\"autoApkFilterByArch\":true,\"apkFilterRegEx\":\"^weiboX_v.*[.]apk$\",\"invertAPKFilter\":false}"
+  },
+  {
+    "id": "com.example.piliplus",
+    "url": "https://github.com/bggRGjQaUbCoE/PiliPlus",
+    "author": "bggRGjQaUbCoE",
+    "name": "PiliPlus",
+    "allowIdChange": false,
+    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"sortMethodChoice\":\"date\",\"versionDetection\":false,\"autoApkFilterByArch\":true,\"apkFilterRegEx\":\"^PiliPlus_android_.*[.]apk$\",\"invertAPKFilter\":false}"
+  },
+  {
+    "id": "io.nekohasekai.sfa",
+    "url": "https://github.com/SagerNet/sing-box",
+    "author": "SagerNet",
+    "name": "sing-box",
+    "allowIdChange": false,
+    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"sortMethodChoice\":\"date\",\"versionDetection\":true,\"autoApkFilterByArch\":true,\"apkFilterRegEx\":\"^SFA-(?!.*-legacy-android-5-).+-(?:arm64-v8a|armeabi-v7a|x86_64|x86)[.]apk$\",\"invertAPKFilter\":false,\"about\":\"跟踪普通 SFA 正式版。旧 Android 兼容版需另行配置。\"}"
+  },
+  {
+    "id": "dev.imranr.obtainium",
+    "url": "https://github.com/ImranR98/Obtainium",
+    "author": "ImranR98",
+    "name": "Obtainium",
+    "allowIdChange": false,
+    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"sortMethodChoice\":\"date\",\"versionDetection\":true,\"autoApkFilterByArch\":true,\"apkFilterRegEx\":\"fdroid\",\"invertAPKFilter\":true}"
+  },
+  {
+    "id": "com.hupux",
+    "url": "https://github.com/bidabrain/hupuX",
+    "author": "bidabrain",
+    "name": "虎扑X",
+    "allowIdChange": false,
+    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"sortMethodChoice\":\"date\",\"versionDetection\":true,\"autoApkFilterByArch\":true,\"apkFilterRegEx\":\"^app-release[.]apk$\",\"invertAPKFilter\":false}"
+  },
+  {
+    "id": "af.shizuku.plus.api",
+    "url": "https://github.com/thejaustin/ShizukuPlus",
+    "author": "thejaustin",
+    "name": "Shizuku+",
+    "allowIdChange": false,
+    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"sortMethodChoice\":\"date\",\"versionDetection\":false,\"autoApkFilterByArch\":true,\"apkFilterRegEx\":\"^Shizuku[+]-v?[0-9].*[.]apk$\",\"invertAPKFilter\":false,\"verifyLatestTag\":true,\"about\":\"Shizuku+ 独立版，使用 af.shizuku.plus.api 包名。\"}"
+  },
+  {
+    "id": "li.songe.gkd",
+    "url": "https://github.com/gkd-kit/gkd",
+    "author": "gkd-kit",
+    "name": "GKD",
+    "allowIdChange": false,
+    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"sortMethodChoice\":\"date\",\"versionDetection\":true,\"autoApkFilterByArch\":true,\"apkFilterRegEx\":\"^gkd-.*[.]apk$\",\"invertAPKFilter\":false}"
+  }
+]
