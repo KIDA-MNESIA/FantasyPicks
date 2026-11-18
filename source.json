@@ -643,6 +643,15 @@
       "bundleIdentifier": "com.minh-ton.Reynard",
       "versions": [
         {
+          "version": "0.22.1",
+          "buildVersion": "2222a37",
+          "date": "2026-11-18",
+          "localizedDescription": "## Changes\r\n\r\n**Full Changelog**: https://github.com/minh-ton/reynard-browser/compare/0.22.0...0.22.1\r\n\r\nThis is a minor release that fixes issues found in 0.22.0. For the complete list of changes, see the [0.22.0 release notes](https://github.com/minh-ton/reynard-browser/releases/tag/0.22.0).\r\n\r\n### Bug Fixes\r\n- Fixed an issue where WebRender would occasionally fall back to software rendering when opening a new tab or switching to an existing one.\n\nUpstream release: https://github.com/minh-ton/reynard-browser/releases/tag/0.22.1",
+          "downloadURL": "https://github.com/minh-ton/reynard-browser/releases/download/0.22.1/Reynard.ipa",
+          "size": 113650739,
+          "minOSVersion": "13.0"
+        },
+        {
           "version": "0.21.0",
           "buildVersion": "85a507c",
           "date": "2026-11-10",
