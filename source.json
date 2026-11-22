@@ -1116,6 +1116,15 @@
       "bundleIdentifier": "com.example.kazumi",
       "versions": [
         {
+          "version": "2.4.6",
+          "buildVersion": "20406",
+          "date": "2026-11-22",
+          "localizedDescription": "- 修复 Bangumi 同步无法使用的问题\n\nUpstream release: https://github.com/Predidit/Kazumi/releases/tag/2.4.6",
+          "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.6/Kazumi_ios_2.4.6_no_sign.ipa",
+          "size": 30369553,
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "2.4.5",
           "buildVersion": "20405",
           "date": "2026-11-21",
