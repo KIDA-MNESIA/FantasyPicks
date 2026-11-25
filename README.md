@@ -5,10 +5,10 @@ FantasyPicks 是一个 AltStore 第三方精选索引源，用来索引一些好
 源地址：
 
 ```text
-https://kida-mnesia.github.io/FantasyPicks/source.json
+https://yescomputer.github.io/FantasyPicks/source.json
 ```
 
-项目仓库：<https://github.com/KIDA-MNESIA/FantasyPicks>
+项目仓库：<https://github.com/yescomputer/FantasyPicks>
 
 ## 收录应用
 

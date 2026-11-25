@@ -1,11 +1,11 @@
 {
   "name": "FantasyPicks",
   "identifier": "io.github.kida-mnesia.FantasyPicks",
-  "sourceURL": "https://kida-mnesia.github.io/FantasyPicks/source.json",
+  "sourceURL": "https://yescomputer.github.io/FantasyPicks/source.json",
   "subtitle": "精选 iOS 旁载应用索引源",
   "description": "FantasyPicks 是一个 AltStore 第三方精选索引源。IPA 下载链接直接指向原作者 GitHub Releases，不重新托管应用文件。",
-  "iconURL": "https://github.com/KIDA-MNESIA.png",
-  "website": "https://kida-mnesia.github.io/FantasyPicks/",
+  "iconURL": "https://github.com/yescomputer.png",
+  "website": "https://yescomputer.github.io/FantasyPicks/",
   "tintColor": "#4185A9",
   "featuredApps": [
     "app.aidoku.Aidoku",
